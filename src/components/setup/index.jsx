@@ -1,0 +1,187 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+
+import moment from 'moment';
+
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import MenuItem from '@material-ui/core/MenuItem';
+
+import { KeyboardTimePicker } from '@material-ui/pickers';
+
+import AirbaseTable from '../tables/airbases';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'left',
+    color: theme.palette.text.secondary
+  },
+  form: {
+    '& .MuiTextField-root': {
+      margin: theme.spacing(1),
+      width: 200
+    }
+  }
+}));
+
+export default function MainContainer() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <Grid container spacing={1}>
+        <Grid item xs={12} sm={12} md={10}>
+          <Paper className={classes.paper}>
+            <form className={classes.form} noValidate autoComplete="off">
+              <Grid container spacing={1}>
+                <Grid item xs={12} sm={12} md={3}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    label="Callsign"
+                    style={{ width: '100%' }}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={12} md={3}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    label="Package"
+                    style={{ width: '100%' }}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={12} md={3}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    label="Mission Type"
+                    style={{ width: '100%' }}
+                  />
+                </Grid>
+                <Grid item xs={12} sm={12} md={3}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    label="Flight #"
+                    style={{ width: '100%' }}
+                  />
+                </Grid>
+              </Grid>
+            </form>
+
+            <Grid container spacing={1}>
+              <Grid item xs={12} sm={12} md={3}></Grid>
+              <AirbaseTable label="Airbases" />
+            </Grid>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={12} md={2}>
+          <Paper className={classes.paper}>
+            <form className={classes.form} noValidate autoComplete="off">
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ width: '100%' }}>
+                Import from Combat Flite
+              </Button>
+
+              <TextField
+                select
+                label="Select Theater"
+                id="demo-simple-select-placeholder-label"
+                value={10}
+                style={{ marginTop: 15, width: '100%' }}>
+                <MenuItem value={10}>Persian Gulf</MenuItem>
+                <MenuItem value={20}>Caucasus</MenuItem>
+              </TextField>
+
+              <TextField
+                select
+                label="Lat / Lon Format"
+                id="demo-simple-select-placeholder-label"
+                value={20}
+                style={{ marginTop: 15, width: '100%' }}>
+                <MenuItem value={10}>DD</MenuItem>
+                <MenuItem value={20}>DDM</MenuItem>
+                <MenuItem value={30}>DMS</MenuItem>
+              </TextField>
+
+              <TextField
+                id="outlined-basic"
+                variant="outlined"
+                label="Coordinate Precision"
+                style={{ marginTop: 15, width: '100%' }}
+                defaultValue={1}
+              />
+
+              <TextField
+                id="outlined-basic"
+                variant="outlined"
+                label="Transition Altitude"
+                style={{ marginTop: 15, width: '100%' }}
+                defaultValue={5000}
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="start">Feet</InputAdornment>
+                  )
+                }}
+              />
+
+              <TextField
+                id="outlined-basic"
+                variant="outlined"
+                label="Walk Time (Zulu)"
+                type="time"
+                defaultValue="19:00"
+                InputLabelProps={{
+                  shrink: true,
+                  step: 300 // 5 min
+                }}
+                style={{ marginTop: 15, width: '100%' }}
+              />
+
+              <TextField
+                select
+                label="Kneeboard Theme"
+                id="demo-simple-select-placeholder-label"
+                value={20}
+                style={{ marginTop: 15, width: '100%' }}>
+                <MenuItem value={10}>Light</MenuItem>
+                <MenuItem value={20}>Dark</MenuItem>
+              </TextField>
+
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginTop: 5, width: '100%' }}>
+                Save
+              </Button>
+
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginTop: 5, width: '100%' }}>
+                Download
+              </Button>
+
+              <Button
+                variant="contained"
+                color="secondary"
+                style={{ marginTop: 5, width: '100%' }}>
+                Reset
+              </Button>
+            </form>
+          </Paper>
+        </Grid>
+      </Grid>
+    </div>
+  );
+}
