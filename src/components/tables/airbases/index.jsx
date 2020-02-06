@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper';
 
 import TextField from '@material-ui/core/TextField';
 
-import testdata from '../../../data/test-mission.json';
+import { StoreContext } from '../../datastore-context'
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -31,6 +31,7 @@ const StyledTableRow = withStyles((theme) => ({
   }
 }))(TableRow);
 
+// STYLES
 const useStyles = makeStyles({
   table: {
     // minWidth: 700
@@ -42,6 +43,7 @@ const useStyles = makeStyles({
   }
 });
 
+// TABLE SETUP
 const columns = [
   {
     id: 1,
@@ -95,27 +97,34 @@ const columns = [
 
 function TableCellInput({ data, onBlur }) {
   const handleChange = (event) => {
-    event.preventDefault()
-    onBlur(event.target.value)
-  }
+    event.preventDefault();
+    onBlur(event.target.value);
+  };
 
   return (
-    <TextField margin="dense" size="small" value={data} fullWidth onChange={(handleChange)} />
+    <TextField
+      margin="dense"
+      size="small"
+      value={data}
+      fullWidth
+      onChange={handleChange}
+    />
   );
 }
 
 export default function AirbaseTable({ label }) {
-  const [data, setData] = React.useState(testdata);
+  // Get our styles
   const classes = useStyles();
 
+  // Get the global store
+  const { store, updateStore } = React.useContext(StoreContext)
+
+  // Update the global store if the input changes
   const updateData = (airfield_index, data_index, value) => {
+    updateStore('airfields', airfield_index, data_index, value)
+  };
 
-    const airfields = data.airfields
-    airfields[airfield_index][data_index] = value
-
-    setData((prev) => ({...prev, airfields }))
-  }
-
+  // Show the table
   return (
     <TableContainer component={Paper} className={classes.outline}>
       <Typography
@@ -136,7 +145,7 @@ export default function AirbaseTable({ label }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.airfields.map((airfield, airfield_index) => {
+          {store.airfields.map((airfield, airfield_index) => {
             let cells = airfield.map((value, index) => (
               <StyledTableCell key={index} align="center">
                 <TableCellInput data={value} onBlur={(newValue) => updateData(airfield_index, index, newValue)} />
