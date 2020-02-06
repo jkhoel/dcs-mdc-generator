@@ -38,31 +38,17 @@ export function StoreProvider({ children }) {
   //   });
   // };
 
-  /**
-   * Updates the global
-   * @param {string} key 
-   * @param {int} rowIndex 
-   * @param {int} colIndex 
-   * @param {*} value 
-   */
-  const updateStore = (key, rowIndex, colIndex, value) => {
-    const target = store[key];
-    target[rowIndex][colIndex] = value;
-
-    setStore((prev) => ({ ...prev, [key]: target }));
-  };
-
   return (
-    <StoreContext.Provider value={{ store, updateStore }}>
+    <StoreContext.Provider value={{ store, setStore }}>
       {children}
     </StoreContext.Provider>
   );
 }
 
 StoreContext.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.any
 };
 
 StoreContext.defaultProps = {
-  children: {},
+  children: {}
 };

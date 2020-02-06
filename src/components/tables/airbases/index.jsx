@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 import { StoreContext } from '../../datastore-context'
 
@@ -117,12 +118,24 @@ export default function AirbaseTable({ label }) {
   const classes = useStyles();
 
   // Get the global store
-  const { store, updateStore } = React.useContext(StoreContext)
+  const { store, setStore } = React.useContext(StoreContext)
 
   // Update the global store if the input changes
   const updateData = (airfield_index, data_index, value) => {
-    updateStore('airfields', airfield_index, data_index, value)
+    let airfields = [...store.airfields];
+    airfields[airfield_index][data_index] = value
+
+    setStore((prev) => ({...prev, airfields }))
   };
+
+  // Add a new row to the table
+  const addRow = () => {
+    let airfields = [...store.airfields];
+    let copyOfLastRow = [...airfields[airfields.length - 1]]
+
+    airfields.push(copyOfLastRow)
+    setStore((prev) => ({...prev, airfields }))
+  }
 
   // Show the table
   return (
@@ -156,6 +169,7 @@ export default function AirbaseTable({ label }) {
           })}
         </TableBody>
       </Table>
+      <Button variant="contained" size="small" color="primary" onClick={addRow}>Add Airbase</Button>
     </TableContainer>
   );
 }
