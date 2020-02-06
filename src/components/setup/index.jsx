@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import moment from 'moment';
-
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
@@ -11,8 +9,7 @@ import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import MenuItem from '@material-ui/core/MenuItem';
 
-import { KeyboardTimePicker } from '@material-ui/pickers';
-
+import CFImportButton from '../cf-import-button';
 import AirbaseTable from '../tables/airbases';
 
 const useStyles = makeStyles((theme) => ({
@@ -44,7 +41,6 @@ export default function MainContainer() {
               <Grid container spacing={1}>
                 <Grid item xs={12} sm={12} md={3}>
                   <TextField
-                    id="outlined-basic"
                     variant="outlined"
                     label="Callsign"
                     style={{ width: '100%' }}
@@ -52,7 +48,6 @@ export default function MainContainer() {
                 </Grid>
                 <Grid item xs={12} sm={12} md={3}>
                   <TextField
-                    id="outlined-basic"
                     variant="outlined"
                     label="Package"
                     style={{ width: '100%' }}
@@ -60,7 +55,6 @@ export default function MainContainer() {
                 </Grid>
                 <Grid item xs={12} sm={12} md={3}>
                   <TextField
-                    id="outlined-basic"
                     variant="outlined"
                     label="Mission Type"
                     style={{ width: '100%' }}
@@ -68,7 +62,6 @@ export default function MainContainer() {
                 </Grid>
                 <Grid item xs={12} sm={12} md={3}>
                   <TextField
-                    id="outlined-basic"
                     variant="outlined"
                     label="Flight #"
                     style={{ width: '100%' }}
@@ -86,17 +79,11 @@ export default function MainContainer() {
         <Grid item xs={12} sm={12} md={2}>
           <Paper className={classes.paper}>
             <form className={classes.form} noValidate autoComplete="off">
-              <Button
-                variant="contained"
-                color="primary"
-                style={{ width: '100%' }}>
-                Import from Combat Flite
-              </Button>
+              <CFImportButton />
 
               <TextField
                 select
                 label="Select Theater"
-                id="demo-simple-select-placeholder-label"
                 value={10}
                 style={{ marginTop: 15, width: '100%' }}>
                 <MenuItem value={10}>Persian Gulf</MenuItem>
@@ -115,7 +102,6 @@ export default function MainContainer() {
               </TextField>
 
               <TextField
-                id="outlined-basic"
                 variant="outlined"
                 label="Coordinate Precision"
                 style={{ marginTop: 15, width: '100%' }}
@@ -123,7 +109,6 @@ export default function MainContainer() {
               />
 
               <TextField
-                id="outlined-basic"
                 variant="outlined"
                 label="Transition Altitude"
                 style={{ marginTop: 15, width: '100%' }}
@@ -136,7 +121,6 @@ export default function MainContainer() {
               />
 
               <TextField
-                id="outlined-basic"
                 variant="outlined"
                 label="Walk Time (Zulu)"
                 type="time"

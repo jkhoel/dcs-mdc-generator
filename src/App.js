@@ -1,12 +1,9 @@
 import React from 'react';
-import {
-  createMuiTheme,
-  makeStyles,
-  ThemeProvider
-} from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import { StoreProvider } from './components/datastore-context';
+import { CombatFliteProvider } from './components/combatflite-context';
 
 import MainContainer from './components/main-container';
 
@@ -20,25 +17,15 @@ const theme = createMuiTheme({
   }
 });
 
-// Set up the styles for the container componets
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1
-  },
-  paper: {
-    padding: 5
-  }
-}));
-
 function App() {
-  const classes = useStyles();
-
   return (
     <MuiPickersUtilsProvider utils={MomentUtils}>
       <ThemeProvider theme={theme}>
         <StoreProvider>
-          <CssBaseline />
-          <MainContainer data-testid="main-container" />
+          <CombatFliteProvider>
+            <CssBaseline />
+            <MainContainer data-testid="main-container" />
+          </CombatFliteProvider>
         </StoreProvider>
       </ThemeProvider>
     </MuiPickersUtilsProvider>

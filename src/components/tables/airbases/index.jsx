@@ -1,175 +1,145 @@
 import React from 'react';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import MaterialTable from 'material-table';
+import AddCircle from '@material-ui/icons/AddCircle';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import CheckIcon from '@material-ui/icons/Check';
+import ClearIcon from '@material-ui/icons/Clear';
 
-import { StoreContext } from '../../datastore-context'
-
-const StyledTableCell = withStyles((theme) => ({
-  head: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white
-  },
-  body: {
-    fontSize: 14
-  }
-}))(TableCell);
-
-const StyledTableRow = withStyles((theme) => ({
-  root: {
-    '&:nth-of-type(odd)': {
-      backgroundColor: theme.palette.background.default
-    }
-  }
-}))(TableRow);
-
-// STYLES
-const useStyles = makeStyles({
-  table: {
-    // minWidth: 700
-  },
-  outline: {
-    borderRadius: 4,
-    border: '1px solid #6e6e6e',
-    padding: 5
-  }
-});
-
-// TABLE SETUP
-const columns = [
-  {
-    id: 1,
-    label: ''
-  },
-  {
-    id: 2,
-    label: 'Airbase'
-  },
-  {
-    id: 3,
-    label: 'ICAO'
-  },
-  {
-    id: 4,
-    label: 'TCN'
-  },
-  {
-    id: 5,
-    label: 'ATIS'
-  },
-  {
-    id: 6,
-    label: 'GND'
-  },
-  {
-    id: 7,
-    label: 'TWR'
-  },
-  {
-    id: 8,
-    label: 'PAR/LSO'
-  },
-  {
-    id: 9,
-    label: 'CTRL'
-  },
-  {
-    id: 10,
-    label: 'ELEV'
-  },
-  {
-    id: 11,
-    label: 'RWY'
-  },
-  {
-    id: 12,
-    label: ''
-  }
-];
-
-function TableCellInput({ data, onBlur }) {
-  const handleChange = (event) => {
-    event.preventDefault();
-    onBlur(event.target.value);
-  };
-
-  return (
-    <TextField
-      margin="dense"
-      size="small"
-      value={data}
-      fullWidth
-      onChange={handleChange}
-    />
-  );
-}
+import { StoreContext } from '../../datastore-context';
 
 export default function AirbaseTable({ label }) {
-  // Get our styles
-  const classes = useStyles();
-
   // Get the global store
-  const { store, setStore } = React.useContext(StoreContext)
+  const { store, setStore } = React.useContext(StoreContext);
 
-  // Update the global store if the input changes
-  const updateData = (airfield_index, data_index, value) => {
-    let airfields = [...store.airfields];
-    airfields[airfield_index][data_index] = value
+  // Configure table columns
+  const columns = [
+    { title: '', field: 'desc', sorting: false },
+    { title: 'Airbase', field: 'airbase', sorting: false },
+    { title: 'ICAO', field: 'icao', sorting: false },
+    { title: 'TCN', field: 'tcn', sorting: false },
+    { title: 'ATIS', field: 'atis', sorting: false },
+    { title: 'GND', field: 'gnd', sorting: false },
+    { title: 'TWR', field: 'twr', sorting: false },
+    { title: 'PAR/LSO', field: 'par', sorting: false },
+    { title: 'CTRL', field: 'ctrl', sorting: false },
+    { title: 'ELEV', field: 'elev', sorting: false },
+    { title: 'RWY', field: 'rwy', sorting: false }
+  ];
 
-    setStore((prev) => ({...prev, airfields }))
+  // Map array-data to the rows
+  const [rows, setRows] = React.useState([]);
+  React.useEffect(() => {
+    const { airfields } = store;
+    if (airfields) {
+      setRows(
+        airfields.map((airfield, index) => {
+          return {
+            desc: airfield[0],
+            airbase: airfield[1],
+            icao: airfield[2],
+            tcn: airfield[3],
+            atis: airfield[4],
+            gnd: airfield[5],
+            twr: airfield[6],
+            par: airfield[7],
+            ctrl: airfield[8],
+            elev: airfield[9],
+            rwy: airfield[10]
+          };
+        })
+      );
+    }
+  }, [store]);
+
+  const ObjectToArray = (obj) => {
+    const arr = [];
+
+    arr[0] = obj.desc || '';
+    arr[1] = obj.airbase || '';
+    arr[2] = obj.icao || '';
+    arr[3] = obj.tcn || '';
+    arr[4] = obj.atis || '';
+    arr[5] = obj.gnd || '';
+    arr[6] = obj.twr || '';
+    arr[7] = obj.par || '';
+    arr[8] = obj.ctrl || '';
+    arr[9] = obj.elev || '';
+    arr[10] = obj.rwy || '';
+    arr[11] = ''; // TODO: this one is probably legacy... can be removed from everywhere?
+
+    return arr;
   };
 
-  // Add a new row to the table
-  const addRow = () => {
-    let airfields = [...store.airfields];
-    let copyOfLastRow = [...airfields[airfields.length - 1]]
+  // Function for adding row to the table
+  const RowAdd = (newData) =>
+    new Promise((resolve) => {
+      let airfields = [...store.airfields];
+      airfields.push(ObjectToArray(newData));
 
-    airfields.push(copyOfLastRow)
-    setStore((prev) => ({...prev, airfields }))
-  }
+      setStore((prev) => ({ ...prev, airfields }));
+      resolve();
+    });
 
-  // Show the table
+  // Function for updating a row in the table
+  const RowUpdate = (newData, oldData) =>
+    new Promise((resolve) => {
+      if (oldData) {
+        let airfields = [...store.airfields];
+
+        airfields[rows.indexOf(oldData)] = ObjectToArray(newData);
+
+        setStore((prev) => ({ ...prev, airfields }));
+        resolve();
+      }
+    });
+
+  const RowDelete = (oldData) =>
+    new Promise((resolve) => {
+      if (oldData) {
+        let airfields = [...store.airfields];
+
+        airfields.splice(rows.indexOf(oldData), 1);
+
+        setStore((prev) => ({ ...prev, airfields }));
+        resolve();
+      }
+    });
+
+  // Material Table
   return (
-    <TableContainer component={Paper} className={classes.outline}>
-      <Typography
-        className={classes.title}
-        align="center"
-        variant="h6"
-        id="tableTitle">
-        {label}
-      </Typography>
-      <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            {columns.map((heading) => (
-              <StyledTableCell key={heading.id} align="left">
-                {heading.label}
-              </StyledTableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {store.airfields.map((airfield, airfield_index) => {
-            let cells = airfield.map((value, index) => (
-              <StyledTableCell key={index} align="center">
-                <TableCellInput data={value} onBlur={(newValue) => updateData(airfield_index, index, newValue)} />
-              </StyledTableCell>
-            ));
-
-            return <StyledTableRow key={airfield_index}>{cells}</StyledTableRow>;
-          })}
-        </TableBody>
-      </Table>
-      <Button variant="contained" size="small" color="primary" onClick={addRow}>Add Airbase</Button>
-    </TableContainer>
+    <MaterialTable
+      style={{
+        width: '100%',
+        borderRadius: 4,
+        border: '1px solid #6e6e6e'
+      }}
+      options={{
+        search: false,
+        filtering: false,
+        paging: false,
+        draggable: false,
+        headerStyle: {
+          backgroundColor: '#6e6e6e',
+          color: '#FFF'
+        }
+      }}
+      icons={{
+        Add: AddCircle,
+        Edit: EditIcon,
+        Delete: DeleteForeverIcon,
+        Check: CheckIcon,
+        Clear: ClearIcon
+      }}
+      title={label}
+      columns={columns}
+      data={rows}
+      editable={{
+        onRowAdd: (newData) => RowAdd(newData),
+        onRowUpdate: (newData, oldData) => RowUpdate(newData, oldData),
+        onRowDelete: (oldData) => RowDelete(oldData)
+      }}
+    />
   );
 }
