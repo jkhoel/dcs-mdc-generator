@@ -15,8 +15,8 @@ export default function AirbaseTable({ label }) {
 
   // Configure table columns
   const columns = [
-    { title: '', field: 'desc', sorting: false },
-    { title: 'Airbase', field: 'airbase', sorting: false },
+    { title: 'TYPE', field: 'type', sorting: false },
+    { title: 'AIRBASE', field: 'airbase', sorting: false },
     { title: 'ICAO', field: 'icao', sorting: false },
     { title: 'TCN', field: 'tcn', sorting: false },
     { title: 'ATIS', field: 'atis', sorting: false },
@@ -36,7 +36,7 @@ export default function AirbaseTable({ label }) {
       setRows(
         airfields.map((airfield, index) => {
           return {
-            desc: airfield[0],
+            type: airfield[0],
             airbase: airfield[1],
             icao: airfield[2],
             tcn: airfield[3],
@@ -56,7 +56,7 @@ export default function AirbaseTable({ label }) {
   const ObjectToArray = (obj) => {
     const arr = [];
 
-    arr[0] = obj.desc || '';
+    arr[0] = obj.type || '';
     arr[1] = obj.airbase || '';
     arr[2] = obj.icao || '';
     arr[3] = obj.tcn || '';
@@ -111,7 +111,6 @@ export default function AirbaseTable({ label }) {
   return (
     <MaterialTable
       style={{
-        width: '100%',
         borderRadius: 4,
         border: '1px solid #6e6e6e'
       }}
@@ -120,6 +119,7 @@ export default function AirbaseTable({ label }) {
         filtering: false,
         paging: false,
         draggable: false,
+        actionsColumnIndex: -1,
         headerStyle: {
           backgroundColor: '#6e6e6e',
           color: '#FFF'

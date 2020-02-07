@@ -11,6 +11,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import CFImportButton from '../cf-import-button';
 import AirbaseTable from '../tables/airbases';
+import WaypointTable from '../tables/waypoints';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -71,8 +72,10 @@ export default function MainContainer() {
             </form>
 
             <Grid container spacing={1}>
-              <Grid item xs={12} sm={12} md={3}></Grid>
-              <AirbaseTable label="Airbases" />
+              <Grid item xs={12} sm={12} md={12}>
+                <AirbaseTable label="Airbases" />
+                <WaypointTable label="Waypoints" />
+              </Grid>
             </Grid>
           </Paper>
         </Grid>
