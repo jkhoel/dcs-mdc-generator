@@ -13,6 +13,8 @@ import CFImportButton from '../cf-import-button';
 import AirbaseTable from '../tables/airbases';
 import WaypointTable from '../tables/waypoints';
 
+import DownloadMDCButton from '../buttons/download-mdc'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1
@@ -152,12 +154,7 @@ export default function MainContainer() {
                 Save
               </Button>
 
-              <Button
-                variant="contained"
-                color="primary"
-                style={{ marginTop: 5, width: '100%' }}>
-                Download
-              </Button>
+              <DownloadMDCButton />
 
               <Button
                 variant="contained"

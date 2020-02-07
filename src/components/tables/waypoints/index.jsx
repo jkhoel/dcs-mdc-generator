@@ -98,7 +98,7 @@ export default function WaypointTable({ label }) {
           // Calculate TOT
           let gs = waypoint[3] || 300;
           let duration_sec = (distance / gs) * 3600;
-          tot += duration_sec;
+          tot += duration_sec; // TODO: include ACT time from previous point also!
 
           return {
             index,
