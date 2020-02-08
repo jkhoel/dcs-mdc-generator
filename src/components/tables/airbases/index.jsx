@@ -33,50 +33,52 @@ export default function AirbaseTable({ label }) {
   React.useEffect(() => {
     const { airfields } = store;
     if (airfields) {
-      setRows(
-        airfields.map((airfield, index) => {
-          return {
-            type: airfield[0],
-            airbase: airfield[1],
-            icao: airfield[2],
-            tcn: airfield[3],
-            atis: airfield[4],
-            gnd: airfield[5],
-            twr: airfield[6],
-            par: airfield[7],
-            ctrl: airfield[8],
-            elev: airfield[9],
-            rwy: airfield[10]
-          };
-        })
-      );
+      setRows(airfields)
+      // setRows(
+      //   airfields.map((airfield, index) => {
+      //     return airfield
+      //     // return {
+      //     //   type: airfield[0],
+      //     //   airbase: airfield[1],
+      //     //   icao: airfield[2],
+      //     //   tcn: airfield[3],
+      //     //   atis: airfield[4],
+      //     //   gnd: airfield[5],
+      //     //   twr: airfield[6],
+      //     //   par: airfield[7],
+      //     //   ctrl: airfield[8],
+      //     //   elev: airfield[9],
+      //     //   rwy: airfield[10]
+      //     // };
+      //   })
+      // );
     }
   }, [store]);
 
-  const ObjectToArray = (obj) => {
-    const arr = [];
+  // const ObjectToArray = (obj) => {
+  //   const arr = [];
 
-    arr[0] = obj.type || '';
-    arr[1] = obj.airbase || '';
-    arr[2] = obj.icao || '';
-    arr[3] = obj.tcn || '';
-    arr[4] = obj.atis || '';
-    arr[5] = obj.gnd || '';
-    arr[6] = obj.twr || '';
-    arr[7] = obj.par || '';
-    arr[8] = obj.ctrl || '';
-    arr[9] = obj.elev || '';
-    arr[10] = obj.rwy || '';
-    arr[11] = ''; // TODO: this one is probably legacy... can be removed from everywhere?
+  //   arr[0] = obj.type || '';
+  //   arr[1] = obj.airbase || '';
+  //   arr[2] = obj.icao || '';
+  //   arr[3] = obj.tcn || '';
+  //   arr[4] = obj.atis || '';
+  //   arr[5] = obj.gnd || '';
+  //   arr[6] = obj.twr || '';
+  //   arr[7] = obj.par || '';
+  //   arr[8] = obj.ctrl || '';
+  //   arr[9] = obj.elev || '';
+  //   arr[10] = obj.rwy || '';
 
-    return arr;
-  };
+  //   return arr;
+  // };
 
   // Function for adding row to the table
   const RowAdd = (newData) =>
     new Promise((resolve) => {
       let airfields = [...store.airfields];
-      airfields.push(ObjectToArray(newData));
+      // airfields.push(ObjectToArray(newData));
+      airfields.push(newData);
 
       setStore((prev) => ({ ...prev, airfields }));
       resolve();
@@ -88,7 +90,8 @@ export default function AirbaseTable({ label }) {
       if (oldData) {
         let airfields = [...store.airfields];
 
-        airfields[rows.indexOf(oldData)] = ObjectToArray(newData);
+        // airfields[rows.indexOf(oldData)] = ObjectToArray(newData);
+        airfields[rows.indexOf(oldData)] = newData;
 
         setStore((prev) => ({ ...prev, airfields }));
         resolve();

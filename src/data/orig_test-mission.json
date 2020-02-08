@@ -1,0 +1,172 @@
+{
+    "airfields": [
+        [
+            "DEP",
+            "Al Dhafra AB",
+            "OMAM",
+            "96X",
+            "126.400",
+            "126.100",
+            "126.200",
+            "126.300",
+            "127.100",
+            "52",
+            "13LR\/31LR",
+            ""
+        ],
+        [
+            "ARR",
+            "CVN Stennis",
+            "",
+            "74X",
+            "",
+            "",
+            "309.000",
+            "309.500",
+            "309.900",
+            "",
+            "",
+            ""
+        ],
+        [
+            "ALT",
+            "Al Dhafra AB",
+            "OMAM",
+            "96X",
+            "126.400",
+            "126.100",
+            "126.200",
+            "126.300",
+            "127.100",
+            "52",
+            "13LR\/31LR",
+            ""
+        ]
+    ],
+    "waypoints": [
+        [
+            "DEP",
+            "Al Ain International Airport",
+            "813",
+            "300",
+            "",
+            "",
+            "24.2752666666667",
+            "55.6113833333333"
+        ],
+        [
+            "WP",
+            "1",
+            "1500",
+            "300",
+            "",
+            "",
+            "24.8891086358444",
+            "56.6894652395402"
+        ],
+        [
+            "WP",
+            "2",
+            "1500",
+            "300",
+            "",
+            "",
+            "25.5138824943904",
+            "56.7191173282923"
+        ],
+        [
+            "ARR",
+            "Khasab",
+            "1500",
+            "300",
+            "",
+            "",
+            "26.1797222222",
+            "56.2430555556"
+        ]
+    ],
+    "poi": [],
+    "loadout": [],
+    "int_comms": [
+        [
+            "INTERNAL",
+            "BRONZE 8",
+            "310.000",
+            ""
+        ],
+        [
+            "INTERNAL SECONDARY",
+            "GRAY 10",
+            "122.250",
+            ""
+        ]
+    ],
+    "mis_comms": [
+        [
+            "AL DHAFRA GROUND",
+            "",
+            "126.100",
+            "96X",
+            "AFT PRE1; POS MERGED WITH TOWER 126.200",
+            ""
+        ],
+        [
+            "AL DHAFRA TOWER",
+            "",
+            "126.200",
+            "96X",
+            "PRE2",
+            ""
+        ],
+        [
+            "AL DHAFRA CONTROL",
+            "RED 4",
+            "127.100",
+            "",
+            "PRE3; NOTE ATC COULD PUSH DIFF. FREQ",
+            ""
+        ],
+        [
+            "DARKSTAR AWACS",
+            "BLUE 3",
+            "237.000",
+            "",
+            "PRE4; NOTE ATC COULD PUSH DIFF. FREQ",
+            ""
+        ]
+    ],
+    "notes": [
+        [
+            "COM-01",
+            "We will exectute the flight twice as a two ship. 1st run, BANSHEE 1-1 will do comms with ATC, through all the stations (GND, TWR, CTRL, AWACS, and return). 2nd run BANSHEE 1-2 will act as FL and take all comms. 2nd run will include a trip to the tanker. ",
+            ""
+        ]
+    ],
+    "ramrod": [
+        [
+            "C",
+            "O",
+            "M",
+            "P",
+            "L",
+            "E",
+            "X",
+            "I",
+            "T",
+            "Y"
+        ]
+    ],
+    "settings": {
+        "coordDisplay": "llf-DDM",
+        "dd-precision": "1",
+        "dms-precision": "0",
+        "transition-alt": "5000",
+        "mission_start": "70200",
+        "mission_title": "COM-O1",
+        "theatre": "PersianGulf",
+        "flight_id": "BANSHEE 1",
+        "package_id": "",
+        "mission_id": "\tTR7820",
+        "dl-theme": "dark"
+    }
+}

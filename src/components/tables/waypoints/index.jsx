@@ -40,13 +40,17 @@ export default function WaypointTable({ label }) {
       let bearing = 0;
 
       // We need the DD values
-      let lat = parseFloat(store.waypoints[index][6]);
-      let lon = parseFloat(store.waypoints[index][7]);
+      // let lat = parseFloat(store.waypoints[index][6]);
+      // let lon = parseFloat(store.waypoints[index][7]);
+      let lat = parseFloat(store.waypoints[index].lat);
+      let lon = parseFloat(store.waypoints[index].lon);
 
       // Some calculations require more than one WP, i.e. cannot be performed on WP1
       if (index > 0) {
-        let last_lat = parseFloat(store.waypoints[index - 1][6]);
-        let last_lon = parseFloat(store.waypoints[index - 1][7]);
+        // let last_lat = parseFloat(store.waypoints[index - 1][6]);
+        // let last_lon = parseFloat(store.waypoints[index - 1][7]);
+        let last_lat = parseFloat(store.waypoints[index - 1].lat);
+        let last_lon = parseFloat(store.waypoints[index - 1].lon);
 
         // Calculate distance and bearing
         let r = Geod.Inverse(last_lat, last_lon, lat, lon);
@@ -77,7 +81,7 @@ export default function WaypointTable({ label }) {
     return `${h}:${s}`;
   };
 
-  // Map array-data to the rows
+  // Map data to the rows
   const [rows, setRows] = React.useState([]);
   React.useEffect(() => {
     const { waypoints, settings } = store;
@@ -86,28 +90,26 @@ export default function WaypointTable({ label }) {
 
       setRows(
         waypoints.map((waypoint, index) => {
-          console.log(waypoint);
-
           // TODO: Make this convert according to the settings rather
-          let lat = Utility.DDtoDDS(waypoint[6]);
-          let lon = Utility.DDtoDDS(waypoint[7]);
+          let lat = Utility.DDtoDDS(waypoint.lat);
+          let lon = Utility.DDtoDDS(waypoint.lon);
 
           // Calculate distance and bearing
           const { distance, bearing } = CalculateRow(index);
 
           // Calculate TOT
-          let gs = waypoint[3] || 300;
+          let gs = waypoint.gs || 300;
           let duration_sec = (distance / gs) * 3600;
           tot += duration_sec; // TODO: include ACT time from previous point also!
 
           return {
             index,
-            desc: waypoint[0],
-            wp: waypoint[1],
-            alt: waypoint[2],
+            desc: waypoint.desc,
+            wp: waypoint.wp,
+            alt: waypoint.alt,
             gs: gs,
             tot: SecondsToTOT(tot),
-            act: waypoint[5],
+            act: waypoint.act,
             lat: lat,
             lon: lon,
             brg: Math.round(bearing),
@@ -118,34 +120,19 @@ export default function WaypointTable({ label }) {
     }
   }, [CalculateRow, store]);
 
-  const ObjectToArray = (obj) => {
-    const arr = [];
-
-    // Need to get the actual DD, as the table stores a formatted string for lat/lon
-    let lat = store.waypoints[obj.index][6] || '0';
-    let lon = store.waypoints[obj.index][7] || '0';
-
-    arr[0] = obj.desc || '';
-    arr[1] = obj.wp || '';
-    arr[2] = obj.alt || '15000';
-    arr[3] = obj.gs || '350';
-    arr[4] = obj.tot || '';
-    arr[5] = obj.act || '';
-    // arr[6] = obj.lat || '';
-    // arr[7] = obj.lon || '';
-    arr[6] = lat;
-    arr[7] = lon;
-    arr[8] = obj.brg || '';
-    arr[9] = obj.dist || '';
-
-    return arr;
-  };
-
   // Function for adding row to the table
   const RowAdd = (newData) =>
     new Promise((resolve) => {
       let waypoints = [...store.waypoints];
-      waypoints.push(ObjectToArray(newData));
+      let last_wp = store.waypoints[store.waypoints.length - 1];
+
+      // Set default data for locked cells to the same as the last waypoint
+      newData.lat = last_wp.lat || 0;
+      newData.lon = last_wp.lon || 0;
+      newData.brg = '';
+      newData.dist = '';
+
+      waypoints.push(newData);
 
       // TODO: Probably show a seperate dialog here in order to insert coordinates
 
@@ -159,7 +146,11 @@ export default function WaypointTable({ label }) {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
-        waypoints[rows.indexOf(oldData)] = ObjectToArray(newData);
+        // Need to get the actual DD, as the table stores a formatted string for lat/lon
+        newData.lat = store.waypoints[newData.index].lat || '0';
+        newData.lon = store.waypoints[newData.index].lon || '0';
+
+        waypoints[rows.indexOf(oldData)] = newData;
 
         setStore((prev) => ({ ...prev, waypoints }));
         resolve();
