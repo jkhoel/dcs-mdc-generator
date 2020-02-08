@@ -4,6 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import { StoreProvider } from './components/datastore-context';
 import { CombatFliteProvider } from './components/combatflite-context';
+import { PrinterProvider } from './components/printer-context';
 
 import MainContainer from './components/main-container';
 
@@ -23,8 +24,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <StoreProvider>
           <CombatFliteProvider>
-            <CssBaseline />
-            <MainContainer data-testid="main-container" />
+            <PrinterProvider>
+              <CssBaseline />
+              <MainContainer data-testid="main-container" />
+            </PrinterProvider>
           </CombatFliteProvider>
         </StoreProvider>
       </ThemeProvider>

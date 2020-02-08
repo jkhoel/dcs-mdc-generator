@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import { StoreContext } from '../datastore-context';
+// import { StoreContext } from '../datastore-context';
 
 const defaults = {
   data: {}, // TODO: this is probably not an object.... remember to update
@@ -18,16 +18,26 @@ export const PrinterContext = React.createContext(defaults);
 export const PrinterConsumer = PrinterContext.Consumer;
 
 export function PrinterProvider({ children }) {
-  const { store } = React.useContext(StoreContext);
+  // const { store } = React.useContext(StoreContext);
 
   // Set our API URL
   const [APIURL, setAPIURL] = React.useState('http://localhost:5000');
 
-  // Set our data object if the store updates - TODO: we might be able to just use the store object directly?
-  const [data, setData] = React.useState(null);
-  React.useEffect(() => {
-    if (store) setData(store);
-  }, [store]);
+  // // Set our data object if the store updates
+  // const [data, setData] = React.useState(null);
+  // React.useEffect(() => {
+  //   if (store) {
+  //     // TODO: We need to generate all HTML etc. here based on the template and the data in the store
+
+  //     const markup = `
+  //     <div class="person">
+  //       <h2>This is test!</h2>
+  //     </div>`;
+
+  //     // Update the data object with the compiled HTML
+  //     setData(markup);
+  //   }
+  // }, [store]);
 
   // Helper functions
   const getDocuments = () => axios.get(`${APIURL}/pdf`);
@@ -43,7 +53,7 @@ export function PrinterProvider({ children }) {
   return (
     <PrinterContext.Provider
       value={{
-        data,
+        // data,
         APIURL,
         setAPIURL,
         getDocuments,

@@ -1,13 +1,24 @@
 import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+
 import Button from '@material-ui/core/Button';
 
+// import axios from 'axios';
+
 import { StoreContext } from '../../datastore-context';
-import axios from 'axios';
+import { PrinterContext } from '../../printer-context';
 
 const baseURL = 'http://mdc.hatchlane.com/'; // TODO: This should probably be local?
 
 export default function DownloadMDCButton() {
   const { store } = React.useContext(StoreContext);
+  const {
+    addDocument,
+    deleteDocument,
+    generatePDF,
+    APIURL,
+    getDocuments
+  } = React.useContext(PrinterContext);
 
   const downloadMDC = () => {
     // Save it so the JSON is on the server
@@ -63,33 +74,61 @@ export default function DownloadMDCButton() {
       data['settings'][k] = store.settings[k];
     });
 
-    // construct an HTTP request
-    const response = await axios
-      .post(`${baseURL}save.php`, JSON.stringify(data))
-      .then((res) => {
-        // TODO: probably have a look at the below code to see if there is anything more needed here
-        cb(data);
-      })
-      .catch((err) => console.log(err)); //.then()
+    // TODO: Turn the data into HTML
+    const createHTML = (data) => {
+      // console.log('Data:', data)
+      return `<div class="person">
+           <h2>This is test!!!!</h2>
+           <ul>
+           ${data.waypoints.map((wp, index) => {
+              console.log(wp)
+             return <li>{wp[1]}</li>;
+           })}
+           </ul>
+        </div>
+      `;
+    };
 
-    // $.post(
-    //   "save.php",
-    //   JSON.stringify(data),
-    //   function(data) {
-    //     if (data) {
-    //       if (update_id) {
-    //         window.location.pathname = window.location.pathname.replace(/^(.*\/).*/, "$1"+data);
-    //       }
-    //       if (cb) {
-    //         cb(data);
-    //       }
-    //     } else {
-    //       alert("failed to save");
-    //     }
-    //   },
-    // );
+    const dogs = [
+      { name: 'Snickers', age: 2 },
+      { name: 'Hugo', age: 8 },
+      { name: 'Sunny', age: 1 }
+    ];
 
-    console.log(key, response, data);
+    const markup = `<ul class="dogs">
+        ${dogs.map((dog) => `<li>${dog.name} is ${dog.age * 7}</li>`)}
+      </ul>`;
+
+    console.log(markup);
+    console.log(ReactDOMServer.renderToString(markup));
+
+    console.log(createHTML(data))
+
+    // Build the API payload
+    // let payload = {
+    //   name: 'TEST DATA',
+    //   document: createHTML(data)
+    // };
+
+    // Send the payload to the backend
+    // addDocument(payload).then(({status, data}) => {
+    //   // If all went well, then lets generate a pdf
+    //   if (status === 200) {
+    //     generatePDF(data.id).then(({status, data}) => {
+    //       // If all went well, then lets open the PDF file in a new window
+    //       if (status === 200) window.open(`${APIURL}/${data}`, '_blank')
+    //     })
+    //   }
+    // });
+
+    // Use this to delete documents
+    // getDocuments().then(res => {
+    //   let docs = res.data
+    //   docs.forEach(doc => {
+    //     console.log(`Deleting: ${doc.id}`)
+    //     deleteDocument(doc.id)
+    //   })
+    // })
   };
 
   // TODO: this seems to not be working. Only getting 'undefined'
