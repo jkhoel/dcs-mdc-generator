@@ -1,0 +1,340 @@
+//- DEV WITH: npx pug -w . -o ./ -P
+-
+  const poi = [
+    {desc: 'P1', ref: 'BULLSEYE MARY', lat_str: '00° 00.000', lon_str: '00° 00.000'},
+    {desc: 'P2', ref: 'TOWER', lat_str: '00° 00.000', lon_str: '00° 00.000'}
+  ]
+
+-
+  const int_comms = [
+    {type: 'FLIGHT PRI - GRAY6', chan: 'U2', freq: '235.250'},
+    {type: 'FLIGHT SEC - OLIVE3', chan: 'V5', freq: '141.750'}
+  ]
+
+- 
+  const loadout = [
+    {pyl: "1/9", item: "AIM120C/AIM120C"},
+    {pyl: "2/8", item: "AIM120C/AIM120C"},
+    {pyl: "3/7", item: "2xGBU12/2xGBU12"},
+    {pyl: "4/6", item: "3xMK82A/3xMK82A"},
+    {pyl: "5R/5L", item: "TGP/-"},
+    {pyl: "5", item: "300CL"}
+  ]
+
+- 
+  const ramrod = ["C", "O", "M", "P", "L", "E", "X", "I", "T", "Y"]
+
+- 
+  const mis_comms = [
+    { agency: 'DARKSTAR', chan: 'BLUE 3', freq: '237.000', tcn: '', notes: 'MISSION COMMANDER' },
+    { agency: 'AR203 - ARCO - BOOM', chan: 'MAROON 11', freq: '140.000', tcn: '49X', notes: '' }
+  ]
+
+-
+  const notes = [
+    { pre: 'TACAN//LASER//IFF', details: '62Y-125Y // 1611-1614 // 4411-4414'},
+    { pre: 'THREAT SITES ACITVE', details: 'TS.9 // TS.6'}
+  ]
+
+doctype html
+html(lang="en")
+  head
+    title #{title}
+    link(rel="stylesheet" href="css/fonts.css")
+    style
+      include css/fonts.css
+      if theme === "dark"
+        include css/kneeboard-dark.css
+      else
+        include css/kneeboard-light.css
+  body
+    div.kneeboard#kneeboard
+      table.kb-width(style="table-layout:fixed")
+        colgroup
+          col(style="width: 60px")
+          col(style="width: 100px")
+          col(style="width: 70px")
+          col(style="width: 100px")
+          col(style="width: 70px")
+          col
+          col(style="width: 30px")
+          col(style="width: 80px")
+
+        tbody
+          if settings
+            tr
+              th FLIGHT
+              td(style="padding-left: 5px") #{settings.flight_id}
+              th PACKAGE
+              td(style="padding-left: 5px") #{settings.package_id}
+              th MISSION
+              td(style="padding-left: 5px") #{settings.mission_title}
+              th ID
+              td(style="padding-left: 5px") #{settings.mission_id}
+          else
+            tr
+              th FLIGHT
+              td(style="padding-left: 5px") -
+              th PACKAGE
+              td(style="padding-left: 5px") -
+              th MISSION
+              td(style="padding-left: 5px") -
+              th ID
+              td(style="padding-left: 5px") -
+
+      table.kb-width(style="margin-top: 15px")
+        colgroup
+          col(style="width: 30px")
+          col
+          col(style="width: 36px")
+          col(style="width: 50px")
+          col(style="width: 60px")
+          col(style="width: 60px")
+          col(style="width: 60px")
+          col(style="width: 60px")
+          col(style="width: 60px")
+          col(style="width: 50px")
+          col(style="width: 80px")
+
+        tbody
+          tr
+            td.section(colspan=11) AIRBASES
+          tr
+            th
+            th AIRBASE
+            th ICAO
+            th TCN
+            th ATIS
+            th GND
+            th TWR
+            th PAR/LSO
+            th CTRL
+            th ELEV
+            th RWY
+
+          if airfields
+            each airfield in airfields
+              tr
+                td.algnc
+                td #{airfield.airbase}
+                td.algnc #{airfield.ico}
+                td.freq #{airfield.tcn}
+                td.freq #{airfield.atis}
+                td.freq #{airfield.gnd}
+                td.freq #{airfield.twr}
+                td.freq #{airfield.par}
+                td.freq #{airfield.ctrl}
+                td.algnc.rpad5 #{airfield.elev}
+                td.algnc #{airfield.rwy}
+          else
+            tr
+              td(colspan=11, style="text-align: center") N/A
+
+        table.kb-width(style="table-layout:fixed; margin-top: 15px")
+          colgroup
+            col(style="width: 30px")
+            col
+            col(style="width: 45px")
+            col(style="width: 45px")
+            col(style="width: 45px")
+            col(style="width: 45px")
+            col(style="width: 140px")
+            col(style="width: 140px")
+            col(style="width: 45px")
+            col(style="width: 45px")
+
+          tbody
+            tr
+              td.section(colspan=10) MISSION WAYPOINTS
+            tr
+              th
+              th NAME
+              th ALT
+              th GS
+              th TOT
+              th ACT
+              th LAT
+              th LON
+              th DIST
+              th BRG
+
+            if waypoints
+              each waypoint in waypoints
+                tr
+                  td.algnc #{waypoint.desc}
+                  td #{waypoint.wp}
+                  td.algnc #{waypoint.alt}
+                  td.algnc #{waypoint.gs}
+                  td.algnc #{waypoint.tot_str}
+                  td.algnc #{waypoint.act_str}
+                  td.freq #{waypoint.lat_str}
+                  td.freq #{waypoint.lon_str}
+                  td.algnc.rpad5 #{waypoint.dist}
+                  td.algnc.rpad5 #{waypoint.brg}°
+
+            else
+              tr
+                td(colspan=10, style="text-align: center") N/A
+
+        div(style="float:left; margin-top: 15px; margin-bottom: 15px")
+          table(style="width: 498px; table-layout: fixed")
+            colgroup
+              col(style="width: 30px")
+              col
+              col(style="width: 140px")
+              col(style="width: 140px")
+
+            tbody
+              tr
+                td.section(colspan=4) POINTS OF INTEREST
+              tr
+                th
+                th NAME
+                th LAT
+                th LON
+
+              if poi
+              each p in poi
+                tr
+                  td.algnc #{p.desc}
+                  td #{p.ref}
+                  td.freq #{p.lat_str}
+                  td.freq #{p.lon_str}
+              else
+                tr
+                  td(colspan=4, style="text-align: center") N/A
+
+          table(style="width: 498px; table-layout: fixed; margin-top: 15px")
+            colgroup
+              col
+              col(style="width: 120px")
+              col(style="width: 120px")
+
+            tbody
+              tr
+                td.section(colspan=3) INTERNAL COMMS
+              tr
+                th TYPE
+                th CHAN
+                th FREQ
+
+              if int_comms
+              each comm in int_comms
+                tr
+                  td #{comm.type}
+                  td.algnc #{comm.chan}
+                  td.vt.freq #{comm.freq}
+              else
+                tr
+                  td(colspan=3, style="text-align: center") N/A
+
+        div(style="float:left; margin-top: 15px; margin-left: 15px; margin-bottom: 15px")
+          table(style="width: 215px")
+            colgroup
+              col
+              col
+
+            tbody
+              tr
+                td.section(colspan=2) LOADOUT
+              tr
+                th PYL
+                th ITEM
+
+              if loadout
+              each load in loadout
+                tr
+                  td.algnc #{load.pyl}
+                  td.lpad5 #{load.item}
+              else
+                tr
+                  td(colspan=3, style="text-align: center") N/A
+
+          table(style="width: 215px; margin-top: 15px;")
+            colgroup
+              col
+              col
+              col
+              col
+              col
+              col
+              col
+              col
+              col
+              col
+
+            tbody
+              tr
+                td.section(colspan=10) RAMROD
+              tr
+                th 0
+                th 1
+                th 2
+                th 3
+                th 4
+                th 5
+                th 6
+                th 7
+                th 8
+                th 9
+
+              if ramrod
+                tr
+                each s in ramrod
+                  td.freq #{s}
+              else
+                tr
+                  td(colspan=10, style="text-align: center") N/A
+
+        table.kb-width(style="table-layout: fixed")
+          colgroup
+            col(style="width: 190px")
+            col(style="width: 75px")
+            col(style="width: 60px")
+            col(style="width: 60px")
+            col
+
+          tbody
+            tr
+              td.section(colspan=5) MISSION COMMS
+            tr
+              th AGENCY
+              th CHAN
+              th FREQ
+              th TCN
+              th NOTES
+
+            if mis_comms
+              each comm in mis_comms
+                tr
+                  td.vt #{comm.agency}
+                  td.vt.algnc #{comm.chan}
+                  td.vt.freq #{comm.freq}
+                  td.vt.freq #{comm.tcn}
+                  td #{comm.notes}
+            else
+              tr
+                td(colspan=5, style="text-align: center") N/A
+
+        table.kb-width(style="table-layout: fixed; margin-top: 15px")
+          colgroup
+            col(style="width: 190px")
+            col
+
+          tbody
+            tr
+              td.section(colspan=2) NOTES
+            tr
+              th PREDICATE
+              th DETAILS
+
+            if notes
+              each note in notes
+                tr
+                  td #{note.pre}
+                  td #{note.details}
+            else
+              tr
+                td(colspan=2, style="text-align: center") N/A
+
+

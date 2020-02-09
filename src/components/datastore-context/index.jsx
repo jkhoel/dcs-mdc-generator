@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import defaultStore from '../../data/test-mission.json';
+import defaultStore from '../../data/default-mission.json';
 
 export const StoreContext = React.createContext({
   store: defaultStore,
@@ -13,7 +13,6 @@ export const StoreConsumer = StoreContext.Consumer;
 
 export function StoreProvider({ children }) {
   const [store, setStore] = React.useState(defaultStore);
-
   return (
     <StoreContext.Provider value={{ store, setStore }}>
       {children}

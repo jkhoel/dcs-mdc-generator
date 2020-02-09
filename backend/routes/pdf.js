@@ -4,6 +4,8 @@ const models = require('../models');
 const fs = require('fs');
 const router = express.Router();
 
+const pug = require('pug');
+
 // ROUTES - CRUD
 router.get('/', async (req, res, next) => {
   const documents = await models.Document.findAll();
@@ -11,9 +13,27 @@ router.get('/', async (req, res, next) => {
   res.json(documents);
 });
 
+// router.post('/', async (req, res, next) => {
+//   const document = await models.Document.create(req.body);
+//   res.json(document);
+// });
+
 router.post('/', async (req, res, next) => {
-  const document = await models.Document.create(req.body);
-  res.json(document);
+  // Get the template
+  const compileToHTML = pug.compileFile('./templates/default/index.pug');
+
+  // Convert req.body.document into HTML
+  console.log(req.body);
+  const { document } = req.body;
+  let html = compileToHTML(document);
+  // console.log(html);
+
+  // Replace the document content - TODO: It would be much better to just store the JS object in the database and then create html at runtime
+  req.body.document = html;
+
+  // Create a new Document record and send it back to the client
+  const doc = await models.Document.create(req.body);
+  res.json(doc);
 });
 
 router.put('/:id', async (req, res, next) => {

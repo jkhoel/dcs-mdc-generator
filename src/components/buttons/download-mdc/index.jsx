@@ -1,21 +1,23 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
-import ReactDOM from 'react-dom';
-
 import { StoreContext } from '../../datastore-context';
 import { PrinterContext } from '../../printer-context';
 
-const baseURL = 'http://mdc.hatchlane.com/'; // TODO: This should probably be local?
+import Utility from '../../../utils/utility';
+import CalculateRow, {
+  SecondsToHHSS
+} from '../../tables/waypoints/calculateRow';
 
 export default function DownloadMDCButton() {
   const { store } = React.useContext(StoreContext);
   const {
     addDocument,
-    deleteDocument,
+    // getDocuments,
+    // deleteDocument,
     generatePDF,
-    APIURL,
-    getDocuments
+    APIURL
+    // getDocuments
   } = React.useContext(PrinterContext);
 
   const downloadMDC = async () => {
@@ -31,11 +33,11 @@ export default function DownloadMDCButton() {
       'mis_comms',
       'notes',
       'ramrod'
-    ].forEach((k) => {
+    ].forEach(k => {
       data[k] = [];
 
       // ... find the matching entry in the store and add those values to the field
-      store[k].forEach((val) => data[k].push(val));
+      store[k].forEach(val => data[k].push(val));
     });
 
     // settings
@@ -52,53 +54,66 @@ export default function DownloadMDCButton() {
       'flight_id',
       'package_id',
       'mission_id',
-      'dl-theme'
-    ].forEach((k) => {
+      'theme'
+    ].forEach(k => {
       data['settings'][k] = store.settings[k];
     });
 
-    // TODO: Turn the data into HTML
-    const createHTML = ({ waypoints }) => {
-      console.log('Data:', data);
+    let tot = 0;
+    // We need to update each Waypoint and POI's data
+    data.waypoints.forEach((waypoint, index) => {
+      // Convert our lat/lon into a string - TODO: Make this convert according to the settings
+      waypoint.lat_str = Utility.DDtoDDS(waypoint.lat);
+      waypoint.lon_str = Utility.DDtoDDS(waypoint.lon);
 
-      const renderedWaypoints = data.waypoints
-        .map((waypoint) => `<li>${waypoint.wp}</ li>`)
-        .join('');
+      // Calculate distance and bearing
+      const { distance, bearing, leg_time } = CalculateRow(index, store);
 
-      return `<div class="person"><h2>Waypoints:</h2><ul>${renderedWaypoints}</ul></div>`;
-    };
+      // Calculate TOT
+      if (index === 0) {
+        tot = store.settings.mission_start;
+      } else {
+        tot += store.waypoints[index - 1].act + leg_time;
+      }
 
-    // Build the API payload
+      waypoint.tot = tot;
+      waypoint.tot_str = SecondsToHHSS(tot);
+
+      waypoint.act_str = SecondsToHHSS(waypoint.act) || SecondsToHHSS(0);
+
+      waypoint.dist = Math.round(distance);
+      waypoint.brg = Math.round(bearing);
+    });
+
+    console.log(data);
+
+    // Build the API payload - TODO: the backend will most likely not accept the documents field being an object...
     let payload = {
       name: 'TEST DATA',
-      document: createHTML(data)
+      document: data
     };
 
-    console.log(createHTML(data));
-
-    const foo = <div>Testing Testing</div>
-
-    ReactDOM.render(foo)
-
     // Send the payload to the backend
-    // addDocument(payload).then(({status, data}) => {
-    //   // If all went well, then lets generate a pdf
-    //   if (status === 200) {
-    //     generatePDF(data.id).then(({status, data}) => {
-    //       // If all went well, then lets open the PDF file in a new window
-    //       if (status === 200) window.open(`${APIURL}/${data}`, '_blank')
-    //     })
-    //   }
-    // });
+    addDocument(payload)
+      .then(({ status, data }) => {
+        // If all went well, then lets generate a pdf
+        if (status === 200) {
+          generatePDF(data.id).then(({ status, data }) => {
+            // If all went well, then lets open the PDF file in a new window
+            if (status === 200) window.open(`${APIURL}/${data}`, '_blank');
+          });
+        }
+      })
+      .catch(err => console.log(err));
 
     // Use this to delete documents
     // getDocuments().then(res => {
-    //   let docs = res.data
+    //   let docs = res.data;
     //   docs.forEach(doc => {
-    //     console.log(`Deleting: ${doc.id}`)
-    //     deleteDocument(doc.id)
-    //   })
-    // })
+    //     console.log(`Deleting: ${doc.id}`);
+    //     deleteDocument(doc.id);
+    //   });
+    // });
   };
 
   return (
@@ -106,7 +121,8 @@ export default function DownloadMDCButton() {
       variant="contained"
       color="primary"
       onClick={downloadMDC}
-      style={{ marginTop: 5, width: '100%' }}>
+      style={{ marginTop: 5, width: '100%' }}
+    >
       Download
     </Button>
   );

@@ -11,9 +11,7 @@ import RoomIcon from '@material-ui/icons/Room';
 import { StoreContext } from '../../datastore-context';
 
 import Utility from '../../../utils/utility';
-
-import GeographicLib from 'geographiclib';
-const Geod = GeographicLib.Geodesic.WGS84;
+import CalculateRow, { SecondsToHHSS } from './calculateRow';
 
 export default function WaypointTable({ label }) {
   // Get the global store
@@ -25,61 +23,13 @@ export default function WaypointTable({ label }) {
     { title: 'WAYPOINT', field: 'wp', sorting: false },
     { title: 'ALT', field: 'alt', sorting: false },
     { title: 'GS', field: 'gs', sorting: false },
-    { title: 'TOT', field: 'tot', sorting: false },
-    { title: 'ACT', field: 'act', sorting: false },
-    { title: 'LAT', field: 'lat', sorting: false, editable: 'never' },
-    { title: 'LON', field: 'lon', sorting: false, editable: 'never' },
+    { title: 'TOT', field: 'tot_str', sorting: false, editable: 'never' },
+    { title: 'ACT', field: 'act_str', sorting: false, editable: 'never' },
+    { title: 'LAT', field: 'lat_str', sorting: false, editable: 'never' },
+    { title: 'LON', field: 'lon_str', sorting: false, editable: 'never' },
     { title: 'BRG', field: 'brg', sorting: false, editable: 'never' },
     { title: 'DIST', field: 'dist', sorting: false, editable: 'never' }
   ];
-
-  // Calculates the values of a WP given the WPs Index in the store
-  const CalculateRow = React.useCallback(
-    (index) => {
-      let distance = 0;
-      let bearing = 0;
-
-      // We need the DD values
-      // let lat = parseFloat(store.waypoints[index][6]);
-      // let lon = parseFloat(store.waypoints[index][7]);
-      let lat = parseFloat(store.waypoints[index].lat);
-      let lon = parseFloat(store.waypoints[index].lon);
-
-      // Some calculations require more than one WP, i.e. cannot be performed on WP1
-      if (index > 0) {
-        // let last_lat = parseFloat(store.waypoints[index - 1][6]);
-        // let last_lon = parseFloat(store.waypoints[index - 1][7]);
-        let last_lat = parseFloat(store.waypoints[index - 1].lat);
-        let last_lon = parseFloat(store.waypoints[index - 1].lon);
-
-        // Calculate distance and bearing
-        let r = Geod.Inverse(last_lat, last_lon, lat, lon);
-        distance = r.s12 / 1852; // s12 is distance from 1 to 2 and then divide by 1852 to get Nautical Miles
-
-        bearing = r.azi1; // Azimut from point 1 to point 2
-        if (bearing < 0) {
-          bearing += 360;
-        }
-
-        // TODO: Time On Target - Remember to add Activity time (VUL) to TOT
-        // var duration_sec = (distance / gs)*3600;
-      }
-
-      // Return an object with our calculated values
-      return { distance, bearing };
-    },
-    [store]
-  );
-
-  // Converts seconds in a day to hours and minutes
-  const SecondsToTOT = (seconds) => {
-    // let h = Math.round(parseInt(seconds / 3600));
-    let t = seconds / 3600;
-    let h = Utility.padNumber(Math.round(parseInt(t)), 2);
-    let s = Utility.padNumber(Math.round((t - h) * 60), 2);
-
-    return `${h}:${s}`;
-  };
 
   // Map data to the rows
   const [rows, setRows] = React.useState([]);
@@ -91,16 +41,18 @@ export default function WaypointTable({ label }) {
       setRows(
         waypoints.map((waypoint, index) => {
           // TODO: Make this convert according to the settings rather
-          let lat = Utility.DDtoDDS(waypoint.lat);
-          let lon = Utility.DDtoDDS(waypoint.lon);
+          let lat_str = Utility.DDtoDDS(waypoint.lat);
+          let lon_str = Utility.DDtoDDS(waypoint.lon);
 
           // Calculate distance and bearing
-          const { distance, bearing } = CalculateRow(index);
+          const { distance, bearing } = CalculateRow(index, store);
 
           // Calculate TOT
           let gs = waypoint.gs || 300;
           let duration_sec = (distance / gs) * 3600;
           tot += duration_sec; // TODO: include ACT time from previous point also!
+
+          // console.log(waypoint);
 
           return {
             index,
@@ -108,21 +60,25 @@ export default function WaypointTable({ label }) {
             wp: waypoint.wp,
             alt: waypoint.alt,
             gs: gs,
-            tot: SecondsToTOT(tot),
+            tot: tot,
             act: waypoint.act,
-            lat: lat,
-            lon: lon,
+            lat: waypoint.lat,
+            lon: waypoint.lon,
             brg: Math.round(bearing),
-            dist: Math.round(distance)
+            dist: Math.round(distance),
+            tot_str: SecondsToHHSS(tot),
+            act_str: SecondsToHHSS(waypoint.act) || SecondsToHHSS(0),
+            lat_str: lat_str,
+            lon_str: lon_str
           };
         })
       );
     }
-  }, [CalculateRow, store]);
+  }, [store]);
 
   // Function for adding row to the table
-  const RowAdd = (newData) =>
-    new Promise((resolve) => {
+  const RowAdd = newData =>
+    new Promise(resolve => {
       let waypoints = [...store.waypoints];
       let last_wp = store.waypoints[store.waypoints.length - 1];
 
@@ -136,13 +92,13 @@ export default function WaypointTable({ label }) {
 
       // TODO: Probably show a seperate dialog here in order to insert coordinates
 
-      setStore((prev) => ({ ...prev, waypoints }));
+      setStore(prev => ({ ...prev, waypoints }));
       resolve();
     });
 
   // Function for updating a row in the table
   const RowUpdate = (newData, oldData) =>
-    new Promise((resolve) => {
+    new Promise(resolve => {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
@@ -152,19 +108,19 @@ export default function WaypointTable({ label }) {
 
         waypoints[rows.indexOf(oldData)] = newData;
 
-        setStore((prev) => ({ ...prev, waypoints }));
+        setStore(prev => ({ ...prev, waypoints }));
         resolve();
       }
     });
 
-  const RowDelete = (oldData) =>
-    new Promise((resolve) => {
+  const RowDelete = oldData =>
+    new Promise(resolve => {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
         waypoints.splice(rows.indexOf(oldData), 1);
 
-        setStore((prev) => ({ ...prev, waypoints }));
+        setStore(prev => ({ ...prev, waypoints }));
         resolve();
       }
     });
@@ -211,9 +167,9 @@ export default function WaypointTable({ label }) {
       columns={columns}
       data={rows}
       editable={{
-        onRowAdd: (newData) => RowAdd(newData),
+        onRowAdd: newData => RowAdd(newData),
         onRowUpdate: (newData, oldData) => RowUpdate(newData, oldData),
-        onRowDelete: (oldData) => RowDelete(oldData)
+        onRowDelete: oldData => RowDelete(oldData)
       }}
     />
   );
