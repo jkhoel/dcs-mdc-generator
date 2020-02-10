@@ -20,13 +20,12 @@ router.get('/', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   // Get the template
-  const compileToHTML = pug.compileFile('./templates/default/index.pug');
+  // const compileToHTML = pug.compileFile('./templates/default/index.pug');
+  const compileToHTML = pug.compileFile('./templates/388th/index.pug');
 
   // Convert req.body.document into HTML
-  console.log(req.body);
   const { document } = req.body;
   let html = compileToHTML(document);
-  // console.log(html);
 
   // Replace the document content - TODO: It would be much better to just store the JS object in the database and then create html at runtime
   req.body.document = html;
