@@ -59,6 +59,7 @@ export default function MainContainer() {
           <Tab label="108th Sqn" />
           <Tab label="338th Sqn" />
           <Tab label="494th Sqn" />
+          <Tab label="Archive" />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -72,6 +73,14 @@ export default function MainContainer() {
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Default />
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <h1>Archive</h1>
+        <p>Should be able to:</p>
+        <ul>
+          <li>View all stored PDFs</li>
+          <li>Load the data from them back to the current kb</li>
+        </ul>
       </TabPanel>
     </React.Fragment>
   );

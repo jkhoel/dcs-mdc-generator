@@ -6,7 +6,7 @@ import { PrinterContext } from '../../printer-context';
 
 import CalculateRow from '../../tables/waypoints/calculateRow';
 
-export default function DownloadMDCButton() {
+export default function DownloadMDCButton(props) {
   const { store } = React.useContext(StoreContext);
   const {
     addDocument,
@@ -105,13 +105,15 @@ export default function DownloadMDCButton() {
   };
 
   return (
-    <Button
-      variant="contained"
-      color="primary"
-      onClick={downloadMDC}
-      style={{ marginTop: 5, width: '100%' }}
-    >
-      Download
-    </Button>
+    <div {...props}>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={downloadMDC}
+        style={{ marginTop: 5, width: '100%' }}
+      >
+        Download PDF
+      </Button>
+    </div>
   );
 }

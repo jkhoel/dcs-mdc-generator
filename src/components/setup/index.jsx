@@ -142,23 +142,7 @@ export default function MainContainer() {
 
               <ThemeOptionsSelector />
 
-              <Button
-                variant="contained"
-                color="primary"
-                style={{ marginTop: 5, width: '100%' }}
-              >
-                Save
-              </Button>
-
-              <DownloadMDCButton />
-
-              <Button
-                variant="contained"
-                color="secondary"
-                style={{ marginTop: 5, width: '100%' }}
-              >
-                Reset
-              </Button>
+              <DownloadMDCButton style={{ marginTop: 10 }} />
             </form>
           </Paper>
         </Grid>
