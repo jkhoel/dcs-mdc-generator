@@ -8,9 +8,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-import Setup from '../setup';
-
-import { StoreContext } from '../datastore-context';
+import Default from '../tabs/default';
+import Peregrines from '../tabs/peregrines';
 
 // Panel component used later in MainContainer
 function TabPanel(props) {
@@ -38,21 +37,7 @@ TabPanel.propTypes = {
 
 // Main Component
 export default function MainContainer() {
-  const { store, setStore } = React.useContext(StoreContext);
-
   const [value, setValue] = React.useState(0);
-  React.useEffect(() => {
-    // Automagically switch templates when a Squadron is selected
-    switch (value) {
-      case 2:
-        const { theme } = store;
-        theme.template = '388th';
-        setStore(prev => ({ ...prev, theme }));
-        break;
-      default:
-        break;
-    }
-  }, [setStore, store, value]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -77,16 +62,16 @@ export default function MainContainer() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Setup />
+        <Default />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Setup />
+        <Default />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Setup />
+        <Peregrines />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <Setup />
+        <Default />
       </TabPanel>
     </React.Fragment>
   );

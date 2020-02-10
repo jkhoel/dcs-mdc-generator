@@ -4,10 +4,7 @@ import Button from '@material-ui/core/Button';
 import { StoreContext } from '../../datastore-context';
 import { PrinterContext } from '../../printer-context';
 
-import Utility from '../../../utils/utility';
-import CalculateRow, {
-  SecondsToHHSS
-} from '../../tables/waypoints/calculateRow';
+import CalculateRow from '../../tables/waypoints/calculateRow';
 
 export default function DownloadMDCButton() {
   const { store } = React.useContext(StoreContext);
@@ -61,10 +58,6 @@ export default function DownloadMDCButton() {
     let tot = 0;
     // We need to update each Waypoint and POI's data
     data.waypoints.forEach((waypoint, index) => {
-      // Convert our lat/lon into a string - TODO: Make this convert according to the settings
-      waypoint.lat_str = Utility.DDtoDDS(waypoint.lat);
-      waypoint.lon_str = Utility.DDtoDDS(waypoint.lon);
-
       // Calculate distance and bearing
       const { distance, bearing, leg_time } = CalculateRow(index, store);
 
@@ -76,10 +69,6 @@ export default function DownloadMDCButton() {
       }
 
       waypoint.tot = tot;
-      waypoint.tot_str = SecondsToHHSS(tot);
-
-      waypoint.act_str = SecondsToHHSS(waypoint.act) || SecondsToHHSS(0);
-
       waypoint.dist = Math.round(distance);
       waypoint.brg = Math.round(bearing);
     });
