@@ -23,10 +23,42 @@ export default function WaypointTable({ label }) {
     { title: 'WAYPOINT', field: 'wp', sorting: false },
     { title: 'ALT', field: 'alt', sorting: false },
     { title: 'GS', field: 'gs', sorting: false },
-    { title: 'TOT', field: 'tot_str', sorting: false, editable: 'never' },
-    { title: 'ACT', field: 'act_str', sorting: false, editable: 'never' },
-    { title: 'LAT', field: 'lat_str', sorting: false, editable: 'never' },
-    { title: 'LON', field: 'lon_str', sorting: false, editable: 'never' },
+    {
+      title: 'TOT',
+      sorting: false,
+      editable: 'never',
+      render: (rowData) =>
+        rowData ? (
+          <React.Fragment>{SecondsToHHSS(rowData.tot)}</React.Fragment>
+        ) : null
+    },
+    {
+      title: 'ACT',
+      sorting: false,
+      editable: 'never',
+      render: (rowData) =>
+        rowData ? (
+          <React.Fragment>{SecondsToHHSS(rowData.act)}</React.Fragment>
+        ) : null
+    },
+    {
+      title: 'LAT',
+      sorting: false,
+      editable: 'never',
+      render: (rowData) =>
+        rowData ? (
+          <React.Fragment>{Utility.DDtoDDS(rowData.lat)}</React.Fragment> // TODO: The render should rather call some function that will return a value based on the selection DDS/DMS etc. and returns a React.Fragment with the formatted value
+        ) : null
+    }, 
+    {
+      title: 'LON',
+      sorting: false,
+      editable: 'never',
+      render: (rowData) =>
+        rowData ? (
+          <React.Fragment>{Utility.DDtoDDS(rowData.lon)}</React.Fragment>
+        ) : null
+    },
     { title: 'BRG', field: 'brg', sorting: false, editable: 'never' },
     { title: 'DIST', field: 'dist', sorting: false, editable: 'never' }
   ];
@@ -40,10 +72,6 @@ export default function WaypointTable({ label }) {
 
       setRows(
         waypoints.map((waypoint, index) => {
-          // TODO: Make this convert according to the settings rather
-          let lat_str = Utility.DDtoDDS(waypoint.lat);
-          let lon_str = Utility.DDtoDDS(waypoint.lon);
-
           // Calculate distance and bearing
           const { distance, bearing } = CalculateRow(index, store);
 
@@ -52,24 +80,18 @@ export default function WaypointTable({ label }) {
           let duration_sec = (distance / gs) * 3600;
           tot += duration_sec; // TODO: include ACT time from previous point also!
 
-          // console.log(waypoint);
-
           return {
             index,
             desc: waypoint.desc,
             wp: waypoint.wp,
             alt: waypoint.alt,
-            gs: gs,
+            gs: waypoint.gs || 300,
             tot: tot,
-            act: waypoint.act,
+            act: waypoint.act || 0,
             lat: waypoint.lat,
             lon: waypoint.lon,
             brg: Math.round(bearing),
-            dist: Math.round(distance),
-            tot_str: SecondsToHHSS(tot),
-            act_str: SecondsToHHSS(waypoint.act) || SecondsToHHSS(0),
-            lat_str: lat_str,
-            lon_str: lon_str
+            dist: Math.round(distance)
           };
         })
       );
@@ -77,8 +99,8 @@ export default function WaypointTable({ label }) {
   }, [store]);
 
   // Function for adding row to the table
-  const RowAdd = newData =>
-    new Promise(resolve => {
+  const RowAdd = (newData) =>
+    new Promise((resolve) => {
       let waypoints = [...store.waypoints];
       let last_wp = store.waypoints[store.waypoints.length - 1];
 
@@ -87,18 +109,20 @@ export default function WaypointTable({ label }) {
       newData.lon = last_wp.lon || 0;
       newData.brg = '';
       newData.dist = '';
+      newData.tot = 0;
+      newData.act = 0;
 
       waypoints.push(newData);
 
-      // TODO: Probably show a seperate dialog here in order to insert coordinates
+      // TODO: Probably show a separate dialog here in order to insert coordinates
 
-      setStore(prev => ({ ...prev, waypoints }));
+      setStore((prev) => ({ ...prev, waypoints }));
       resolve();
     });
 
   // Function for updating a row in the table
   const RowUpdate = (newData, oldData) =>
-    new Promise(resolve => {
+    new Promise((resolve) => {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
@@ -108,19 +132,19 @@ export default function WaypointTable({ label }) {
 
         waypoints[rows.indexOf(oldData)] = newData;
 
-        setStore(prev => ({ ...prev, waypoints }));
+        setStore((prev) => ({ ...prev, waypoints }));
         resolve();
       }
     });
 
-  const RowDelete = oldData =>
-    new Promise(resolve => {
+  const RowDelete = (oldData) =>
+    new Promise((resolve) => {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
         waypoints.splice(rows.indexOf(oldData), 1);
 
-        setStore(prev => ({ ...prev, waypoints }));
+        setStore((prev) => ({ ...prev, waypoints }));
         resolve();
       }
     });
@@ -167,9 +191,9 @@ export default function WaypointTable({ label }) {
       columns={columns}
       data={rows}
       editable={{
-        onRowAdd: newData => RowAdd(newData),
+        onRowAdd: (newData) => RowAdd(newData),
         onRowUpdate: (newData, oldData) => RowUpdate(newData, oldData),
-        onRowDelete: oldData => RowDelete(oldData)
+        onRowDelete: (oldData) => RowDelete(oldData)
       }}
     />
   );

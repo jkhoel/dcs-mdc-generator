@@ -6,8 +6,9 @@
 .pnp.js
 
 # backend
-/backend/node_modules
-/backend/files
+backend/node_modules
+backend/files
+backend/development.db
 
 # testing
 /coverage
