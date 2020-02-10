@@ -133,7 +133,10 @@
     "theatre": "PersianGulf",
     "flight_id": "BANSHEE 1",
     "package_id": "",
-    "mission_id": "TR7820",
-    "theme": "dark"
+    "mission_id": "TR7820"
+  },
+  "theme": {
+    "mode": "light",
+    "template": "default"
   }
 }

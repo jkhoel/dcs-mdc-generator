@@ -26,7 +26,7 @@ function App() {
           <CombatFliteProvider>
             <PrinterProvider>
               <CssBaseline />
-              <MainContainer data-testid="main-container" />
+              <MainContainer />
             </PrinterProvider>
           </CombatFliteProvider>
         </StoreProvider>

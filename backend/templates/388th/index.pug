@@ -87,9 +87,9 @@
   ]
 
 -
-  const settings = {
-    //- theme: "dark"
-    theme: "light"
+  const theme = {
+    //- mode: "dark"
+    mode: "light"
   }
 
 doctype html
@@ -99,7 +99,7 @@ html(lang="en")
     link(rel="stylesheet" href="css/fonts.css")
     style
       include css/fonts.css
-      if settings.theme === "dark"
+      if theme.mode === "dark"
         include css/kneeboard-dark.css
       else
         include css/kneeboard-light.css
@@ -122,8 +122,7 @@ html(lang="en")
           if settings
             tr
               th FLIGHT
-              //- td(style="padding-left: 5px") #{settings.flight_id}
-              td(style="padding-left: 5px") #{settings.theme}
+              td(style="padding-left: 5px") #{settings.flight_id}
               th PACKAGE
               td(style="padding-left: 5px") #{settings.package_id}
               th MISSION

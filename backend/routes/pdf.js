@@ -76,4 +76,15 @@ router.get('/generatePdf/:id', async (req, res, next) => {
   res.json(fileName);
 });
 
+router.get('/templates', async (req, res, next) => {
+  // We will just check what folders are in the ./templates folder and expect each to hold a valid index.pug template
+  let templates = fs
+    .readdirSync('./templates', { withFileTypes: true })
+    .filter(dir => dir.isDirectory())
+    .map(dir => dir.name);
+
+  // And return them as an array
+  res.json(templates);
+});
+
 module.exports = router;

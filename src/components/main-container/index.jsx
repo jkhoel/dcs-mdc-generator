@@ -8,7 +8,9 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-import Setup from '../setup'
+import Setup from '../setup';
+
+import { StoreContext } from '../datastore-context';
 
 // Panel component used later in MainContainer
 function TabPanel(props) {
@@ -21,7 +23,8 @@ function TabPanel(props) {
       hidden={value !== index}
       id={`scrollable-auto-tabpanel-${index}`}
       aria-labelledby={`scrollable-auto-tab-${index}`}
-      {...other}>
+      {...other}
+    >
       {value === index && <Box p={3}>{children}</Box>}
     </Typography>
   );
@@ -35,7 +38,21 @@ TabPanel.propTypes = {
 
 // Main Component
 export default function MainContainer() {
+  const { store, setStore } = React.useContext(StoreContext);
+
   const [value, setValue] = React.useState(0);
+  React.useEffect(() => {
+    // Automagically switch templates when a Squadron is selected
+    switch (value) {
+      case 2:
+        const { theme } = store;
+        theme.template = '388th';
+        setStore(prev => ({ ...prev, theme }));
+        break;
+      default:
+        break;
+    }
+  }, [setStore, store, value]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -51,7 +68,8 @@ export default function MainContainer() {
           textColor="primary"
           variant="scrollable"
           scrollButtons="auto"
-          aria-label="scrollable auto tabs example">
+          aria-label="scrollable auto tabs example"
+        >
           <Tab label="Setup" />
           <Tab label="108th Sqn" />
           <Tab label="338th Sqn" />
@@ -62,13 +80,13 @@ export default function MainContainer() {
         <Setup />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Setup />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Setup />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        <Setup />
       </TabPanel>
     </React.Fragment>
   );

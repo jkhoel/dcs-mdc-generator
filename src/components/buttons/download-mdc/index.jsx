@@ -17,7 +17,6 @@ export default function DownloadMDCButton() {
     // deleteDocument,
     generatePDF,
     APIURL
-    // getDocuments
   } = React.useContext(PrinterContext);
 
   const downloadMDC = async () => {

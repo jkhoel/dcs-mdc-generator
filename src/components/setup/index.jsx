@@ -13,9 +13,10 @@ import CFImportButton from '../cf-import-button';
 import AirbaseTable from '../tables/airbases';
 import WaypointTable from '../tables/waypoints';
 
-import DownloadMDCButton from '../buttons/download-mdc'
+import DownloadMDCButton from '../buttons/download-mdc';
+import ThemeOptionsSelector from '../selectors/theme-options';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
@@ -90,7 +91,8 @@ export default function MainContainer() {
                 select
                 label="Select Theater"
                 value={10}
-                style={{ marginTop: 15, width: '100%' }}>
+                style={{ marginTop: 15, width: '100%' }}
+              >
                 <MenuItem value={10}>Persian Gulf</MenuItem>
                 <MenuItem value={20}>Caucasus</MenuItem>
               </TextField>
@@ -100,7 +102,8 @@ export default function MainContainer() {
                 label="Lat / Lon Format"
                 id="demo-simple-select-placeholder-label"
                 value={20}
-                style={{ marginTop: 15, width: '100%' }}>
+                style={{ marginTop: 15, width: '100%' }}
+              >
                 <MenuItem value={10}>DD</MenuItem>
                 <MenuItem value={20}>DDM</MenuItem>
                 <MenuItem value={30}>DMS</MenuItem>
@@ -137,20 +140,13 @@ export default function MainContainer() {
                 style={{ marginTop: 15, width: '100%' }}
               />
 
-              <TextField
-                select
-                label="Kneeboard Theme"
-                id="demo-simple-select-placeholder-label"
-                value={20}
-                style={{ marginTop: 15, width: '100%' }}>
-                <MenuItem value={10}>Light</MenuItem>
-                <MenuItem value={20}>Dark</MenuItem>
-              </TextField>
+              <ThemeOptionsSelector />
 
               <Button
                 variant="contained"
                 color="primary"
-                style={{ marginTop: 5, width: '100%' }}>
+                style={{ marginTop: 5, width: '100%' }}
+              >
                 Save
               </Button>
 
@@ -159,7 +155,8 @@ export default function MainContainer() {
               <Button
                 variant="contained"
                 color="secondary"
-                style={{ marginTop: 5, width: '100%' }}>
+                style={{ marginTop: 5, width: '100%' }}
+              >
                 Reset
               </Button>
             </form>
