@@ -12,8 +12,8 @@ This project uses ReactJS for the front-end client application, and NodeJS for t
 
 ## Development - Client & Backend
 1. Ensure the `installation` steps have been performed and open up a console window
-2. Navigate to the root project folder, and start the client with ```$ npm start```. A window pointing to `http://localhost:3000` should open in your browser
-3. Navigate to the `backend` folder and start the backend server with ```$ npm start```. If you open up a new browser tab and navigate to `http://localhost:5000` you should see a welcome page
+2. Navigate to the root project folder, and start the client with ```$ npm run dev```. This will start both the front-end and the backend applications, and a window pointing to `http://localhost:3000` should open in your browser showing the client application.
+3. Open up a new browser tab and navigate to `http://localhost:5000` you should see a welcome page indicating that the backend application is up and running.
 
 #### Notes
 - Both the client and the backend applications will now be looking for file-changes and updating on each save automatically

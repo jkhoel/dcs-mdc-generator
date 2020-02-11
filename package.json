@@ -11,6 +11,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
     "geographiclib": "^1.50.0",
     "jszip": "^3.2.2",
     "material-table": "^1.57.1",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"npm start\" \"npm start --prefix ./backend\""
   },
   "eslintConfig": {
     "extends": "react-app"
