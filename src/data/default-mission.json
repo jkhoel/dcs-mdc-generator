@@ -40,6 +40,34 @@
       "rwy": ""
     }
   ],
+  "flight": [
+    {
+      "desc": "FL",
+      "callsign": "Dex",
+      "tcn": "62X",
+      "laser": 1611,
+      "mode": 4411
+    },
+    {
+      "desc": "#2",
+      "callsign": "Dex",
+      "tcn": "62Y",
+      "laser": 1611,
+      "mode": 4411
+    },   {
+      "desc": "EL",
+      "callsign": "Dex",
+      "tcn": "62Y",
+      "laser": 1611,
+      "mode": 4411
+    },   {
+      "desc": "#4",
+      "callsign": "Dex",
+      "tcn": "62Y",
+      "laser": 1611,
+      "mode": 4411
+    }
+  ],
   "waypoints": [
     {
       "desc": "DEP",

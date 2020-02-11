@@ -8,28 +8,59 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 import { StoreContext } from '../../datastore-context';
 
-export default function FlightInfoTable() {
+export default function FlightInfoTable({ label }) {
   const { store, setStore } = React.useContext(StoreContext);
 
   const columns = [
+    { title: '', field: 'desc', sorting: false, editable: 'never' },
     { title: 'CALLSIGN', field: 'callsign', sorting: false },
-    { title: 'PACKAGE', field: 'packageName', sorting: false },
-    { title: 'MISSION DESCRIPTION', field: 'desc', sorting: false },
-    { title: 'MISSION #', field: 'number', sorting: false }
+    { title: 'TCN', field: 'tcn', sorting: false },
+    { title: 'LASER', field: 'laser', sorting: false },
+    { title: 'MODE', field: 'mode', sorting: false }
   ];
 
   // Map data to the rows
   const [rows, setRows] = React.useState([]);
   React.useEffect(() => {
-    const { mission } = store;
-    if (mission) setRows([mission]);
+    const { flight } = store;
+    if (flight) {
+      setRows(
+        flight.map((member, index) => {
+          // We dont need to manipulate the data if we are dealing with the FL
+          if (index === 0) {
+            return member;
+          } else {
+            // But if we are dealing with any of the other members, then we want to change TCN, LASER and MODE based on FL's values
+            let tcn_fl = flight[0].tcn;
+            let tcn_fl_band =
+              tcn_fl.includes('x') || tcn_fl.includes('X') ? 'X' : 'Y';
+            let tcn = parseInt(tcn_fl.match(/\d+/g)) + 63;
+
+            let laser = flight[0].laser + index;
+            let mode = flight[0].mode + index;
+
+            return {
+              index: index,
+              desc: member.desc,
+              callsign: member.callsign,
+              tcn: `${tcn}${tcn_fl_band}`,
+              laser: laser, // TODO: CHANGE THIS BASED ON FL DATA
+              mode: mode // TODO: CHANGE THIS BASED ON FL DATA
+            };
+          }
+        })
+      );
+    }
   }, [store]);
 
   // Function for updating a row in the table
   const RowUpdate = (newData, oldData) =>
     new Promise((resolve) => {
       if (oldData) {
-        setStore((prev) => ({ ...prev, mission: newData }));
+        let flight = [...store.flight];
+        flight[rows.indexOf(oldData)] = newData;
+
+        setStore((prev) => ({ ...prev, flight }));
         resolve();
       }
     });
@@ -38,7 +69,8 @@ export default function FlightInfoTable() {
     <MaterialTable
       style={{
         borderRadius: 4,
-        border: '1px solid #6e6e6e'
+        border: '1px solid #6e6e6e',
+        marginTop: 10
       }}
       options={{
         search: false,
@@ -57,7 +89,7 @@ export default function FlightInfoTable() {
         Check: CheckIcon,
         Clear: ClearIcon
       }}
-      title={'MISSION INFORMATION'}
+      title={label}
       columns={columns}
       data={rows}
       editable={{
