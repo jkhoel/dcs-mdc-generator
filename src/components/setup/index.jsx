@@ -4,19 +4,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
-import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import MenuItem from '@material-ui/core/MenuItem';
 
-import CFImportButton from '../cf-import-button';
+import MissionInfoTable from '../tables/mission-info';
+import FlightInfoTable from '../tables/flight-info';
+
 import AirbaseTable from '../tables/airbases';
 import WaypointTable from '../tables/waypoints';
 
+import CFImportButton from '../cf-import-button';
 import DownloadMDCButton from '../buttons/download-mdc';
 import ThemeOptionsSelector from '../selectors/theme-options';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1
   },
@@ -27,7 +29,6 @@ const useStyles = makeStyles(theme => ({
   },
   form: {
     '& .MuiTextField-root': {
-      margin: theme.spacing(1),
       width: 200
     }
   }
@@ -41,43 +42,13 @@ export default function MainContainer() {
       <Grid container spacing={1}>
         <Grid item xs={12} sm={12} md={10}>
           <Paper className={classes.paper}>
-            <form className={classes.form} noValidate autoComplete="off">
-              <Grid container spacing={1}>
-                <Grid item xs={12} sm={12} md={3}>
-                  <TextField
-                    variant="outlined"
-                    label="Callsign"
-                    style={{ width: '100%' }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={12} md={3}>
-                  <TextField
-                    variant="outlined"
-                    label="Package"
-                    style={{ width: '100%' }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={12} md={3}>
-                  <TextField
-                    variant="outlined"
-                    label="Mission Type"
-                    style={{ width: '100%' }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={12} md={3}>
-                  <TextField
-                    variant="outlined"
-                    label="Flight #"
-                    style={{ width: '100%' }}
-                  />
-                </Grid>
-              </Grid>
-            </form>
+            <MissionInfoTable label="MISSION INFORMATION" />
 
             <Grid container spacing={1}>
               <Grid item xs={12} sm={12} md={12}>
-                <AirbaseTable label="Airbases" />
-                <WaypointTable label="Waypoints" />
+                <AirbaseTable label="AIRBASES" />
+                <FlightInfoTable label="FLIGHT INFORMATION" />
+                <WaypointTable label="WAYPOINTS" />
               </Grid>
             </Grid>
           </Paper>
@@ -91,8 +62,7 @@ export default function MainContainer() {
                 select
                 label="Select Theater"
                 value={10}
-                style={{ marginTop: 15, width: '100%' }}
-              >
+                style={{ marginTop: 15, width: '100%' }}>
                 <MenuItem value={10}>Persian Gulf</MenuItem>
                 <MenuItem value={20}>Caucasus</MenuItem>
               </TextField>
@@ -102,8 +72,7 @@ export default function MainContainer() {
                 label="Lat / Lon Format"
                 id="demo-simple-select-placeholder-label"
                 value={20}
-                style={{ marginTop: 15, width: '100%' }}
-              >
+                style={{ marginTop: 15, width: '100%' }}>
                 <MenuItem value={10}>DD</MenuItem>
                 <MenuItem value={20}>DDM</MenuItem>
                 <MenuItem value={30}>DMS</MenuItem>

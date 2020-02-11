@@ -34,44 +34,8 @@ export default function AirbaseTable({ label }) {
     const { airfields } = store;
     if (airfields) {
       setRows(airfields)
-      // setRows(
-      //   airfields.map((airfield, index) => {
-      //     return airfield
-      //     // return {
-      //     //   type: airfield[0],
-      //     //   airbase: airfield[1],
-      //     //   icao: airfield[2],
-      //     //   tcn: airfield[3],
-      //     //   atis: airfield[4],
-      //     //   gnd: airfield[5],
-      //     //   twr: airfield[6],
-      //     //   par: airfield[7],
-      //     //   ctrl: airfield[8],
-      //     //   elev: airfield[9],
-      //     //   rwy: airfield[10]
-      //     // };
-      //   })
-      // );
     }
   }, [store]);
-
-  // const ObjectToArray = (obj) => {
-  //   const arr = [];
-
-  //   arr[0] = obj.type || '';
-  //   arr[1] = obj.airbase || '';
-  //   arr[2] = obj.icao || '';
-  //   arr[3] = obj.tcn || '';
-  //   arr[4] = obj.atis || '';
-  //   arr[5] = obj.gnd || '';
-  //   arr[6] = obj.twr || '';
-  //   arr[7] = obj.par || '';
-  //   arr[8] = obj.ctrl || '';
-  //   arr[9] = obj.elev || '';
-  //   arr[10] = obj.rwy || '';
-
-  //   return arr;
-  // };
 
   // Function for adding row to the table
   const RowAdd = (newData) =>
@@ -115,7 +79,8 @@ export default function AirbaseTable({ label }) {
     <MaterialTable
       style={{
         borderRadius: 4,
-        border: '1px solid #6e6e6e'
+        border: '1px solid #6e6e6e',
+        marginTop: 10
       }}
       options={{
         search: false,

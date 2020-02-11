@@ -15,19 +15,6 @@
     },
     {
       "type": "ARR",
-      "airbase": "CVN Stennis",
-      "icao": "",
-      "tcn": "74X",
-      "atis": "",
-      "gnd": "",
-      "twr": "309.000",
-      "par": "309.500",
-      "ctrl": "309.900",
-      "elev": "",
-      "rwy": ""
-    },
-    {
-      "type": "ALT",
       "airbase": "Al Dhafra AB",
       "icao": "OMAM",
       "tcn": "96X",
@@ -38,6 +25,19 @@
       "ctrl": "127.100",
       "elev": "52",
       "rwy": "13LR/31LR"
+    },
+    {
+      "type": "ALT",
+      "airbase": "CVN Stennis",
+      "icao": "",
+      "tcn": "74X",
+      "atis": "",
+      "gnd": "",
+      "twr": "309.000",
+      "par": "309.500",
+      "ctrl": "309.900",
+      "elev": "",
+      "rwy": ""
     }
   ],
   "waypoints": [
@@ -85,8 +85,18 @@
   "poi": [],
   "loadout": [],
   "int_comms": [
-    ["INTERNAL", "BRONZE 8", "310.000", ""],
-    ["INTERNAL SECONDARY", "GRAY 10", "122.250", ""]
+    [
+      "INTERNAL",
+      "BRONZE 8",
+      "310.000",
+      ""
+    ],
+    [
+      "INTERNAL SECONDARY",
+      "GRAY 10",
+      "122.250",
+      ""
+    ]
   ],
   "mis_comms": [
     [
@@ -97,7 +107,14 @@
       "AFT PRE1; POS MERGED WITH TOWER 126.200",
       ""
     ],
-    ["AL DHAFRA TOWER", "", "126.200", "96X", "PRE2", ""],
+    [
+      "AL DHAFRA TOWER",
+      "",
+      "126.200",
+      "96X",
+      "PRE2",
+      ""
+    ],
     [
       "AL DHAFRA CONTROL",
       "RED 4",
@@ -122,18 +139,31 @@
       ""
     ]
   ],
-  "ramrod": ["C", "O", "M", "P", "L", "E", "X", "I", "T", "Y"],
+  "ramrod": [
+    "C",
+    "O",
+    "M",
+    "P",
+    "L",
+    "E",
+    "X",
+    "I",
+    "T",
+    "Y"
+  ],
   "settings": {
     "coordDisplay": "llf-DDM",
     "dd-precision": "1",
     "dms-precision": "0",
     "transition-alt": "5000",
     "mission_start": 70200,
-    "mission_title": "COM-O1",
-    "theatre": "PersianGulf",
-    "flight_id": "BANSHEE 1",
-    "package_id": "",
-    "mission_id": "TR7820"
+    "theatre": "PersianGulf"
+  },
+  "mission": {
+    "desc": "COM-O1",
+    "callsign": "BANSHEE 1",
+    "packageName": "Alpha",
+    "number": "TR7820"
   },
   "theme": {
     "mode": "light",
