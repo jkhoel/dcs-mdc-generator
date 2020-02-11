@@ -6,7 +6,7 @@ import { StoreProvider } from './components/datastore-context';
 import { CombatFliteProvider } from './components/combatflite-context';
 import { PrinterProvider } from './components/printer-context';
 
-import MainContainer from './components/main-container';
+import Landing from './components/pages/landing';
 
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import MomentUtils from '@date-io/moment';
@@ -26,7 +26,7 @@ function App() {
           <CombatFliteProvider>
             <PrinterProvider>
               <CssBaseline />
-              <MainContainer />
+              <Landing />
             </PrinterProvider>
           </CombatFliteProvider>
         </StoreProvider>
