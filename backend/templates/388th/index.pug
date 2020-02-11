@@ -34,9 +34,12 @@
     return `${h}:${s}`;
   };
 
+
+//- ### TEMP DATA
+
 - 
   const waypoints = [
-    { desc: "DEP", wp: "Al Ain Int. Airport", alt: "813", gs: "300", tot: 70200, act: 0, lat: "24.2752666666667", lon: "55.6113833333333", dist: 0, brg: 0 },
+    { desc: "DEP", wp: "012345678901234", alt: "813", gs: "300", tot: 70200, act: 0, lat: "24.2752666666667", lon: "55.6113833333333", dist: 0, brg: 0 },
     { desc: "WP", wp: "1", alt: "1500", gs: "300", tot: 71033.48791441802, act: 0, lat: "24.8891086358444", lon: "56.6894652395402", dist: 69, brg: 58 },
     { desc: "WP", wp: "2", alt: "1500", gs: "300", tot: 71482.34997529117, act: 0, lat: "25.5138824943904", lon: "56.7191173282923", dist: 37, brg: 2 },
     { desc: "ARR", wp: "Khasab", alt: "1500", gs: "300", tot: 72051.61841114698, act: 0, lat: "26.1797222222", lon: "56.2430555556", dist: 47, brg: 327 }
@@ -88,9 +91,11 @@
 
 -
   const theme = {
-    //- mode: "dark"
-    mode: "light"
+    mode: "dark"
+    //- mode: "light"
   }
+
+//- ### DOCUMENT
 
 doctype html
 html(lang="en")
@@ -356,8 +361,14 @@ html(lang="en")
               td.lpad5 TOTAL
               td.bold.algnr.rpad5 12103 lbs
 
+        table(style="width: 225px; margin-top: 12px")
+          colgroup
+            col(style="width: 100px")
+            col
+          
+          tbody
             tr
-              th(colspan=2, style="margin-top: 15px") TAKE-OFF
+              th(colspan=2) TAKE-OFF
             tr
               td.lpad5 GTOW
               td.bold.algnr.rpad5 34309 lbs
@@ -452,26 +463,28 @@ html(lang="en")
           col
           col(style="width: 45px")
           col(style="width: 45px")
-          col(style="width: 45px")
-          col(style="width: 45px")
           col(style="width: 130px")
           col(style="width: 130px")
           col(style="width: 55px")
           col(style="width: 55px")
+          col(style="width: 45px")
+          col(style="width: 45px")
+          col(style="width: 45px")
         tbody
           tr
-            td.section(colspan=10) MISSION WAYPOINTS
+            td.section(colspan=11) MISSION WAYPOINTS
           tr
             th
             th NAME
-            th ALT
-            th GS
             th TOT
             th ACT
             th LAT
             th LON
             th DIST
             th BRG
+            th GS
+            th ALT
+            th ETE
 
           if waypoints
             each waypoint, index in waypoints
@@ -483,26 +496,28 @@ html(lang="en")
                   td
                   td
                   td
-                  td
-                  td
-                  td.freq.rpad5 #{waypoint.dist} NM
                   td.freq.rpad5 #{waypoint.brg}°
+                  td.freq.rpad5 #{waypoint.dist} NM
+                  td.freq #{waypoint.gs}
+                  td.freq #{waypoint.alt}
+                  td.freq 99:99
               tr
                 td.freq #{waypoint.desc}
                 td.lpad5 #{waypoint.wp}
-                td.algnc #{waypoint.alt}
-                td.algnc #{waypoint.gs}
-                td.algnc #{SecondsToHHSS(waypoint.tot)}
+                td.freq #{SecondsToHHSS(waypoint.tot)}
                 td.algnc #{SecondsToHHSS(waypoint.act)}
                 td.freq(style="font-size: 16px") #{DDtoDDS(waypoint.lat)}
                 td.freq(style="font-size: 16px") #{DDtoDDS(waypoint.lon)}
+                td
+                td
+                td
                 td
                 td
 
 
           else
             tr
-              td(colspan=10, style="text-align: center") N/A
+              td(colspan=11, style="text-align: center") N/A
 
       //- POIs
       table.kb-width(style="table-layout: fixed; margin-top: 15px")

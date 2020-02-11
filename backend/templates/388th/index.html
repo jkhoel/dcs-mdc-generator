@@ -16,15 +16,15 @@ body {
 }
 
 .kneeboard {
-  color: #000000;
-  font-size: 13px;
+  color: #fff;
+  font-size: 14px;
   font-family: 'Roboto Mono CourierPrime Numbers';
   padding-left: 20px;
   padding-top: 20px;
   width: 774px;
   height: 1100px;
-  background: #efefef;
-  border-bottom: 1px solid black;
+  background: #101010;
+  border-bottom: 1px solid white;
 }
 
 .kneeboard:last-child {
@@ -36,7 +36,7 @@ body {
   border: 0px solid #000000;
   border-collapse: collapse;
   border-spacing: 0;
-  background: #d9d9d9;
+  background: #262626;
   height: 15px;
   line-height: 14px;
   margin: 0px;
@@ -45,7 +45,7 @@ body {
   max-width: 100%;
   width: 100%;
   font-family: 'Roboto Mono CourierPrime Numbers';
-  font-size: 13px;
+  font-size: 14px;
 }
 
 /* coordinates, tcn, and frequences should be bold */
@@ -58,15 +58,13 @@ body {
 .kneeboard .tcn input {
   font-weight: bold;
   text-align: center;
+  color: #fff;
 }
 
 /* Additional Helpers */
-.bold {
-  font-weight: bold;
-}
 
 .kb-width {
-  width: 754px;
+  width: 728px;
 }
 
 .lpad5 {
@@ -88,36 +86,35 @@ body {
 /* Section Headers */
 .section {
   font-size: 12px;
-  font-weight: bold;
   text-align: center;
-  background: #efefef;
+  background: #101010;
 }
 
 /* All table rows should be colored nicely */
 
 .kneeboard table {
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid #cccccc;
 }
 
 .kneeboard td {
-  border-left: 1px solid black;
+  border-left: 1px solid #cccccc;
 }
 
 .kneeboard tr {
-  background: #fff2cc;
+  background: #262626;
 }
 
 .kneeboard th {
-  background: #203764;
-  color: #ffffff;
+  background: #cccccc;
+  color: #000000;
   font-size: 14px;
 }
 
 .kneeboard tr:nth-child(even) textarea,
 .kneeboard tr:nth-child(even) input,
 .kneeboard tr:nth-child(even) {
-  background: #fffdf7;
+  background: #363636;
 }
 
     </style>
@@ -406,8 +403,16 @@ body {
               <td class="lpad5">TOTAL</td>
               <td class="bold algnr rpad5">12103 lbs</td>
             </tr>
+          </tbody>
+        </table>
+        <table style="width: 225px; margin-top: 12px">
+          <colgroup>
+            <col style="width: 100px">
+            <col>
+          </colgroup>
+          <tbody>
             <tr>
-              <th colspan="2" style="margin-top: 15px">TAKE-OFF</th>
+              <th colspan="2">TAKE-OFF</th>
             </tr>
             <tr>
               <td class="lpad5">GTOW</td>
@@ -529,40 +534,43 @@ body {
           <col>
           <col style="width: 45px">
           <col style="width: 45px">
-          <col style="width: 45px">
-          <col style="width: 45px">
           <col style="width: 130px">
           <col style="width: 130px">
           <col style="width: 55px">
           <col style="width: 55px">
+          <col style="width: 45px">
+          <col style="width: 45px">
+          <col style="width: 45px">
         </colgroup>
         <tbody>
           <tr>
-            <td class="section" colspan="10">MISSION WAYPOINTS</td>
+            <td class="section" colspan="11">MISSION WAYPOINTS</td>
           </tr>
           <tr>
             <th></th>
             <th>NAME</th>
-            <th>ALT</th>
-            <th>GS</th>
             <th>TOT</th>
             <th>ACT</th>
             <th>LAT</th>
             <th>LON</th>
             <th>DIST</th>
             <th>BRG</th>
+            <th>GS</th>
+            <th>ALT</th>
+            <th>ETE</th>
           </tr>
           <tr>
             <td class="freq">DEP</td>
-            <td class="lpad5">Al Ain Int. Airport</td>
-            <td class="algnc">813</td>
-            <td class="algnc">300</td>
-            <td class="algnc">19:30</td>
+            <td class="lpad5">012345678901234</td>
+            <td class="freq">19:30</td>
             <td class="algnc">00:00</td>
             <td class="freq" style="font-size: 16px">24°16.516'</td>
             <td class="freq" style="font-size: 16px">55°36.683'</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td></td>
@@ -571,22 +579,24 @@ body {
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td class="freq rpad5">69 NM</td>
             <td class="freq rpad5">58°</td>
+            <td class="freq rpad5">69 NM</td>
+            <td class="freq">300</td>
+            <td class="freq">1500</td>
+            <td class="freq">99:99</td>
           </tr>
           <tr>
             <td class="freq">WP</td>
             <td class="lpad5">1</td>
-            <td class="algnc">1500</td>
-            <td class="algnc">300</td>
-            <td class="algnc">19:44</td>
+            <td class="freq">19:44</td>
             <td class="algnc">00:00</td>
             <td class="freq" style="font-size: 16px">24°53.347'</td>
             <td class="freq" style="font-size: 16px">56°41.368'</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td></td>
@@ -595,22 +605,24 @@ body {
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td class="freq rpad5">37 NM</td>
             <td class="freq rpad5">2°</td>
+            <td class="freq rpad5">37 NM</td>
+            <td class="freq">300</td>
+            <td class="freq">1500</td>
+            <td class="freq">99:99</td>
           </tr>
           <tr>
             <td class="freq">WP</td>
             <td class="lpad5">2</td>
-            <td class="algnc">1500</td>
-            <td class="algnc">300</td>
-            <td class="algnc">19:51</td>
+            <td class="freq">19:51</td>
             <td class="algnc">00:00</td>
             <td class="freq" style="font-size: 16px">25°30.833'</td>
             <td class="freq" style="font-size: 16px">56°43.147'</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td></td>
@@ -619,20 +631,22 @@ body {
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td class="freq rpad5">47 NM</td>
             <td class="freq rpad5">327°</td>
+            <td class="freq rpad5">47 NM</td>
+            <td class="freq">300</td>
+            <td class="freq">1500</td>
+            <td class="freq">99:99</td>
           </tr>
           <tr>
             <td class="freq">ARR</td>
             <td class="lpad5">Khasab</td>
-            <td class="algnc">1500</td>
-            <td class="algnc">300</td>
-            <td class="algnc">20:01</td>
+            <td class="freq">20:01</td>
             <td class="algnc">00:00</td>
             <td class="freq" style="font-size: 16px">26°10.783'</td>
             <td class="freq" style="font-size: 16px">56°14.583'</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
