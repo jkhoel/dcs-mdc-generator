@@ -13,9 +13,6 @@ import FlightInfoTable from '../../tables/flight-info';
 import FlightCommsTable from '../../tables/flight-comms';
 import SupportTable from '../../tables/support';
 
-import AirbaseTable from '../../tables/airbases';
-import WaypointTable from '../../tables/waypoints';
-
 import CFImportButton from '../../cf-import-button';
 import DownloadMDCButton from '../../buttons/download-mdc';
 import ThemeOptionsSelector from '../../selectors/theme-options';
@@ -36,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Datacard() {
+export default function Communication() {
   const classes = useStyles();
 
   return (
@@ -45,17 +42,15 @@ export default function Datacard() {
         <Grid item xs={12} sm={12} md={10}>
           <Paper className={classes.paper}>
             <MissionInfoTable label="MISSION INFORMATION" />
-            <AirbaseTable label="AIRBASES" />
-            <FlightInfoTable label="FLIGHT INFORMATION" />
             <Grid container spacing={1}>
-              <Grid item xs={12} sm={12} md={5}>
-                <FlightCommsTable label="INTERNAL" />
+              <Grid item xs={12} sm={12} md={6}>
+                <FlightInfoTable label="FLIGHT INFORMATION" />
               </Grid>
-              <Grid item xs={12} sm={12} md={7}>
-                <SupportTable label="SUPPORT" />
+              <Grid item xs={12} sm={12} md={6}>
+                <FlightCommsTable label="INTERNAL COMMUNICATIONS" />
               </Grid>
             </Grid>
-            <WaypointTable label="WAYPOINTS" />
+            <SupportTable label="SUPPORT" />
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={2}>
