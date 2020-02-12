@@ -54,19 +54,53 @@
       "tcn": "62Y",
       "laser": 1611,
       "mode": 4411
-    },   {
+    },
+    {
       "desc": "EL",
       "callsign": "Dex",
       "tcn": "62Y",
       "laser": 1611,
       "mode": 4411
-    },   {
+    },
+    {
       "desc": "#4",
       "callsign": "Dex",
       "tcn": "62Y",
       "laser": 1611,
       "mode": 4411
     }
+  ],
+  "flight_comms": [
+    {
+      "type": "FLIGHT PRI - GRAY6",
+      "chan": "U2",
+      "freq": "235.250"
+    },
+    {
+      "type": "FLIGHT SEC - OLIVE3",
+      "chan": "V5",
+      "freq": "141.750"
+    }
+  ],
+  "support": [
+    {
+      "agency": "DARKSTAR",
+      "chan": "BLUE 3",
+      "freq": "123.250",
+      "tcn": "",
+      "notes": "MISSION CMDR"
+    },
+    {
+      "agency": "ARCO - BOOM",
+      "chan": "MAROON 11",
+      "freq": "235.250",
+      "tcn": "49X",
+      "notes": "AAR203"
+    }
+  ],
+  "pkg": [
+    { "callsign": "Panther", "aircraft": "2xFA18C", "freq": "123.750", "tcn": "76Y", "lsr": "N/A", "tasking": "CAP"},
+    { "callsign": "Axe", "aircraft": "2xA10C", "freq": "134.000", "tcn": "55Y", "lsr": "1511", "tasking": "CAS"}
   ],
   "waypoints": [
     {
@@ -112,54 +146,6 @@
   ],
   "poi": [],
   "loadout": [],
-  "int_comms": [
-    [
-      "INTERNAL",
-      "BRONZE 8",
-      "310.000",
-      ""
-    ],
-    [
-      "INTERNAL SECONDARY",
-      "GRAY 10",
-      "122.250",
-      ""
-    ]
-  ],
-  "mis_comms": [
-    [
-      "AL DHAFRA GROUND",
-      "",
-      "126.100",
-      "96X",
-      "AFT PRE1; POS MERGED WITH TOWER 126.200",
-      ""
-    ],
-    [
-      "AL DHAFRA TOWER",
-      "",
-      "126.200",
-      "96X",
-      "PRE2",
-      ""
-    ],
-    [
-      "AL DHAFRA CONTROL",
-      "RED 4",
-      "127.100",
-      "",
-      "PRE3; NOTE ATC COULD PUSH DIFF. FREQ",
-      ""
-    ],
-    [
-      "DARKSTAR AWACS",
-      "BLUE 3",
-      "237.000",
-      "",
-      "PRE4; NOTE ATC COULD PUSH DIFF. FREQ",
-      ""
-    ]
-  ],
   "notes": [
     [
       "COM-01",

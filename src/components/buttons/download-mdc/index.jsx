@@ -22,13 +22,17 @@ export default function DownloadMDCButton(props) {
     // Define the fields we want, then for each field...
     [
       'airfields',
+      'flight',
+      'flight_comms',
+      'support',
+      'pkg',
       'waypoints',
       'poi',
       'loadout',
-      'int_comms',
-      'mis_comms',
       'notes',
-      'ramrod'
+      'ramrod',
+      'mission',
+      'theme'
     ].forEach(k => {
       data[k] = [];
 

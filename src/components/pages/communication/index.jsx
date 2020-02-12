@@ -12,6 +12,7 @@ import MissionInfoTable from '../../tables/mission-info';
 import FlightInfoTable from '../../tables/flight-info';
 import FlightCommsTable from '../../tables/flight-comms';
 import SupportTable from '../../tables/support';
+import Package from '../../tables/package'
 
 import CFImportButton from '../../cf-import-button';
 import DownloadMDCButton from '../../buttons/download-mdc';
@@ -51,6 +52,7 @@ export default function Communication() {
               </Grid>
             </Grid>
             <SupportTable label="SUPPORT" />
+            <Package label="PACKAGE" />
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={2}>
