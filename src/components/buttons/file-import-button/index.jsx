@@ -3,10 +3,13 @@ import JSzip from 'jszip';
 
 import Button from '@material-ui/core/Button';
 
-import { CombatFliteContext } from '../combatflite-context';
+import { StoreContext } from '../../datastore-context';
+import { CombatFliteContext } from '../../combatflite-context';
 
 export default function FileImportButton() {
   const { setRoutes, openImportDialog } = React.useContext(CombatFliteContext);
+  const { setStore } = React.useContext(StoreContext);
+
 
   // Need a reference to the hidden input field
   const nodeRef = React.createRef();
@@ -31,8 +34,7 @@ export default function FileImportButton() {
     // Do stuff according to filetype
     switch (fileType) {
       case 'json':
-        // do JSON things - TODO: Implement parsing of a mdc saved as JSON
-        console.log(fileType);
+        importFromJSON(file);
         break;
       case 'cf':
         importFromCF(file);
@@ -41,6 +43,20 @@ export default function FileImportButton() {
         break;
     }
   };
+
+  const importFromJSON = (file) => {
+    const reader = new FileReader();
+    reader.type = file.type;
+    reader.readAsText(file)
+
+    reader.onloadend = (e) => {
+      let { result } = e.target;
+      result = JSON.parse(result);
+
+      // update the store
+      setStore(result)
+    }
+  }
 
   const importFromCF = (file) => {
     // Clear the path from the node so that we can load the same file again (bug work-around)
