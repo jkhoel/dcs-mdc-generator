@@ -5,9 +5,8 @@ import Button from '@material-ui/core/Button';
 
 import { CombatFliteContext } from '../combatflite-context';
 
-export default function CFImportButton() {
+export default function FileImportButton() {
   const { setRoutes, openImportDialog } = React.useContext(CombatFliteContext);
-
 
   // Need a reference to the hidden input field
   const nodeRef = React.createRef();
@@ -18,12 +17,34 @@ export default function CFImportButton() {
     nodeRef.current.click();
   };
 
-  const importFromCF = () => {
-    // Get the files from the input node
+  // Handle file import
+  const handleFileImport = () => {
+    // Get the file
     const file = nodeRef.current.files[0];
 
+    // Get the file type
+    const fileType = file.name
+      .split('.')
+      .pop()
+      .toLowerCase();
+
+    // Do stuff according to filetype
+    switch (fileType) {
+      case 'json':
+        // do JSON things - TODO: Implement parsing of a mdc saved as JSON
+        console.log(fileType);
+        break;
+      case 'cf':
+        importFromCF(file);
+        break;
+      default:
+        break;
+    }
+  };
+
+  const importFromCF = (file) => {
     // Clear the path from the node so that we can load the same file again (bug work-around)
-    nodeRef.current.value = null
+    nodeRef.current.value = null;
 
     // Get the contents of mission.xml file from within the zip, parse it to XML
     const getXML = JSzip.loadAsync(file)
@@ -44,12 +65,12 @@ export default function CFImportButton() {
       // The main data that we are interested in can be found under <Route /> in the XML file
       let xmlRoutes = xml.getElementsByTagName('Route');
 
-      openImportDialog()
+      openImportDialog();
 
       // Update the context and open the context dialog
-      setRoutes(xmlRoutes)
+      setRoutes(xmlRoutes);
     });
-   };
+  };
 
   return (
     <Button
@@ -57,13 +78,13 @@ export default function CFImportButton() {
       color="primary"
       style={{ width: '100%' }}
       onClick={onButtonClick}>
-      Import from Combat Flite
+      Import from File
       <input
         ref={nodeRef}
         style={{ display: 'none' }}
         type="file"
-        accept=".cf"
-        onChange={importFromCF}
+        accept=".cf, .json"
+        onChange={handleFileImport}
       />
     </Button>
   );

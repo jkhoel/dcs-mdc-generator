@@ -12,6 +12,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import { StoreContext } from '../datastore-context';
 
+// import { SecondsToHHSS } from '../tables/waypoints/calculateRow'
+
 const defaults = {
   routes: {},
   setRoutes: () => null,
@@ -79,28 +81,45 @@ function cfTypeMap(type) {
   }
 }
 
+
+/**
+ * Converts a string of format 'HH:MM:SS' to seconds in the day
+ */
+function convertHHSSMMtoSeconds(time) {
+  const arr = time.split(':')
+
+  let t = parseInt(arr[0]) * 3600 // Seconds in an hour
+  t += parseInt(arr[1]) * 60 // Seconds in a minute
+  t += parseInt(arr[2])
+
+  return t
+}
+
 export function createWaypointsFromXML(xml) {
   let wps = getRouteWaypoints(xml);
   let waypoints = [];
 
   // Create a valid waypoint array for each waypoint in the XML
   wps.forEach((wp) => {
-    // TODO: This doesn't look right...
-    let activity =
-      wp.activity === '00:00:00'
-        ? ''
-        : wp.activity.substr(0, wp.activity.lenght - 3);
+    // Convert activity to seconds
+    let activity = convertHHSSMMtoSeconds(wp.activity)
 
-    waypoints.push([
-      cfTypeMap(wp.type),
-      wp.name,
-      wp.altitude,
-      wp.gs,
-      '',
-      activity,
-      wp.lat,
-      wp.lon
-    ]);
+    // Convert tot to seconds
+    let tot = convertHHSSMMtoSeconds(wp.tot.split(' ')[1])
+
+    // console.log(SecondsToHHSS(tot))
+    // console.log(SecondsToHHSS(activity))
+
+    waypoints.push({
+      desc: cfTypeMap(wp.type),
+      wp: wp.name,
+      alt: wp.altitude,
+      gs: wp.gs,
+      tot: tot,
+      act: activity,
+      lat: wp.lat,
+      lon: wp.lon
+    });
   });
 
   return waypoints;
@@ -112,7 +131,12 @@ export function createPoiFromXML(xml) {
 
   // Create a valid waypoint array for each waypoint in the XML
   wps.forEach((poi) => {
-    pois.push([cfTypeMap(poi.type), poi.name, poi.lat, poi.lon]);
+    pois.push({
+      type: cfTypeMap(poi.type), 
+      name: poi.name, 
+      lat: poi.lat, 
+      lon: poi.lon
+    });
   });
 
   return pois;

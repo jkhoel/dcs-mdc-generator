@@ -11,7 +11,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import AirbaseTable from '../../tables/airbases';
 import WaypointTable from '../../tables/waypoints';
 
-import CFImportButton from '../../cf-import-button';
+import FileImportButton from '../../file-import-button';
 import DownloadMDCButton from '../../buttons/download-mdc';
 import ThemeOptionsSelector from '../../selectors/theme-options';
 
@@ -46,7 +46,7 @@ export default function Navigation() {
         <Grid item xs={12} sm={12} md={2}>
           <Paper className={classes.paper}>
             <form className={classes.form} noValidate autoComplete="off">
-              <CFImportButton />
+              <FileImportButton />
 
               <TextField
                 select

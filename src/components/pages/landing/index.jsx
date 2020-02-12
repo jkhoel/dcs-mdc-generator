@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 
 // Main Component
 export default function Landing() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1); // TODO: set this back to 0
 
   const classes = useStyles();
 
