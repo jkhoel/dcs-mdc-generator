@@ -5,6 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { StoreProvider } from './components/datastore-context';
 import { CombatFliteProvider } from './components/combatflite-context';
 import { PrinterProvider } from './components/printer-context';
+import { CoordEditorProvider } from './components/coordinate-editor-context';
 
 import Landing from './components/pages/landing';
 
@@ -26,7 +27,9 @@ function App() {
           <CombatFliteProvider>
             <PrinterProvider>
               <CssBaseline />
-              <Landing />
+              <CoordEditorProvider>
+                <Landing />
+              </CoordEditorProvider>
             </PrinterProvider>
           </CombatFliteProvider>
         </StoreProvider>
