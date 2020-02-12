@@ -136,7 +136,8 @@ export default function WaypointTable({ label }) {
         resolve();
       }
     });
-
+  
+  // Function for removing a row from the table
   const RowDelete = (oldData) =>
     new Promise((resolve) => {
       if (oldData) {
