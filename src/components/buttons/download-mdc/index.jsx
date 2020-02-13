@@ -31,10 +31,13 @@ export default function DownloadMDCButton(props) {
       'loadout',
       'notes',
       'ramrod',
-      'mission',
-      'theme'
+      // 'settings',    TODO: these need to either be made into an array of objects, or store[k] below will not work...
+      // 'mission',
+      // 'theme'
     ].forEach(k => {
       data[k] = [];
+
+      console.log(k)
 
       // ... find the matching entry in the store and add those values to the field
       store[k].forEach(val => data[k].push(val));
