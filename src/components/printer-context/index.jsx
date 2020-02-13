@@ -1,12 +1,17 @@
 import React from 'react';
 import axios from 'axios';
 
-const API_URL = `/api/v1`  // http://localhost:5050/api/v1
+let API_ROOT = '/api/v1'
 
-console.log(API_URL)
+let API_URL = ""
+if (process.env.NODE_ENV === 'development') {
+  API_URL = 'http://localhost:5050'
+}
+
+console.log(API_URL, process.env.NODE_ENV)
 
 const defaults = {
-  data: {}, // TODO: this is probably not an object.... remember to update
+  data: {},
   APIURL: API_URL,
   getDocuments: () => null,
   addDocument: () => null,
@@ -25,17 +30,17 @@ export function PrinterProvider({ children }) {
   const [APIURL, setAPIURL] = React.useState(API_URL);
 
   // Helper functions
-  const getDocuments = () => axios.get(`${APIURL}/pdf`);
+  const getDocuments = () => axios.get(`${APIURL}${API_ROOT}/pdf`);
 
-  const addDocument = data => axios.post(`${APIURL}/pdf`, data);
+  const addDocument = data => axios.post(`${APIURL}${API_ROOT}/pdf`, data);
 
-  const editDocument = data => axios.put(`${APIURL}/pdf/${data.id}`, data);
+  const editDocument = data => axios.put(`${APIURL}${API_ROOT}/pdf/${data.id}`, data);
 
-  const deleteDocument = id => axios.delete(`${APIURL}/pdf/${id}`);
+  const deleteDocument = id => axios.delete(`${APIURL}${API_ROOT}/pdf/${id}`);
 
-  const generatePDF = id => axios.get(`${APIURL}/pdf/generatePdf/${id}`);
+  const generatePDF = id => axios.get(`${APIURL}${API_ROOT}/pdf/generatePdf/${id}`);
 
-  const getTemplates = () => axios.get(`${APIURL}/pdf/templates`);
+  const getTemplates = () => axios.get(`${APIURL}${API_ROOT}/pdf/templates`);
 
   return (
     <PrinterContext.Provider
