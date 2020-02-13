@@ -1,9 +1,13 @@
 import React from 'react';
 import axios from 'axios';
 
+const API_URL = `/api/v1`  // http://localhost:5050/api/v1
+
+console.log(API_URL)
+
 const defaults = {
   data: {}, // TODO: this is probably not an object.... remember to update
-  APIURL: 'http://localhost:5000',
+  APIURL: API_URL,
   getDocuments: () => null,
   addDocument: () => null,
   editDocument: () => null,
@@ -18,7 +22,7 @@ export const PrinterConsumer = PrinterContext.Consumer;
 
 export function PrinterProvider({ children }) {
   // Set our API URL
-  const [APIURL, setAPIURL] = React.useState('http://localhost:5000');
+  const [APIURL, setAPIURL] = React.useState(API_URL);
 
   // Helper functions
   const getDocuments = () => axios.get(`${APIURL}/pdf`);
