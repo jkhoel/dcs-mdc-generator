@@ -95,7 +95,7 @@ export default function DownloadMDCButton(props) {
         if (status === 200) {
           generatePDF(data.id).then(({ status, data }) => {
             // If all went well, then lets open the PDF file in a new window
-            if (status === 200) window.open(`${APIURL}/files/${data}`, '_blank');
+            if (status === 200) window.open(`/${data}`, '_blank');
           });
         }
       })
