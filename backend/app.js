@@ -24,8 +24,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "files")));
 app.use(cors());
 
-app.use("/", indexRouter);
-app.use("/pdf", pdfRouter);
+app.use("/api/v1", indexRouter);
+app.use("/api/v1/pdf", pdfRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
