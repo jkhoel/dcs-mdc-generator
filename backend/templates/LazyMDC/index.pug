@@ -34,117 +34,75 @@
     return `${h}:${s}`;
   };
 
-//- ### DOCUMENT
+- 
+  const waypoints = [
+    { desc: "DEP", wp: "Al Ain Int. Airport", alt: "813", gs: "300", tot: 70200, act: 0, lat: "24.2752666666667", lon: "55.6113833333333", dist: 0, brg: 0 },
+    { desc: "WP", wp: "1", alt: "1500", gs: "300", tot: 71033.48791441802, act: 0, lat: "24.8891086358444", lon: "56.6894652395402", dist: 69, brg: 58 },
+    { desc: "WP", wp: "2", alt: "1500", gs: "300", tot: 71482.34997529117, act: 0, lat: "25.5138824943904", lon: "56.7191173282923", dist: 37, brg: 2 },
+    { desc: "ARR", wp: "Khasab", alt: "1500", gs: "300", tot: 72051.61841114698, act: 0, lat: "26.1797222222", lon: "56.2430555556", dist: 47, brg: 327 }
+  ]
+
+-
+  const airfields = [
+    { type: "DEP", airbase: "Al Dhafra AB", icao: "OMAM", tcn: "96X", atis: "126.400", gnd: "126.100", twr: "126.200", par: "126.300", ctrl: "127.100", elev: "52", rwy: "13LR/31LR" },
+    { type: "ARR", airbase: "CVN Stennis", icao: "", tcn: "74X", atis: "", gnd: "", twr: "309.000", par: "309.500", ctrl: "309.900", elev: "", rwy: "" },
+    { type: "ALT", airbase: "Al Dhafra AB", icao: "OMAM", tcn: "96X", atis: "126.400", gnd: "126.100", twr: "126.200", par: "126.300", ctrl: "127.100", elev: "52", rwy: "13LR/31LR"}
+  ]
+
+-
+  const poi = [
+    {desc: 'P1', ref: 'BULLSEYE MARY', lat: "26.1797222222", lon: "56.2430555556" },
+    {desc: 'P2', ref: 'TOWER', lat: "24.8891086358444", lon: "56.6894652395402" }
+  ]
+
+-
+  const int_comms = [
+    {type: 'FLIGHT PRI - GRAY6', chan: 'U2', freq: '235.250'},
+    {type: 'FLIGHT SEC - OLIVE3', chan: 'V5', freq: '141.750'}
+  ]
+
+- 
+  const loadout = [
+    {pyl: "1/9", item: "AIM120C/AIM120C"},
+    {pyl: "2/8", item: "AIM120C/AIM120C"},
+    {pyl: "3/7", item: "2xGBU12/2xGBU12"},
+    {pyl: "4/6", item: "3xMK82A/3xMK82A"},
+    {pyl: "5R/5L", item: "TGP/-"},
+    {pyl: "5", item: "300CL"}
+  ]
+
+- 
+  const ramrod = ["C", "O", "M", "P", "L", "E", "X", "I", "T", "Y"]
+
+- 
+  const mis_comms = [
+    { agency: 'DARKSTAR', chan: 'BLUE 3', freq: '237.000', tcn: '', notes: 'MISSION COMMANDER' },
+    { agency: 'AR203 - ARCO - BOOM', chan: 'MAROON 11', freq: '140.000', tcn: '49X', notes: '' }
+  ]
+
+-
+  const notes = [
+    { pre: 'TACAN//LASER//IFF', details: '62Y-125Y // 1611-1614 // 4411-4414'},
+    { pre: 'THREAT SITES ACITVE', details: 'TS.9 // TS.6'}
+  ]
+
+-
+  const theme = {
+    //- mode: "dark"
+    mode: "light"
+  }
 
 doctype html
 html(lang="en")
   head
     title #{title}
-    style(type='text/css').
-      body {
-        font-family: sans-serif;
-        font-size: 12px;
-        margin: 0px;
-      }
-
-      .kneeboard {
-        color: #ededed;
-        font-size: 14px;
-        font-family: monospace;
-        padding-left: 20px;
-        padding-top: 20px;
-        width: 774px;
-        height: 1100px;
-        background: #101010;
-        text-transform: uppercase;
-      }
-
-      .kneeboard input,
-      .kneeboard textarea {
-        border: 0px solid #000000;
-        border-collapse: collapse;
-        border-spacing: 0;
-        background: #262626;
-        height: 15px;
-        line-height: 14px;
-        margin: 0px;
-        padding: 0px;
-        z-index: 1;
-        max-width: 100%;
-        width: 100%;
-        font-family: 'Roboto Mono CourierPrime Numbers';
-        font-size: 13px;
-      }
-
-      /* coordinates, tcn, and frequences should be bold */
-      .kneeboard .coord,
-      .kneeboard .tcn,
-      .kneeboard .tcn input,
-      .kneeboard .freq,
-      .kneeboard .freq input,
-      .kneeboard .tcn,
-      .kneeboard .tcn input {
-        font-weight: bold;
-        text-align: center;
-        color: #e3e3e3;
-      }
-
-      /* Additional Helpers */
-
-      .kb-width {
-        width: 754px;
-      }
-
-      .lpad5 {
-        padding-left: 5px;
-      }
-      .rpad5 {
-        padding-right: 5px;
-      }
-
-      .algnr,
-      .algnr > * {
-        text-align: right;
-      }
-      .algnc,
-      .algnc > * {
-        text-align: center;
-      }
-
-      /* Section Headers */
-      .section {
-        font-size: 12px;
-        text-align: center;
-        background: #101010;
-      }
-
-      /* All table rows should be colored nicely */
-
-      .kneeboard table {
-        border-collapse: collapse;
-        border: 1px solid #cccccc;
-      }
-
-      .kneeboard td {
-        border-left: 1px solid #cccccc;
-      }
-
-      .kneeboard tr {
-        background: #262626;
-      }
-
-      .kneeboard th {
-        background: #cccccc;
-        color: #000000;
-        font-size: 14px;
-      }
-
-      .kneeboard tr:nth-child(even) textarea,
-      .kneeboard tr:nth-child(even) input,
-      .kneeboard tr:nth-child(even) {
-        background: #363636;
-      }
-
+    link(rel="stylesheet" href="css/fonts.css")
+    style
+      include css/fonts.css
+      if theme.mode === "dark"
+        include css/kneeboard-dark.css
+      else
+        include css/kneeboard-light.css
   body
     //- ##### PAGE: FRONTPAGE
     div.kneeboard#kneeboard
@@ -161,16 +119,16 @@ html(lang="en")
           col(style="width: 80px")
 
         tbody
-          if mission
+          if settings
             tr
               th FLIGHT
-              td(style="padding-left: 5px") #{mission.callsign}
+              td(style="padding-left: 5px") #{settings.flight_id}
               th PACKAGE
-              td(style="padding-left: 5px") #{mission.packageName}
+              td(style="padding-left: 5px") #{settings.package_id}
               th MISSION
-              td(style="padding-left: 5px") #{mission.desc}
+              td(style="padding-left: 5px") #{settings.mission_title}
               th ID
-              td(style="padding-left: 5px") #{mission.number}
+              td(style="padding-left: 5px") #{settings.mission_id}
           else
             tr
               th FLIGHT
@@ -247,12 +205,12 @@ html(lang="en")
               th CHAN
               th FREQ
 
-            if flight_comms
-              each comm in flight_comms
-                tr
-                  td #{comm.type}
-                  td.algnc #{comm.chan}
-                  td.vt.freq #{comm.freq}
+            if int_comms
+            each comm in int_comms
+              tr
+                td #{comm.type}
+                td.algnc #{comm.chan}
+                td.vt.freq #{comm.freq}
             else
               tr
                 td(colspan=3, style="text-align: center") N/A
@@ -371,16 +329,7 @@ html(lang="en")
                 td.freq #{s}
             else
               tr
-                td.freq(style="height: 17px")
-                td.freq
-                td.freq
-                td.freq
-                td.freq
-                td.freq
-                td.freq
-                td.freq
-                td.freq
-                td.freq
+                td(colspan=10, style="text-align: center") N/A
 
       div(style="float:left; margin-top: 15px; margin-left: 15px; margin-bottom: 15px")
         //- Config
@@ -433,10 +382,10 @@ html(lang="en")
               th ITEM
 
             if loadout
-              each load in loadout
-                tr
-                  td.algnc #{load.pyl}
-                  td.lpad5 #{load.item}
+            each load in loadout
+              tr
+                td.algnc #{load.pyl}
+                td.lpad5 #{load.item}
             else
               tr
                 td(colspan=3, style="text-align: center") N/A
@@ -573,12 +522,12 @@ html(lang="en")
             th LON
 
           if poi
-            each p in poi
-              tr
-                td.freq #{p.desc}
-                td.lpad5 #{p.ref}
-                td.freq #{DDtoDDS(p.lat)}
-                td.freq #{DDtoDDS(p.lon)}
+          each p in poi
+            tr
+              td.freq #{p.desc}
+              td.lpad5 #{p.ref}
+              td.freq #{DDtoDDS(p.lat)}
+              td.freq #{DDtoDDS(p.lon)}
           else
             tr
               td(colspan=4, style="text-align: center") N/A

@@ -6,6 +6,8 @@ import { PrinterContext } from '../../printer-context';
 
 import CalculateRow from '../../tables/waypoints/calculateRow';
 
+import FileWriter from '../../../utils/FileWriter';
+
 export default function DownloadMDCButton(props) {
   const { store } = React.useContext(StoreContext);
   const {
@@ -13,7 +15,7 @@ export default function DownloadMDCButton(props) {
     // getDocuments,
     // deleteDocument,
     generatePDF,
-    APIURL
+    // APIURL
   } = React.useContext(PrinterContext);
 
   const downloadMDC = async () => {
@@ -95,7 +97,8 @@ export default function DownloadMDCButton(props) {
         if (status === 200) {
           generatePDF(data.id).then(({ status, data }) => {
             // If all went well, then lets open the PDF file in a new window
-            if (status === 200) window.open(`${APIURL}/${data}`, '_blank');
+            // if (status === 200) window.open(`${APIURL}/${data}`, '_blank');
+            if (status === 200) FileWriter(`${data}`, data, 'application/pdf')
           });
         }
       })
