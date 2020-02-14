@@ -6,8 +6,6 @@ import { PrinterContext } from '../../printer-context';
 
 import CalculateRow from '../../tables/waypoints/calculateRow';
 
-import FileWriter from '../../../utils/FileWriter';
-
 export default function DownloadMDCButton(props) {
   const { store } = React.useContext(StoreContext);
   const {
@@ -15,13 +13,13 @@ export default function DownloadMDCButton(props) {
     // getDocuments,
     // deleteDocument,
     generatePDF,
-    // APIURL
+    APIURL
   } = React.useContext(PrinterContext);
 
   const downloadMDC = async () => {
     const data = {};
 
-    // Define the fields we want, then for each field...
+    // Define the fields we want from data stored as ARRAYS
     [
       'airfields',
       'flight',
@@ -33,37 +31,17 @@ export default function DownloadMDCButton(props) {
       'loadout',
       'notes',
       'ramrod',
-      // 'settings',    TODO: these need to either be made into an array of objects, or store[k] below will not work...
-      // 'mission',
-      // 'theme'
     ].forEach(k => {
       data[k] = [];
-
-      console.log(k)
-
-      // ... find the matching entry in the store and add those values to the field
       store[k].forEach(val => data[k].push(val));
     });
 
-    // settings
-    data['settings'] = {};
+    // Define the fields we want from data stored as OBJECTS
+    ['settings', 'mission', 'theme'].forEach(k => {
+      data[k] = store[k]
+    })
 
-    [
-      'coordDisplay',
-      'dd-precision',
-      'dms-precision',
-      'transition-alt',
-      'mission_start',
-      'mission_title',
-      'theatre',
-      'flight_id',
-      'package_id',
-      'mission_id',
-      'theme'
-    ].forEach(k => {
-      data['settings'][k] = store.settings[k];
-    });
-
+    // Set TOT and Waypoint Data
     let tot = 0;
     // We need to update each Waypoint and POI's data
     data.waypoints.forEach((waypoint, index) => {
@@ -97,8 +75,7 @@ export default function DownloadMDCButton(props) {
         if (status === 200) {
           generatePDF(data.id).then(({ status, data }) => {
             // If all went well, then lets open the PDF file in a new window
-            // if (status === 200) window.open(`${APIURL}/${data}`, '_blank');
-            if (status === 200) FileWriter(`${data}`, data, 'application/pdf')
+            if (status === 200) window.open(`${APIURL}/${data}`, '_blank');
           });
         }
       })
