@@ -30,6 +30,8 @@ router.post('/', async (req, res, next) => {
   // Convert req.body.document into HTML
   let html = compileToHTML(document);
 
+  console.log(html)
+
   // Replace the document content - TODO: It would be much better to just store the JS object in the database and then create html at runtime
   req.body.document = html;
 

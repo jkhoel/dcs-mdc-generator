@@ -168,8 +168,10 @@ html(lang="en")
               td(style="padding-left: 5px") #{mission.callsign}
               th PACKAGE
               td(style="padding-left: 5px") #{mission.packageName}
-              th MISSION
-              td(style="padding-left: 5px") #{mission.desc}
+              //- th MISSION
+              //- td(style="padding-left: 5px") #{mission.desc}
+              th TEMPLATE
+              td(style="padding-left: 5px") #{theme.template}
               th ID
               td(style="padding-left: 5px") #{mission.number}
           else
@@ -178,7 +180,9 @@ html(lang="en")
               td(style="padding-left: 5px") -
               th PACKAGE
               td(style="padding-left: 5px") -
-              th MISSION
+              //- th MISSION
+              //- td(style="padding-left: 5px") -
+              th TEMPLATE
               td(style="padding-left: 5px") -
               th ID
               td(style="padding-left: 5px") -
