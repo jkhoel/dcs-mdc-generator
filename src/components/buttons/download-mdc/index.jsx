@@ -30,7 +30,7 @@ export default function DownloadMDCButton(props) {
       'poi',
       'loadout',
       'notes',
-      'ramrod',
+      'ramrod'
     ].forEach(k => {
       data[k] = [];
       store[k].forEach(val => data[k].push(val));
@@ -38,8 +38,8 @@ export default function DownloadMDCButton(props) {
 
     // Define the fields we want from data stored as OBJECTS
     ['settings', 'mission', 'theme'].forEach(k => {
-      data[k] = store[k]
-    })
+      data[k] = store[k];
+    });
 
     // Set TOT and Waypoint Data
     let tot = 0;
@@ -60,17 +60,17 @@ export default function DownloadMDCButton(props) {
       waypoint.brg = Math.round(bearing);
     });
 
-    console.log(data);
-
-    // Build the API payload - TODO: the backend will most likely not accept the documents field being an object...
+    // Build the API payload
     let payload = {
-      name: 'TEST DATA',
-      document: data
+      name: data.mission.number || 'Datacard',
+      data: data
     };
 
     // Send the payload to the backend
     addDocument(payload)
       .then(({ status, data }) => {
+        console.log(data);
+
         // If all went well, then lets generate a pdf
         if (status === 200) {
           generatePDF(data.id).then(({ status, data }) => {

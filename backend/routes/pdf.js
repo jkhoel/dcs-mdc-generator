@@ -19,24 +19,20 @@ router.get('/', async (req, res, next) => {
 // });
 
 router.post('/', async (req, res, next) => {
-  const { document } = req.body;
-  const { template } = document.theme
+  const { data, name } = req.body;
+  const { template } = data.theme;
 
-  // Get the template
-  // const compileToHTML = pug.compileFile('./templates/default/index.pug');
-  // const compileToHTML = pug.compileFile('./templates/388th/index.pug');
+  // Compile to Pug from template
   const compileToHTML = pug.compileFile(`./templates/${template}/index.pug`);
-  
-  // Convert req.body.document into HTML
-  let html = compileToHTML(document);
 
-  console.log(html)
+  const document = {
+    name,
+    data,
+    html: compileToHTML(data)
+  };
 
-  // Replace the document content - TODO: It would be much better to just store the JS object in the database and then create html at runtime
-  req.body.document = html;
-
-  // Create a new Document record and send it back to the client
-  const doc = await models.Document.create(req.body);
+  // Create a new Document and send it back to the client
+  const doc = await models.Document.create(document);
   res.json(doc);
 });
 
@@ -59,10 +55,17 @@ router.delete('/:id', async (req, res, next) => {
 // ROUTES - OTHER
 router.get('/generatePdf/:id', async (req, res, next) => {
   const id = req.params.id;
+
+  // Find and retrieve the document we are trying to generate a PDF for in the DB
   const documents = await models.Document.findAll({ where: { id } });
   const document = documents[0];
+
+  // Create the PDF from the HTML stored in document.document
+  const fileName = `${+new Date()}.pdf`;
+  const pdfPath = `${__dirname}/../files/${fileName}`;
+
   const stream = await new Promise((resolve, reject) => {
-    pdf.create(document.document).toStream((err, stream) => {
+    pdf.create(document.html).toStream((err, stream) => {
       if (err) {
         reject(reject);
         return;
@@ -70,14 +73,14 @@ router.get('/generatePdf/:id', async (req, res, next) => {
       resolve(stream);
     });
   });
-  const fileName = `${+new Date()}.pdf`;
-  const pdfPath = `${__dirname}/../files/${fileName}`;
-  stream.pipe(fs.createWriteStream(pdfPath));
-  const doc = await models.Document.update(
-    { pdfPath: fileName },
-    { where: { id } }
-  );
 
+  // Store the PDF file on the server
+  stream.pipe(fs.createWriteStream(pdfPath));
+
+  // Update the record with the filename
+  await models.Document.update({ pdfPath: fileName }, { where: { id } });
+
+  // Return the filename
   res.json(fileName);
 });
 
