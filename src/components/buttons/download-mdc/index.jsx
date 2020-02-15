@@ -69,8 +69,6 @@ export default function DownloadMDCButton(props) {
     // Send the payload to the backend
     addDocument(payload)
       .then(({ status, data }) => {
-        console.log(data);
-
         // If all went well, then lets generate a pdf
         if (status === 200) {
           generatePDF(data.id).then(({ status, data }) => {

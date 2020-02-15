@@ -1,0 +1,112 @@
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.kneeboard {
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto Mono CourierPrime Numbers';
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 585px;
+  height: 832px;
+  background: #101010;
+  text-transform: uppercase;
+}
+
+.kneeboard:last-child {
+  border-bottom: none;
+}
+
+.kneeboard input,
+.kneeboard textarea {
+  border: 0px solid #000000;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #262626;
+  height: 15px;
+  line-height: 14px;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1;
+  max-width: 100%;
+  width: 100%;
+  font-family: 'Roboto Mono CourierPrime Numbers';
+  font-size: 14px;
+}
+
+/* coordinates, tcn, and frequences should be bold */
+.kneeboard .coord,
+.kneeboard .tcn,
+.kneeboard .tcn input,
+.kneeboard .freq,
+.kneeboard .freq input,
+.kneeboard .tcn,
+.kneeboard .tcn input {
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+/* Additional Helpers */
+
+.kb-width {
+  width: 570px;
+}
+
+.lpad5 {
+  padding-left: 5px;
+}
+.rpad5 {
+  padding-right: 5px;
+}
+
+.algnl,
+.algnl > * {
+  text-align: left;
+}
+
+.algnr,
+.algnr > * {
+  text-align: right;
+}
+.algnc,
+.algnc > * {
+  text-align: center;
+}
+
+/* Section Headers */
+.section {
+  font-size: 12px;
+  text-align: center;
+  background: #101010;
+}
+
+/* All table rows should be colored nicely */
+
+.kneeboard table {
+  border-collapse: collapse;
+  border: 1px solid #cccccc;
+}
+
+.kneeboard td {
+  border-left: 1px solid #cccccc;
+}
+
+.kneeboard tr {
+  background: #262626;
+}
+
+.kneeboard th {
+  background: #cccccc;
+  color: #000000;
+  font-size: 14px;
+}
+
+.kneeboard tr:nth-child(even) textarea,
+.kneeboard tr:nth-child(even) input,
+.kneeboard tr:nth-child(even) {
+  background: #363636;
+}

@@ -103,10 +103,11 @@ html(lang="en")
     title #{title}
     style
       include css/fonts.css
-      if theme.mode === "dark"
-        include css/kneeboard-dark.css
-      else
-        include css/kneeboard-light.css
+      if theme
+        if theme.mode === "dark"
+          include css/kneeboard-dark.css
+        else
+          include css/kneeboard-light.css
   body
     //- ##### PAGE: FRONTPAGE
     div.kneeboard#kneeboard
@@ -364,7 +365,7 @@ html(lang="en")
           colgroup
             col(style="width: 100px")
             col
-          
+
           tbody
             tr
               th(colspan=2) TAKE-OFF
@@ -479,8 +480,8 @@ html(lang="en")
             th ACT
             th LAT
             th LON
-            th DIST
             th BRG
+            th DIST
             th GS
             th ALT
             th ETE

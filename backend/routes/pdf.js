@@ -64,8 +64,15 @@ router.get('/generatePdf/:id', async (req, res, next) => {
   const fileName = `${+new Date()}.pdf`;
   const pdfPath = `${__dirname}/../files/${fileName}`;
 
+  const options = {
+    zoomFactor: '1',
+    format: 'A4', // allowed units: A3, A4, A5, Legal, Letter, Tabloid
+    type: 'pdf', // allowed file types: png, jpeg, pdf
+    quality: '75' // only used for types png & jpeg
+  };
+
   const stream = await new Promise((resolve, reject) => {
-    pdf.create(document.html).toStream((err, stream) => {
+    pdf.create(document.html, options).toStream((err, stream) => {
       if (err) {
         reject(reject);
         return;
