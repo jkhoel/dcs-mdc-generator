@@ -36,8 +36,8 @@ export default function FlightInfoTable({ label }) {
               tcn_fl.includes('x') || tcn_fl.includes('X') ? 'X' : 'Y';
             let tcn = parseInt(tcn_fl.match(/\d+/g)) + 63;
 
-            let laser = flight[0].laser + index;
-            let mode = flight[0].mode + index;
+            let laser = parseInt(flight[0].laser) + index;
+            let mode = parseInt(flight[0].mode) + index;
 
             return {
               index: index,
@@ -55,12 +55,12 @@ export default function FlightInfoTable({ label }) {
 
   // Function for updating a row in the table
   const RowUpdate = (newData, oldData) =>
-    new Promise((resolve) => {
+    new Promise(resolve => {
       if (oldData) {
         let flight = [...store.flight];
         flight[rows.indexOf(oldData)] = newData;
 
-        setStore((prev) => ({ ...prev, flight }));
+        setStore(prev => ({ ...prev, flight }));
         resolve();
       }
     });
