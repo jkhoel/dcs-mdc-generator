@@ -21,6 +21,16 @@ export default function WaypointTable({ label }) {
   // Get the coordinate editor dialoge and functions
   const { editCoordinates } = React.useContext(CoordEditorContext);
 
+  const FormatCoords = coord => {
+    switch (store.settings.coordFormat) {
+      case 'dd':
+        return Utility.round(coord, 3);
+      case 'dms':
+        return Utility.DDtoDMS(coord);
+      default:
+        return Utility.DDtoDDS(coord);
+    }
+  };
 
   // Configure table columns
   const columns = [
@@ -32,7 +42,7 @@ export default function WaypointTable({ label }) {
       title: 'TOT',
       sorting: false,
       editable: 'never',
-      render: (rowData) =>
+      render: rowData =>
         rowData ? (
           <React.Fragment>{SecondsToHHSS(rowData.tot)}</React.Fragment>
         ) : null
@@ -41,7 +51,7 @@ export default function WaypointTable({ label }) {
       title: 'ACT',
       sorting: false,
       editable: 'never',
-      render: (rowData) =>
+      render: rowData =>
         rowData ? (
           <React.Fragment>{SecondsToHHSS(rowData.act)}</React.Fragment>
         ) : null
@@ -50,18 +60,18 @@ export default function WaypointTable({ label }) {
       title: 'LAT',
       sorting: false,
       editable: 'never',
-      render: (rowData) =>
+      render: rowData =>
         rowData ? (
-          <React.Fragment>{Utility.DDtoDDS(rowData.lat)}</React.Fragment> // TODO: The render should rather call some function that will return a value based on the selection DDS/DMS etc. and returns a React.Fragment with the formatted value
+          <React.Fragment>{FormatCoords(rowData.lat)}</React.Fragment> // TODO: The render should rather call some function that will return a value based on the selection DDS/DMS etc. and returns a React.Fragment with the formatted value
         ) : null
     },
     {
       title: 'LON',
       sorting: false,
       editable: 'never',
-      render: (rowData) =>
+      render: rowData =>
         rowData ? (
-          <React.Fragment>{Utility.DDtoDDS(rowData.lon)}</React.Fragment>
+          <React.Fragment>{FormatCoords(rowData.lon)}</React.Fragment>
         ) : null
     },
     { title: 'BRG', field: 'brg', sorting: false, editable: 'never' },
@@ -104,8 +114,8 @@ export default function WaypointTable({ label }) {
   }, [store]);
 
   // Function for adding row to the table
-  const RowAdd = (newData) =>
-    new Promise((resolve) => {
+  const RowAdd = newData =>
+    new Promise(resolve => {
       let waypoints = [...store.waypoints];
       let last_wp = store.waypoints[store.waypoints.length - 1];
 
@@ -120,7 +130,7 @@ export default function WaypointTable({ label }) {
       waypoints.push(newData);
 
       // Update the store
-      setStore((prev) => ({ ...prev, waypoints }));
+      setStore(prev => ({ ...prev, waypoints }));
       resolve();
 
       // Show a separate dialog here in order to insert coordinates
@@ -129,7 +139,7 @@ export default function WaypointTable({ label }) {
 
   // Function for updating a row in the table
   const RowUpdate = (newData, oldData) =>
-    new Promise((resolve) => {
+    new Promise(resolve => {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
@@ -139,71 +149,70 @@ export default function WaypointTable({ label }) {
 
         waypoints[rows.indexOf(oldData)] = newData;
 
-        setStore((prev) => ({ ...prev, waypoints }));
+        setStore(prev => ({ ...prev, waypoints }));
         resolve();
       }
     });
 
   // Function for removing a row from the table
-  const RowDelete = (oldData) =>
-    new Promise((resolve) => {
+  const RowDelete = oldData =>
+    new Promise(resolve => {
       if (oldData) {
         let waypoints = [...store.waypoints];
 
         waypoints.splice(rows.indexOf(oldData), 1);
 
-        setStore((prev) => ({ ...prev, waypoints }));
+        setStore(prev => ({ ...prev, waypoints }));
         resolve();
       }
     });
 
   // Material Table
   return (
+    <MaterialTable
+      actions={[
+        {
+          icon: RoomIcon,
+          tooltip: 'Calculate or input Waypoint Data',
+          onClick: (event, rowData) => {
+            // TODO: This should probably show a dialog to input coords and/or add offsets, then update the wp data
 
-      <MaterialTable
-        actions={[
-          {
-            icon: RoomIcon,
-            tooltip: 'Calculate or input Waypoint Data',
-            onClick: (event, rowData) => {
-              // TODO: This should probably show a dialog to input coords and/or add offsets, then update the wp data
-
-              // TODO: Probably remove this at it should happen automatically when coords are put in and store.waypoints are updated
-              CalculateRow(rowData.tableData.id, store);
-            }
+            // TODO: Probably remove this at it should happen automatically when coords are put in and store.waypoints are updated
+            CalculateRow(rowData.tableData.id, store);
           }
-        ]}
-        style={{
-          borderRadius: 4,
-          border: '1px solid #6e6e6e',
-          marginTop: 10
-        }}
-        options={{
-          search: false,
-          filtering: false,
-          paging: false,
-          draggable: false,
-          actionsColumnIndex: -1,
-          headerStyle: {
-            backgroundColor: '#6e6e6e',
-            color: '#FFF'
-          }
-        }}
-        icons={{
-          Add: AddCircle,
-          Edit: EditIcon,
-          Delete: DeleteForeverIcon,
-          Check: CheckIcon,
-          Clear: ClearIcon
-        }}
-        title={label}
-        columns={columns}
-        data={rows}
-        editable={{
-          onRowAdd: (newData) => RowAdd(newData),
-          onRowUpdate: (newData, oldData) => RowUpdate(newData, oldData),
-          onRowDelete: (oldData) => RowDelete(oldData)
-        }}
-      />
+        }
+      ]}
+      style={{
+        borderRadius: 4,
+        border: '1px solid #6e6e6e',
+        marginTop: 10
+      }}
+      options={{
+        search: false,
+        filtering: false,
+        paging: false,
+        draggable: false,
+        actionsColumnIndex: -1,
+        headerStyle: {
+          backgroundColor: '#6e6e6e',
+          color: '#FFF'
+        }
+      }}
+      icons={{
+        Add: AddCircle,
+        Edit: EditIcon,
+        Delete: DeleteForeverIcon,
+        Check: CheckIcon,
+        Clear: ClearIcon
+      }}
+      title={label}
+      columns={columns}
+      data={rows}
+      editable={{
+        onRowAdd: newData => RowAdd(newData),
+        onRowUpdate: (newData, oldData) => RowUpdate(newData, oldData),
+        onRowDelete: oldData => RowDelete(oldData)
+      }}
+    />
   );
 }

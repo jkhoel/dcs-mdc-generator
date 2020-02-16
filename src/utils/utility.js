@@ -13,10 +13,11 @@ Utility.timestamp = () => {
 };
 
 /* TRACKNUM: Generates a string for a track number */
-Utility.trackNum = (string) => {
+Utility.trackNum = string => {
   let number = '';
   const { length } = string;
-  for (let i = 0; i < length; i += 1) number += string.charCodeAt(i).toString(5);
+  for (let i = 0; i < length; i += 1)
+    number += string.charCodeAt(i).toString(5);
   number = number.substring(0, 4);
   return number;
 };
@@ -52,10 +53,10 @@ Utility.padNumber = (n, width = 3, z = 0, precision = 0) => {
 */
 
 /* DEG2RAD: Converts the supplied value in DEGREES to RADIANS */
-Utility.deg2rad = (deg) => (deg * Math.PI) / 180;
+Utility.deg2rad = deg => (deg * Math.PI) / 180;
 
 /* RAD2DEG: Converts the supplied value in RADIANS to DEGREES */
-Utility.rad2deg = (rad) => (rad * 180) / Math.PI;
+Utility.rad2deg = rad => (rad * 180) / Math.PI;
 
 /* METERS TO FEET: Converts supplied value in METERS to FEET. Will round to nearest foot unless rounded is supplied as false */
 Utility.metersToFeet = (meters, rounded = true) => {
@@ -64,7 +65,7 @@ Utility.metersToFeet = (meters, rounded = true) => {
   return feet;
 };
 
-Utility.metersToNautical = (meters) => {
+Utility.metersToNautical = meters => {
   const nautical = meters * 0.000539957;
   return nautical;
 };
@@ -75,7 +76,7 @@ Utility.metersToNautical = (meters) => {
 // };
 
 /* METERS TO FL: Converts supplied value in METERS to FLIGHTLEVEL */
-Utility.metersToFL = (meters) => {
+Utility.metersToFL = meters => {
   let fl = Math.round((meters * 3.28084) / 100);
   if (fl < 100) fl = `0${fl}`;
   return fl;
@@ -97,26 +98,36 @@ Utility.metersToAltitude = (meters, treshold) => {
   return `${alt} ft`;
 };
 
-Utility.knotsToMs = (knots) => {
+Utility.knotsToMs = knots => {
   const ms = knots * 0.514444444;
   return ms;
 };
 
-Utility.msToKnots = (ms) => {
+Utility.msToKnots = ms => {
   const knots = ms / 0.514444444;
   return knots;
 };
 
 /*
-  GEOGRAPHICALS ###############################################################################
+  FORMATTERS ###############################################################################
 */
+
+/**
+ * @desc Rounds a number to a provided number of decimals
+ * @param {float} value - Value to round
+ * @param {int} decimals - Number of decimals to round to
+ * @returns {string}
+ */
+Utility.round = (value, decimals) => {
+  return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+};
 
 /**
  * @desc Converts Decimal Degrees to Decimal Minutes Seconds
  * @param {float} dd - Decimal Degrees to convert
  * @return {string} dms - returns a string formatted as DMS
  */
-Utility.DDtoDMS = (dd) => {
+Utility.DDtoDMS = dd => {
   // 42.178 => 42°10'41
 
   const dec = dd.toString().split('.')[0];
@@ -137,7 +148,7 @@ Utility.DDtoDMS = (dd) => {
  * @param {float} dd - Decimal Degrees to convert
  * @return {string} dds - returns a string formatted as DDS
  */
-Utility.DDtoDDS = (dd) => {
+Utility.DDtoDDS = dd => {
   // 41.7585 =>  41° 45.510'N ;
 
   const dec = dd.toString().split('.')[0];
@@ -160,7 +171,7 @@ Utility.DDtoDDS = (dd) => {
 	Calculates distance in meter for 1deg of longitude and latitude - based on latitude (WGS84)
 	Source: http://msi.nga.mil/MSISiteContent/StaticFiles/Calculators/degree.html
 */
-Utility.calcLatLonDistances = (LatInDegrees) => {
+Utility.calcLatLonDistances = LatInDegrees => {
   // Convert latitude to radians
   const lat = Utility.deg2rad(LatInDegrees);
 
@@ -174,13 +185,18 @@ Utility.calcLatLonDistances = (LatInDegrees) => {
   const p3 = 0.118; // longitude calculation term 3
 
   // Calculate the length of a degree of latitude and longitude in meters
-  const latlen = m1 + m2 * Math.cos(2 * lat) + m3 * Math.cos(4 * lat) + m4 * Math.cos(6 * lat);
-  const longlen = p1 * Math.cos(lat) + p2 * Math.cos(3 * lat) + p3 * Math.cos(5 * lat);
+  const latlen =
+    m1 +
+    m2 * Math.cos(2 * lat) +
+    m3 * Math.cos(4 * lat) +
+    m4 * Math.cos(6 * lat);
+  const longlen =
+    p1 * Math.cos(lat) + p2 * Math.cos(3 * lat) + p3 * Math.cos(5 * lat);
 
   // Distances in meters
   const lenghts = {
     lat: Math.round(latlen),
-    lon: Math.round(longlen),
+    lon: Math.round(longlen)
   };
 
   return lenghts;
@@ -210,7 +226,10 @@ Utility.findCoordDistance = (f, s) => {
 
   const a =
     Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
-    Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLon / 2) * Math.sin(deltaLon / 2);
+    Math.cos(lat1) *
+      Math.cos(lat2) *
+      Math.sin(deltaLon / 2) *
+      Math.sin(deltaLon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   const res = R * c; // Distance in meters!
 
@@ -234,7 +253,9 @@ Utility.findBearing = (f, s) => {
   const lat2 = Utility.deg2rad(s[0]);
   const deltaLon = Utility.deg2rad(s[1] - f[1]);
   const y = Math.sin(deltaLon) * Math.cos(lat2);
-  const x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(deltaLon);
+  const x =
+    Math.cos(lat1) * Math.sin(lat2) -
+    Math.sin(lat1) * Math.cos(lat2) * Math.cos(deltaLon);
   const brng = Math.atan2(y, x);
 
   // console.log("Bearing: %s", (Utility.rad2deg(brng) + 360) % 360);

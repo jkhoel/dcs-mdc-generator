@@ -99,8 +99,22 @@
     }
   ],
   "pkg": [
-    { "callsign": "Panther", "aircraft": "2xFA18C", "freq": "123.750", "tcn": "76Y", "lsr": "N/A", "tasking": "CAP"},
-    { "callsign": "Axe", "aircraft": "2xA10C", "freq": "134.000", "tcn": "55Y", "lsr": "1511", "tasking": "CAS"}
+    {
+      "callsign": "Panther",
+      "aircraft": "2xFA18C",
+      "freq": "123.750",
+      "tcn": "76Y",
+      "lsr": "N/A",
+      "tasking": "CAP"
+    },
+    {
+      "callsign": "Axe",
+      "aircraft": "2xA10C",
+      "freq": "134.000",
+      "tcn": "55Y",
+      "lsr": "1511",
+      "tasking": "CAS"
+    }
   ],
   "waypoints": [
     {
@@ -145,8 +159,18 @@
     }
   ],
   "poi": [
-    { "type": "P1", "name": "Bullseye Mary", "lat": "25.5138824943904", "lon": "56.7191173282923" },
-    { "type": "P2", "name": "BRIDGE", "lat": "25.5138824943904", "lon": "56.7191173282923" }
+    {
+      "type": "P1",
+      "name": "Bullseye Mary",
+      "lat": "25.5138824943904",
+      "lon": "56.7191173282923"
+    },
+    {
+      "type": "P2",
+      "name": "BRIDGE",
+      "lat": "25.5138824943904",
+      "lon": "56.7191173282923"
+    }
   ],
   "loadout": [],
   "notes": [
@@ -156,20 +180,9 @@
       ""
     ]
   ],
-  "ramrod": [
-    "C",
-    "O",
-    "M",
-    "P",
-    "L",
-    "E",
-    "X",
-    "I",
-    "T",
-    "Y"
-  ],
+  "ramrod": ["C", "O", "M", "P", "L", "E", "X", "I", "T", "Y"],
   "settings": {
-    "coordDisplay": "llf-DDM",
+    "coordFormat": "ddm",
     "dd-precision": "1",
     "dms-precision": "0",
     "transition-alt": "5000",
