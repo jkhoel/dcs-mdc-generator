@@ -16,7 +16,7 @@ var app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
-app.use(logger("dev"));
+app.use(logger('[:date[web]] :: :method :url :status :response-time ms - :res[content-length]')); // See https://www.npmjs.com/package/morgan
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
