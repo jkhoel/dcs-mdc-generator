@@ -1,0 +1,4361 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Stores>
+  <Store>
+    <CLSID>{ADEN_GUNPOD}</CLSID>
+    <Name>ADEN GUNPOD</Name>
+    <Weight>87</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ADM_141A}</CLSID>
+    <Name>ADM-141A</Name>
+    <Weight>180</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ADM_141B}</CLSID>
+    <Name>ADM-141B</Name>
+    <Weight>180</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AV8BNA_AERO1D}</CLSID>
+    <Name>AERO 1D 300 Gallons Fuel Tank </Name>
+    <Weight>1002.439</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AV8BNA_AERO1D_EMPTY}</CLSID>
+    <Name>AERO 1D 300 Gallons Fuel Tank (Empty)</Name>
+    <Weight>93.89362</Weight>
+  </Store>
+  <Store>
+    <CLSID>AGM114x2_OH_58</CLSID>
+    <Name>AGM-114K * 2</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ee368869-c35a-486a-afe7-284beb7c5d52}</CLSID>
+    <Name>AGM-114K</Name>
+    <Weight>65</Weight>
+  </Store>
+  <Store>
+    <CLSID>{88D18A5E-99C8-4B04-B40B-1C02F2018B6E}</CLSID>
+    <Name>AGM-114K * 4</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7B8DCEB4-820B-4015-9B48-1028A4195692}</CLSID>
+    <Name>AGM-119B Penguin</Name>
+    <Weight>300</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM_122}</CLSID>
+    <Name>AGM-122</Name>
+    <Weight>88</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM_122_SIDEARM}</CLSID>
+    <Name>AGM-122 Sidearm</Name>
+    <Weight>92</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU_7_AGM_122_SIDEARM}</CLSID>
+    <Name>AGM-122 Sidearm</Name>
+    <Weight>107</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM-154A}</CLSID>
+    <Name>AGM-154A</Name>
+    <Weight>485</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM-154B}</CLSID>
+    <Name>AGM-154B</Name>
+    <Weight>485</Weight>
+  </Store>
+  <Store>
+    <CLSID>{9BCC2A2B-5708-4860-B1F1-053A18442067}</CLSID>
+    <Name>AGM-154C</Name>
+    <Weight>484</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AABA1A14-78A1-4E85-94DD-463CF75BD9E4}</CLSID>
+    <Name>AGM-154C*4</Name>
+    <Weight>2560</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM_45A}</CLSID>
+    <Name>AGM-45A</Name>
+    <Weight>177</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3E6B632D-65EB-44D2-9501-1C2D04515404}</CLSID>
+    <Name>AGM-45B</Name>
+    <Weight>177</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3E6B632D-65EB-44D2-9501-1C2D04515405}</CLSID>
+    <Name>AGM-45B</Name>
+    <Weight>177</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C40A1E3A-DD05-40D9-85A4-217729E37FAE}</CLSID>
+    <Name>AGM-62</Name>
+    <Weight>1088</Weight>
+  </Store>
+  <Store>
+    <CLSID>{444BA8AE-82A7-4345-842E-76154EFCCA47}</CLSID>
+    <Name>AGM-65D</Name>
+    <Weight>218</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F16A4DE0-116C-4A71-97F0-2CF85B0313EF}</CLSID>
+    <Name>AGM-65E</Name>
+    <Weight>286</Weight>
+  </Store>
+  <Store>
+    <CLSID>{69DC8AE7-8F77-427B-B8AA-B19D3F478B65}</CLSID>
+    <Name>AGM-65K</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>AGM_84</CLSID>
+    <Name>AGM-84 HARPOON</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8B7CADF9-4954-46B3-8CFB-93F2F5B90B03}</CLSID>
+    <Name>AGM-84A</Name>
+    <Weight>661.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{46ACDCF8-5451-4E26-BDDB-E78D5830E93C}</CLSID>
+    <Name>AGM-84A*8</Name>
+    <Weight>5292</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM_84D}</CLSID>
+    <Name>AGM-84D</Name>
+    <Weight>540</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AF42E6DF-9A60-46D8-A9A0-1708B241AADB}</CLSID>
+    <Name>AGM-84E</Name>
+    <Weight>628</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AGM_84H}</CLSID>
+    <Name>AGM-84H</Name>
+    <Weight>675</Weight>
+  </Store>
+  <Store>
+    <CLSID>{769A15DF-6AFB-439F-9B24-5B7A45C59D16}</CLSID>
+    <Name>AGM-86C</Name>
+    <Weight>1950</Weight>
+  </Store>
+  <Store>
+    <CLSID>{22906569-A97F-404B-BA4F-D96DBF94D05E}</CLSID>
+    <Name>AGM-86C*20</Name>
+    <Weight>39000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8DCAF3A3-7FCF-41B8-BB88-58DEDA878EDE}</CLSID>
+    <Name>AGM-86C*8</Name>
+    <Weight>15600</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B06DD79A-F21E-4EB9-BD9D-AB3844618C9C}</CLSID>
+    <Name>AGM-88C</Name>
+    <Weight>361</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B06DD79A-F21E-4EB9-BD9D-AB3844618C93}</CLSID>
+    <Name>AGM-88C</Name>
+    <Weight>361</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C8E06185-7CD6-4C90-959F-044679E90751}</CLSID>
+    <Name>AIM-120B</Name>
+    <Weight>157.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{40EF17B7-F508-45de-8566-6FFECC0C1AB8}</CLSID>
+    <Name>AIM-120C</Name>
+    <Weight>161.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7575BA0B-7294-4844-857B-031A144B2595}</CLSID>
+    <Name>AIM-54C</Name>
+    <Weight>463</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-7F}</CLSID>
+    <Name>AIM-7F</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-7H}</CLSID>
+    <Name>AIM-7H</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8D399DDA-FF81-4F14-904D-099B34FE7918}</CLSID>
+    <Name>AIM-7M</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9L}</CLSID>
+    <Name>AIM-9L</Name>
+    <Weight>85.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6CEB49FC-DED8-4DED-B053-E1F033FF72D3}</CLSID>
+    <Name>AIM-9M</Name>
+    <Weight>86.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{9BFD8C90-F7AE-4e90-833B-BFD0CED0E536}</CLSID>
+    <Name>AIM-9P</Name>
+    <Weight>86.18</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9P5}</CLSID>
+    <Name>AIM-9P5</Name>
+    <Weight>85.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{5CE2FF2A-645A-4197-B48D-8720AC69394F}</CLSID>
+    <Name>AIM-9X</Name>
+    <Weight>84.46</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>LAU-115_LAU-127_AIM-9X</CLSID>
+    <Name>LAU-115C LAU-127 AIM-9X</Name>
+    <Weight>183.705</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>LAU-115_2*LAU-127_AIM-9X</CLSID>
+    <Name>LAU-115 - 2 AIM-9X</Name>
+    <Weight>313.886</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{VIGGEN_X-TANK}</CLSID>
+    <Name>AJS X-Tank</Name>
+    <Weight>1208</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AKAN}</CLSID>
+    <Name>AKAN Gunpod</Name>
+    <Weight>276</Weight>
+  </Store>
+  <Store>
+    <CLSID>{akg_dlpod}</CLSID>
+    <Name>AKG Datalink Pod</Name>
+    <Weight>445</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E6747967-B1F0-4C77-977B-AB2E6EB0C102}</CLSID>
+    <Name>ALARM</Name>
+    <Weight>268</Weight>
+  </Store>
+  <Store>
+    <CLSID>{07BE2D19-0E48-4B0B-91DA-5F6C8F9E3C75}</CLSID>
+    <Name>ALARM*2</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6D21ECEA-F85B-4E8D-9D51-31DC9B8AA4EF}</CLSID>
+    <Name>ALQ-131</Name>
+    <Weight>305</Weight>
+  </Store>
+  <Store>
+    <CLSID>ALQ_184</CLSID>
+    <Name>ALQ-184</Name>
+    <Weight>215</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A111396E-D3E8-4b9c-8AC9-2432489304D5}</CLSID>
+    <Name>AN/AAQ-28 LITENING</Name>
+    <Weight>300</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6C0D552F-570B-42ff-9F6D-F10D9C1D4E1C}</CLSID>
+    <Name>AN/AAS-38 FLIR</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ALQ_164_RF_Jammer}</CLSID>
+    <Name>AN/ALQ-164 DECM Pod</Name>
+    <Weight>143.789</Weight>
+  </Store>
+  <Store>
+    <CLSID>{1C2B16EB-8EB0-43de-8788-8EBB2D70B8BC}</CLSID>
+    <Name>AN/ASQ-173 LST/SCAM</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIS_ASQ_T50}</CLSID>
+    <Name>AN/ASQ-T50 TCTS Pod</Name>
+    <Weight>62.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M3}</CLSID>
+    <Name>AN-M3</Name>
+    <Weight>218</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M64}</CLSID>
+    <Name>AN-M64</Name>
+    <Weight>227</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F86ANM64}</CLSID>
+    <Name>AN-M64</Name>
+    <Weight>227</Weight>
+  </Store>
+  <Store>
+    <CLSID>{APU-60-1_R_60M}</CLSID>
+    <Name>APU-60-1 R-60M</Name>
+    <Weight>76</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A6FD14D3-6D30-4C85-88A7-8D17BEE120E2}</CLSID>
+    <Name>APU-6 - 6 9A4172 Vikhr</Name>
+    <Weight>330</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F789E86A-EE2E-4E6B-B81E-D5E5F903B6ED}</CLSID>
+    <Name>APU-8 - 8 9A4172 Vikhr</Name>
+    <Weight>404</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ARAKM70BAP}</CLSID>
+    <Name>ARAK M70B AP</Name>
+    <Weight>372.2</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ARAKM70BHE}</CLSID>
+    <Name>ARAK M70B HE</Name>
+    <Weight>372.2</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ASO-2}</CLSID>
+    <Name>ASO-2</Name>
+    <Weight>22</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RAFAUT_BLG66}</CLSID>
+    <Name>AUF2 BLG-66-AC x 2</Name>
+    <Weight>685</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RAFAUT_GBU12}</CLSID>
+    <Name>AUF2 GBU-12 x 2</Name>
+    <Weight>621</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RAFAUT_MK82S}</CLSID>
+    <Name>AUF2 MK-82 Snakeyes x 2</Name>
+    <Weight>525</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RAFAUT_MK82}</CLSID>
+    <Name>AUF2 MK-82 x 2</Name>
+    <Weight>525</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RAFAUT_ROCKEYE}</CLSID>
+    <Name>AUF2 ROCKEYE x 2</Name>
+    <Weight>525</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BDU-33}</CLSID>
+    <Name>BDU-33</Name>
+    <Weight>11</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BDU-50HD}</CLSID>
+    <Name>BDU-50HD</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BDU-50LD}</CLSID>
+    <Name>BDU-50LD</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BDU-50LGB}</CLSID>
+    <Name>BDU-50LGB</Name>
+    <Weight>280</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BETAB-500M}</CLSID>
+    <Name>BETAB-500M</Name>
+    <Weight>479</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BETAB-500S}</CLSID>
+    <Name>BETAB-500S</Name>
+    <Weight>425</Weight>
+  </Store>
+  <Store>
+    <CLSID>{35B698AC-9FEF-4EC4-AD29-484A0085F62B}</CLSID>
+    <Name>BetAB-500</Name>
+    <Weight>430</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BD289E34-DF84-4C5E-9220-4B14C346E79D}</CLSID>
+    <Name>BetAB-500ShP</Name>
+    <Weight>424</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D6A0441E-6794-4FEB-87F7-E68E2290DFAB}</CLSID>
+    <Name>BetAB-500*12</Name>
+    <Weight>478</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2B7BDB38-4F45-43F9-BE02-E7B3141F3D24}</CLSID>
+    <Name>BetAB-500*6</Name>
+    <Weight>2868</Weight>
+  </Store>
+  <Store>
+    <CLSID>BF109K_4_FUEL_TANK</CLSID>
+    <Name>Fuel Tank 300 liters</Name>
+    <Weight>266</Weight>
+  </Store>
+  <Store>
+    <CLSID>BGM_109</CLSID>
+    <Name>BGM-109 TOMAHAWK</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>BGM-109B</CLSID>
+    <Name>BGM-109B</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3EA17AB0-A805-4D9E-8732-4CE00CB00F17}</CLSID>
+    <Name>BGM-71D Tow * 4</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>BIN_200</CLSID>
+    <Name>BIN-200</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BK90MJ1}</CLSID>
+    <Name>BK90 MJ1 with launcher</Name>
+    <Weight>661</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BK90MJ2}</CLSID>
+    <Name>BK90 MJ2 with launcher</Name>
+    <Weight>661</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BK90}</CLSID>
+    <Name>BK90 mix with launcher</Name>
+    <Weight>605</Weight>
+  </Store>
+  <Store>
+    <CLSID>{08164777-5E9C-4B08-B48E-5AA7AFB246E2}</CLSID>
+    <Name>BL755</Name>
+    <Weight>264</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BLG66_BELOUGA_AC}</CLSID>
+    <Name>BLG-66-AC Belouga</Name>
+    <Weight>305</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BLG66_BELOUGA}</CLSID>
+    <Name>BLG-66 Belouga</Name>
+    <Weight>290</Weight>
+  </Store>
+  <Store>
+    <CLSID>{752B9781-F962-11d5-9190-00A0249B6F00}</CLSID>
+    <Name>BLU-107</Name>
+    <Weight>185</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C535596E-F7D2-4301-8BB4-B1658BB87ED7}</CLSID>
+    <Name>BL-755*2</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8C3F26A1-FA0F-11d5-9190-00A0249B6F00}</CLSID>
+    <Name>BOZ-107</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_LAU10}</CLSID>
+    <Name>BRU-33 LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>519</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_LAU61}</CLSID>
+    <Name>BRU-33 LAU-61 - 19 2.75' rockets MK151 HE</Name>
+    <Weight>313</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_LAU68}</CLSID>
+    <Name>BRU-33 LAU-68 - 7 2.75' rockets M151 (HE)</Name>
+    <Weight>179</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_LAU68_MK5}</CLSID>
+    <Name>BRU-33 LAU-68 - 7 2.75' rockets MK5 (HE)</Name>
+    <Weight>179</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2*LAU10}</CLSID>
+    <Name>BRU-33 - 2 LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>959</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2*LAU61}</CLSID>
+    <Name>BRU-33 - 2 LAU-61 - 19 2.75' rockets MK151 HE</Name>
+    <Weight>547</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2*LAU68}</CLSID>
+    <Name>BRU-33 - 2 LAU-68 - 7 2.75' rockets M151 (HE)</Name>
+    <Weight>279</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2*LAU68_MK5}</CLSID>
+    <Name>BRU-33 - 2 LAU-68 - 7 2.75' rockets MK5 (HE)</Name>
+    <Weight>279</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2X_CBU-99}</CLSID>
+    <Name>BRU-33 - 2 x CBU-99</Name>
+    <Weight>523</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2X_ROCKEYE}</CLSID>
+    <Name>BRU-33 - 2 x Mk-20 Rockeye</Name>
+    <Weight>523</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2X_MK-82}</CLSID>
+    <Name>BRU-33 - 2 x Mk-82</Name>
+    <Weight>561</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2X_MK-82_Snakeye}</CLSID>
+    <Name>BRU-33 - 2 x Mk-82 SnakeEye</Name>
+    <Weight>543</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{BRU33_2X_MK-82Y}</CLSID>
+    <Name>BRU-33 - 2 x Mk-82Y</Name>
+    <Weight>543</Weight>
+  </Store>
+    
+  <Store>
+    <CLSID>{BRU33_2X_MK-83}</CLSID>
+    <Name>BRU-33 - 2 x Mk-83</Name>
+    <Weight>973</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU41_6X_BDU-33}</CLSID>
+    <Name>BRU-41A - 6 x BDU-33</Name>
+    <Weight>195.713</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU41_6X_MK-82}</CLSID>
+    <Name>BRU-41A - 6 x Mk-82</Name>
+    <Weight>1573.913</Weight>
+  </Store>
+  <Store>
+    <CLSID>BRU-42_3*BDU-33</CLSID>
+    <Name>3 BDU-33</Name>
+    <Weight>98</Weight>
+  </Store>
+  <Store>
+    <CLSID>BRU-42_3*GBU-12</CLSID>
+    <Name>3 GBU-12</Name>
+    <Weight>876</Weight>
+  </Store>
+  <Store>
+    <CLSID>BRU-42_LS</CLSID>
+    <Name>BRU-42LS</Name>
+    <Weight>65</Weight>
+  </Store>
+  <Store>
+    <CLSID>BR_250</CLSID>
+    <Name>BR-250</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>BR_500</CLSID>
+    <Name>BR-500</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier</CLSID>
+    <Name>GB-GP-250LBS-MK4-BOMB</Name>
+    <Weight>108.326</Weight>
+  </Store>
+  <Store>
+    <CLSID>British_GP_250LBS_Bomb_MK4_on_RH_Spitfire_Wing_Carrier</CLSID>
+    <Name>GB-GP-250LBS-MK4-BOMB</Name>
+    <Weight>108.326</Weight>
+  </Store>
+  <Store>
+    <CLSID>British_GP_500LBS_Bomb_MK4_on_British_UniversalBC_MK3</CLSID>
+    <Name>GB-GP-500LBS-MK4-BOMB</Name>
+    <Weight>225.188</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FC56DF80-9B09-44C5-8976-DCFAFF219062}</CLSID>
+    <Name>B-13L - 5 S-13 OF</Name>
+    <Weight>510</Weight>
+  </Store>
+  <Store>
+    <CLSID>B-1B_Mk-84*8</CLSID>
+    <Name>Mk-84*8</Name>
+    <Weight>7152</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F72F47E5-C83A-4B85-96ED-D3E46671EE9A}</CLSID>
+    <Name>B-8M1 - 20 S-8KOM</Name>
+    <Weight>363.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>B-8M1 - 20 S-8OFP2</CLSID>
+    <Name>B-8M1 - 20 S-8OFP2</Name>
+    <Weight>471.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3DFB7320-AB0E-11d7-9897-000476191836}</CLSID>
+    <Name>B-8M1 - 20 S-8TsM</Name>
+    <Weight>359.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>B_8V20A_CM</CLSID>
+    <Name>B-8V20A - 20 S-8TsM</Name>
+    <Weight>345</Weight>
+  </Store>
+  <Store>
+    <CLSID>B_8V20A_OFP2</CLSID>
+    <Name>B-8V20A - 20 S-8OFP2</Name>
+    <Weight>457</Weight>
+  </Store>
+  <Store>
+    <CLSID>B_8V20A_OM</CLSID>
+    <Name>B-8V20A - 20 S-8OM</Name>
+    <Weight>365</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6A4B9E69-64FE-439a-9163-3A87FB6A4D81}</CLSID>
+    <Name>B-8V20A - 20 S-8KOM</Name>
+    <Weight>349</Weight>
+  </Store>
+  <Store>
+    <CLSID>CATM-9M</CLSID>
+    <Name>CAP-9M</Name>
+    <Weight>85.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>CBLS-200</CLSID>
+    <Name>4*BDU-33</Name>
+    <Weight>98</Weight>
+  </Store>
+  <Store>
+    <CLSID>CBU87*10</CLSID>
+    <Name>CBU-87*10</Name>
+    <Weight>4300</Weight>
+  </Store>
+  <Store>
+    <CLSID>CBU97*10</CLSID>
+    <Name>CBU-97*10</Name>
+    <Weight>4170</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU_103}</CLSID>
+    <Name>CBU-103</Name>
+    <Weight>430</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU_105}</CLSID>
+    <Name>CBU-105</Name>
+    <Weight>417</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-52B}</CLSID>
+    <Name>CBU-52B</Name>
+    <Weight>356</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-87}</CLSID>
+    <Name>CBU-87</Name>
+    <Weight>430</Weight>
+  </Store>
+  <Store>
+    <CLSID>{5335D97A-35A5-4643-9D9B-026C75961E52}</CLSID>
+    <Name>CBU-97</Name>
+    <Weight>417</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU_99}</CLSID>
+    <Name>CBU-99</Name>
+    <Weight>222</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CM-802AKG}</CLSID>
+    <Name>CM-802AKG</Name>
+    <Weight>850</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C-802AK}</CLSID>
+    <Name>C-802AK</Name>
+    <Weight>850</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C-101-DEFA553}</CLSID>
+    <Name>DEFA-553</Name>
+    <Weight>218</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DT75GAL}</CLSID>
+    <Name>Drop Tank 75Gal</Name>
+    <Weight>227.048087675</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DWS39_MJ1}</CLSID>
+    <Name>DWS39 MJ1</Name>
+    <Weight>605</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DWS39_MJ1_MJ2}</CLSID>
+    <Name>DWS39 MJ1-MJ2</Name>
+    <Weight>605</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DWS39_MJ2}</CLSID>
+    <Name>DWS39 MJ2</Name>
+    <Weight>605</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Eclair}</CLSID>
+    <Name>Eclair</Name>
+    <Weight>20</Weight>
+  </Store>
+  <Store>
+    <CLSID>ER_4_SC50</CLSID>
+    <Name>4 * SC50</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0519A261-0AB6-11d6-9193-00A0249B6F00}</CLSID>
+    <Name>ETHER</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FB3CE165-BF07-4979-887C-92B87F13276B}</CLSID>
+    <Name>FAB-100</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>FAB_100M</CLSID>
+    <Name>FAB-100M</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-100-4}</CLSID>
+    <Name>FAB-100 x 4</Name>
+    <Weight>465</Weight>
+  </Store>
+  <Store>
+    <CLSID>{639DB5DD-CB7E-4E42-AC75-2112BC397B97}</CLSID>
+    <Name>FAB-1500*3</Name>
+    <Weight>4500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D9179118-E42F-47DE-A483-A6C2EA7B4F38}</CLSID>
+    <Name>FAB-1500*6</Name>
+    <Weight>9000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{40AA4ABE-D6EB-4CD6-AEFE-A1A0477B24AB}</CLSID>
+    <Name>FAB-1500 M54</Name>
+    <Weight>1392</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3C612111-C7AD-476E-8A8E-2485812F4E5C}</CLSID>
+    <Name>FAB-250</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B0241BD2-5628-47E0-954C-A8675B7E698E}</CLSID>
+    <Name>FAB-250*24</Name>
+    <Weight>6000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BDAD04AA-4D4A-4E51-B958-180A89F963CF}</CLSID>
+    <Name>FAB-250*33</Name>
+    <Weight>8250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-250-M54}</CLSID>
+    <Name>FAB-250 M54</Name>
+    <Weight>235</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-250-M54-TU}</CLSID>
+    <Name>FAB-250 M54 TU</Name>
+    <Weight>235</Weight>
+  </Store>
+  <Store>
+    <CLSID>FAB_50</CLSID>
+    <Name>FAB-50</Name>
+    <Weight>50</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E70446B7-C7E6-4B95-B685-DEA10CAD1A0E}</CLSID>
+    <Name>FAB-500*12</Name>
+    <Weight>6000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AD5E5863-08FC-4283-B92C-162E2B2BD3FF}</CLSID>
+    <Name>FAB-500*33</Name>
+    <Weight>16500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{26D2AF37-B0DF-4AB6-9D61-A150FF58A37B}</CLSID>
+    <Name>FAB-500*6</Name>
+    <Weight>3000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-500-M54}</CLSID>
+    <Name>FAB-500 M54</Name>
+    <Weight>474</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-500-M54-TU}</CLSID>
+    <Name>FAB-500 M54 TU</Name>
+    <Weight>480</Weight>
+  </Store>
+  <Store>
+    <CLSID>{37DCC01E-9E02-432F-B61D-10C166CA2798}</CLSID>
+    <Name>FAB-500 M62</Name>
+    <Weight>506</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-500-SL}</CLSID>
+    <Name>FAB-500 SL</Name>
+    <Weight>515</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-500-TA}</CLSID>
+    <Name>FAB-500 TA</Name>
+    <Weight>477</Weight>
+  </Store>
+  <Store>
+    <CLSID>FIM_92</CLSID>
+    <Name>STINGER</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FPU_8A_FUEL_TANK}</CLSID>
+    <Name>FPU-8A Fuel Tank 330 gallons</Name>
+    <Weight>1150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_120_F86F35}</CLSID>
+    <Name>Fuel Tank 120 gallons</Name>
+    <Weight>413.36</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_150L_L39}</CLSID>
+    <Name>Fuel Tank 150 liters</Name>
+    <Weight>124.25</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_200_F86F35}</CLSID>
+    <Name>Fuel Tank 200 gallons</Name>
+    <Weight>675.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_350L_L39}</CLSID>
+    <Name>Fuel Tank 350 liters</Name>
+    <Weight>283.25</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_490C_MIG21}</CLSID>
+    <Name>Fuel Tank 490 L Central (21)</Name>
+    <Weight>434</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_490_MIG21}</CLSID>
+    <Name>Fuel Tank 490 L (21)</Name>
+    <Weight>434</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB_800_MIG21}</CLSID>
+    <Name>Fuel Tank 800 L (21)</Name>
+    <Weight>682</Weight>
+  </Store>
+  <Store>
+    <CLSID>Fuel_Tank_FT600</CLSID>
+    <Name>Fuel tank FT600</Name>
+    <Weight>1925</Weight>
+  </Store>
+  <Store>
+    <CLSID>{414E383A-59EB-41BC-8566-2B5E0788ED1F}</CLSID>
+    <Name>Fuel tank 1150L</Name>
+    <Weight>977</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C0FF4842-FBAC-11d5-9190-00A0249B6F00}</CLSID>
+    <Name>Fuel tank 1150L MiG-29</Name>
+    <Weight>977</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2BEC576B-CDF5-4B7F-961F-B0FA4312B841}</CLSID>
+    <Name>Fuel tank 1500L</Name>
+    <Weight>1250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{16602053-4A12-40A2-B214-AB60D481B20E}</CLSID>
+    <Name>Fuel tank 2000L</Name>
+    <Weight>1700</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7D7EC917-05F6-49D4-8045-61FC587DD019}</CLSID>
+    <Name>Fuel tank 3000L</Name>
+    <Weight>2550</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8A0BE8AE-58D4-4572-9263-3144C0D06364}</CLSID>
+    <Name>Fuel tank 300 gal</Name>
+    <Weight>958.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{EFEC8200-B922-11d7-9897-000476191836}</CLSID>
+    <Name>Fuel tank 330 gal</Name>
+    <Weight>1049.24</Weight>
+  </Store>
+  <Store>
+    <CLSID>{EFEC8201-B922-11d7-9897-000476191836}</CLSID>
+    <Name>Fuel tank 330 gal</Name>
+    <Weight>1049.24</Weight>
+  </Store>
+  <Store>
+    <CLSID>{82364E69-5564-4043-A866-E13032926C3E}</CLSID>
+    <Name>Fuel tank 367 gal</Name>
+    <Weight>1161.276</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F376DBEE-4CAE-41BA-ADD9-B2910AC95DEC}</CLSID>
+    <Name>Fuel tank 370 gal</Name>
+    <Weight>1170.36</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0855A3A1-FA50-4C89-BDBB-5D5360ABA071}</CLSID>
+    <Name>Fuel tank 5000L</Name>
+    <Weight>4420</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E1F29B21-F291-4589-9FD8-3272EEC69506}</CLSID>
+    <Name>Fuel tank 610 gal</Name>
+    <Weight>1897.08</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A5BAEAB7-6FAF-4236-AF72-0FD900F493F9}</CLSID>
+    <Name>Fuel tank 800L</Name>
+    <Weight>680</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E8D4652F-FD48-45B7-BA5B-2AE05BB5A9CF}</CLSID>
+    <Name>Fuel tank 800L Wing</Name>
+    <Weight>760</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B99EE8A8-99BC-4a8d-89AC-A26831920DCE}</CLSID>
+    <Name>Fuel tank Ka-50</Name>
+    <Weight>550</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A504D93B-4E80-4B4F-A533-0D9B65F2C55F}</CLSID>
+    <Name>Fuel tank S-3</Name>
+    <Weight>964</Weight>
+  </Store>
+  <Store>
+    <CLSID>FW109_FUEL_TANK</CLSID>
+    <Name>Fuel Tank 300 liters</Name>
+    <Weight>266</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8B9E3FD0-F034-4A07-B6CE-C269884CC71B}</CLSID>
+    <Name>F-4 Fuel tank-C</Name>
+    <Weight>2345</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7B4B122D-C12C-4DB4-834E-4D8BB4D863A8}</CLSID>
+    <Name>F-4 Fuel tank-W</Name>
+    <Weight>1420</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PTB-150GAL}</CLSID>
+    <Name>F-5 150Gal Fuel tank</Name>
+    <Weight>509</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0395076D-2F77-4420-9D33-087A4398130B}</CLSID>
+    <Name>F-5 275Gal Fuel tank</Name>
+    <Weight>909</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9B}</CLSID>
+    <Name>GAR-8</Name>
+    <Weight>85.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{GAU_12_Equalizer}</CLSID>
+    <Name>GAU 12 Gunpod</Name>
+    <Weight>595.9426</Weight>
+  </Store>
+  <Store>
+    <CLSID>{51F9AAE5-964F-4D21-83FB-502E3BFE5F8A}</CLSID>
+    <Name>GBU-10</Name>
+    <Weight>1162</Weight>
+  </Store>
+  <Store>
+    <CLSID>{62BE78B1-9258-48AE-B882-279534C0D278}</CLSID>
+    <Name>GBU-10*2</Name>
+    <Weight>1800</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DB769D48-67D7-42ED-A2BE-108D566C8B1E}</CLSID>
+    <Name>GBU-12</Name>
+    <Weight>275</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAAFA032-8996-42BF-ADC4-8E2C86BCE536}</CLSID>
+    <Name>GBU-15</Name>
+    <Weight>1140</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0D33DDAE-524F-4A4E-B5B8-621754FE3ADE}</CLSID>
+    <Name>GBU-16</Name>
+    <Weight>564</Weight>
+  </Store>
+  <Store>
+    <CLSID>{34759BBC-AF1E-4AEE-A581-498FF7A6EBCE}</CLSID>
+    <Name>GBU-24</Name>
+    <Weight>900</Weight>
+  </Store>
+  <Store>
+    <CLSID>{EF0A9419-01D6-473B-99A3-BEBDB923B14D}</CLSID>
+    <Name>GBU-27</Name>
+    <Weight>1200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{EB969276-1922-4ED1-A5CB-18590F45D7FE}</CLSID>
+    <Name>GBU-27*2</Name>
+    <Weight>1968</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8C99F40-E486-4040-B547-6639172A5D57}</CLSID>
+    <Name>GBU-27*4</Name>
+    <Weight>3936</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F06B775B-FC70-44B5-8A9F-5B5E2EB839C7}</CLSID>
+    <Name>GBU-28</Name>
+    <Weight>2130</Weight>
+  </Store>
+  <Store>
+    <CLSID>{GBU-31}</CLSID>
+    <Name>GBU-31</Name>
+    <Weight>894</Weight>
+  </Store>
+  <Store>
+    <CLSID>GBU-31V3B*8</CLSID>
+    <Name>GBU-31(V)3/B*8</Name>
+    <Weight>7848</Weight>
+  </Store>
+  <Store>
+    <CLSID>GBU-31*8</CLSID>
+    <Name>GBU-31*8</Name>
+    <Weight>7152</Weight>
+  </Store>
+  <Store>
+    <CLSID>{GBU-31V3B}</CLSID>
+    <Name>GBU-31(V)3/B</Name>
+    <Weight>981</Weight>
+  </Store>
+  <Store>
+    <CLSID>{GBU-38}</CLSID>
+    <Name>GBU-38</Name>
+    <Weight>241</Weight>
+  </Store>
+  <Store>
+    <CLSID>GBU-38*16</CLSID>
+    <Name>GBU-38*16</Name>
+    <Weight>3856</Weight>
+  </Store>
+  <Store>
+    <CLSID>GUV_VOG</CLSID>
+    <Name>GUV AP-30</Name>
+    <Weight>274</Weight>
+  </Store>
+  <Store>
+    <CLSID>GUV_YakB_GSHP</CLSID>
+    <Name>GUV YakB GSHP</Name>
+    <Weight>452</Weight>
+  </Store>
+  <Store>
+    <CLSID>{HOT3G}</CLSID>
+    <Name>HOT3</Name>
+    <Weight>32</Weight>
+  </Store>
+  <Store>
+    <CLSID>{HOT3D}</CLSID>
+    <Name>HOT3</Name>
+    <Weight>32</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4CD2BB0F-5493-44EF-A927-9760350F7BA1}</CLSID>
+    <Name>HSAB*9 Mk-20 Rockeye</Name>
+    <Weight>2050</Weight>
+  </Store>
+  <Store>
+    <CLSID>{696CFFC4-0BDE-42A8-BE4B-0BE3D9DD723C}</CLSID>
+    <Name>HSAB*9 Mk-84</Name>
+    <Weight>8100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{HVAR}</CLSID>
+    <Name>HVAR</Name>
+    <Weight>64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{HVARx2}</CLSID>
+    <Name>HVARx2</Name>
+    <Weight>128</Weight>
+  </Store>
+  <Store>
+    <CLSID>{HVAR_SMOKE_2}</CLSID>
+    <Name>HVAR SMOKE 2</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{HVAR_SMOKE_GENERATOR}</CLSID>
+    <Name>HVAR Smoke Generator</Name>
+    <Weight>64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{IAB-500}</CLSID>
+    <Name>IAB-500</Name>
+    <Weight>470</Weight>
+  </Store>
+  <Store>
+    <CLSID>{IR_Deflector}</CLSID>
+    <Name>IR Deflector</Name>
+    <Weight>5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{KAB_1500Kr_LOADOUT}</CLSID>
+    <Name>KAB-1500Kr</Name>
+    <Weight>1525</Weight>
+  </Store>
+  <Store>
+    <CLSID>{39821727-F6E2-45B3-B1F0-490CC8921D1E}</CLSID>
+    <Name>KAB-1500L</Name>
+    <Weight>1560</Weight>
+  </Store>
+  <Store>
+    <CLSID>{KAB_1500LG_LOADOUT}</CLSID>
+    <Name>KAB-1500LG-Pr</Name>
+    <Weight>1525</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E2C426E3-8B10-4E09-B733-9CDC26520F48}</CLSID>
+    <Name>KAB-500kr</Name>
+    <Weight>560</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BA565F89-2373-4A84-9502-A0E017D3A44A}</CLSID>
+    <Name>KAB-500L</Name>
+    <Weight>534</Weight>
+  </Store>
+  <Store>
+    <CLSID>{KAB_500S_LOADOUT}</CLSID>
+    <Name>KAB-500S</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{KB}</CLSID>
+    <Name>KB F/C dispenser</Name>
+    <Weight>296</Weight>
+  </Store>
+  <Store>
+    <CLSID>{12429ECF-03F0-4DF6-BCBD-5D38B6343DE1}</CLSID>
+    <Name>Kh-22N</Name>
+    <Weight>6800</Weight>
+  </Store>
+  <Store>
+    <CLSID>{9F390892-E6F9-42C9-B84E-1136A881DCB2}</CLSID>
+    <Name>Kh-23L</Name>
+    <Weight>288</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6DADF342-D4BA-4D8A-B081-BA928C4AF86D}</CLSID>
+    <Name>Kh-25ML</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>{79D73885-0801-45a9-917F-C90FE1CE3DFC}</CLSID>
+    <Name>Kh-25ML</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Kh-25MP}</CLSID>
+    <Name>Kh-25MP</Name>
+    <Weight>355</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E86C5AA5-6D49-4F00-AD2E-79A62D6DDE26}</CLSID>
+    <Name>Kh-25MPU</Name>
+    <Weight>370</Weight>
+  </Store>
+  <Store>
+    <CLSID>{752AF1D2-EBCC-4bd7-A1E7-2357F5601C70}</CLSID>
+    <Name>Kh-25MPU</Name>
+    <Weight>370</Weight>
+  </Store>
+  <Store>
+    <CLSID>{292960BB-6518-41AC-BADA-210D65D5073C}</CLSID>
+    <Name>Kh-25MR</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Kh-28}</CLSID>
+    <Name>Kh-28 (AS-9 Kyle)</Name>
+    <Weight>715</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3468C652-E830-4E73-AFA9-B5F260AB7C3D}</CLSID>
+    <Name>Kh-29L</Name>
+    <Weight>747</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D4A8D9B9-5C45-42e7-BBD2-0E54F8308432}</CLSID>
+    <Name>Kh-29L</Name>
+    <Weight>747</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B4FC81C9-B861-4E87-BBDC-A1158E648EBF}</CLSID>
+    <Name>Kh-29T</Name>
+    <Weight>760</Weight>
+  </Store>
+  <Store>
+    <CLSID>{601C99F7-9AF3-4ed7-A565-F8B8EC0D7AAC}</CLSID>
+    <Name>Kh-29T</Name>
+    <Weight>760</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4D13E282-DF46-4B23-864A-A9423DFDE504}</CLSID>
+    <Name>Kh-31A</Name>
+    <Weight>690</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4D13E282-DF46-4B23-864A-A9423DFDE50A}</CLSID>
+    <Name>Kh-31A</Name>
+    <Weight>690</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D8F2C90B-887B-4B9E-9FE2-996BC9E9AF03}</CLSID>
+    <Name>Kh-31P</Name>
+    <Weight>690</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D8F2C90B-887B-4B9E-9FE2-996BC9E9AF0A}</CLSID>
+    <Name>Kh-31P</Name>
+    <Weight>690</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2234F529-1D57-4496-8BB0-0150F9BDBBD2}</CLSID>
+    <Name>Kh-35</Name>
+    <Weight>480</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2234F529-1D57-4496-8BB0-0150F9BDBBD3}</CLSID>
+    <Name>Kh-35</Name>
+    <Weight>570</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C42EE4C3-355C-4B83-8B22-B39430B8F4AE}</CLSID>
+    <Name>Kh-35*6</Name>
+    <Weight>2880</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3F26D9C5-5CC3-4E42-BC79-82FAA54E9F26}</CLSID>
+    <Name>Kh-41</Name>
+    <Weight>4500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FE382A68-8620-4AC0-BDF5-709BFE3977D7}</CLSID>
+    <Name>Kh-58U</Name>
+    <Weight>730</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B5CA9846-776E-4230-B4FD-8BCC9BFB1676}</CLSID>
+    <Name>Kh-58U</Name>
+    <Weight>730</Weight>
+  </Store>
+  <Store>
+    <CLSID>{40AB87E8-BEFB-4D85-90D9-B2753ACF9514}</CLSID>
+    <Name>Kh-59M</Name>
+    <Weight>850</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BADAF2DE-68B5-472A-8AAC-35BAEFF6B4A1}</CLSID>
+    <Name>Kh-65</Name>
+    <Weight>1250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0290F5DE-014A-4BB1-9843-D717749B1DED}</CLSID>
+    <Name>Kh-65*6</Name>
+    <Weight>7500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CD9417DF-455F-4176-A5A2-8C58D61AA00B}</CLSID>
+    <Name>Kh-65*8</Name>
+    <Weight>10000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Kh-66_Grom}</CLSID>
+    <Name>Kh-66 Grom (21) APU-68</Name>
+    <Weight>300</Weight>
+  </Store>
+  <Store>
+    <CLSID>{96A7F676-F956-404A-AD04-F33FB2C74884}</CLSID>
+    <Name>KMGU-2 - 96 AO-2.5RT</Name>
+    <Weight>520</Weight>
+  </Store>
+  <Store>
+    <CLSID>{96A7F676-F956-404A-AD04-F33FB2C74881}</CLSID>
+    <Name>KMGU-2 - 96 PTAB-2.5KO</Name>
+    <Weight>520</Weight>
+  </Store>
+  <Store>
+    <CLSID>KORD_12_7</CLSID>
+    <Name>KORD 12.7 Gun</Name>
+    <Weight>95</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F4920E62-A99A-11d8-9897-000476191836}</CLSID>
+    <Name>Kopyo radar pod</Name>
+    <Weight>115</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7210496B-7B81-4B52-80D6-8529ECF847CD}</CLSID>
+    <Name>Kormoran</Name>
+    <Weight>660</Weight>
+  </Store>
+  <Store>
+    <CLSID>{44EE8698-89F9-48EE-AF36-5FD31896A82F}</CLSID>
+    <Name>L005 Sorbtsiya ECM pod (left)</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{44EE8698-89F9-48EE-AF36-5FD31896A82A}</CLSID>
+    <Name>L005 Sorbtsiya ECM pod (right)</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU3_HE151</CLSID>
+    <Name>LAU-3 - 19 2.75' rockets MK151 HE</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU3_HE5</CLSID>
+    <Name>LAU-3 - 19 2.75' rockets MK5 HEAT</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU3_WP156</CLSID>
+    <Name>LAU-3 - 19 2.75' rockets MK156 WP</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU3_WP1B</CLSID>
+    <Name>LAU-3 - 19 2.75' rockets WTU-1/B WP</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU3_WP61</CLSID>
+    <Name>LAU-3 - 19 2.75' rockets MK61 WP</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105</CLSID>
+    <Name>LAU-105</Name>
+    <Weight>18</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_1*AIM-9L_L</CLSID>
+    <Name>LAU-105 AIM-9L</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_1*AIM-9L_R</CLSID>
+    <Name>LAU-105 AIM-9L</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_1*AIM-9M_L</CLSID>
+    <Name>LAU-105 AIM-9M</Name>
+    <Weight>116.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_1*AIM-9M_R</CLSID>
+    <Name>LAU-105 AIM-9M</Name>
+    <Weight>116.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_1*CATM-9M_L</CLSID>
+    <Name>LAU-105 CAP-9M</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_1*CATM-9M_R</CLSID>
+    <Name>LAU-105 CAP-9M</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_2*AIM-9L</CLSID>
+    <Name>LAU-105 - 2 AIM-9L</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_2*AIM-9P5</CLSID>
+    <Name>LAU-105 - 2 AIM-9P5</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_2*CATM-9M</CLSID>
+    <Name>LAU-105 - 2 CAP-9M</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_AIS_ASQ_T50_L</CLSID>
+    <Name>LAU-105 AN/ASQ-T50 TCTS Pod</Name>
+    <Weight>92.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-105_AIS_ASQ_T50_R</CLSID>
+    <Name>LAU-105 AN/ASQ-T50 TCTS Pod</Name>
+    <Weight>92.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DB434044-F5D0-4F1F-9BA9-B73027E18DD3}</CLSID>
+    <Name>LAU-105 - 2 AIM-9M</Name>
+    <Weight>116.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3C0745ED-8B0B-42eb-B907-5BD5C1717447}</CLSID>
+    <Name>LAU-105 - 2 AIM-9P</Name>
+    <Weight>116.18</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU_10R}</CLSID>
+    <Name>LAU-10R - 4 ZUNI MK 71</Name>
+    <Weight>440</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}</CLSID>
+    <Name>LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>440</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-115 - AIM-7F}</CLSID>
+    <Name>LAU-115C AIM-7F</Name>
+    <Weight>284.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-115 - AIM-7H}</CLSID>
+    <Name>LAU-115C AIM-7H</Name>
+    <Weight>284.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-115_2*LAU-127_AIM-120B</CLSID>
+    <Name>LAU-115 - 2 AIM-120B</Name>
+    <Weight>460.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-115_2*LAU-127_AIM-120C</CLSID>
+    <Name>LAU-115 - 2 AIM-120C</Name>
+    <Weight>468</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-115_2*LAU-127_AIM-9L</CLSID>
+    <Name>LAU-115 - 2 AIM-9L</Name>
+    <Weight>316</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-115_2*LAU-127_AIM-9M</CLSID>
+    <Name>LAU-115 - 2 AIM-9M</Name>
+    <Weight>318.28</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU-115_2*LAU-127_CATM-9M</CLSID>
+    <Name>LAU-115 - 2 CAP-9M</Name>
+    <Weight>316</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-115 - AIM-120B}</CLSID>
+    <Name>LAU-115 - AIM-120B</Name>
+    <Weight>212.2</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-115 - AIM-120C}</CLSID>
+    <Name>LAU-115 - AIM-120C</Name>
+    <Weight>215.9</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-115 - AIM-7M}</CLSID>
+    <Name>LAU-115 - AIM-7M</Name>
+    <Weight>284.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{444BA8AE-82A7-4345-842E-76154EFCCA46}</CLSID>
+    <Name>LAU-117,AGM-65D</Name>
+    <Weight>277</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F16A4DE0-116C-4A71-97F0-2CF85B0313EC}</CLSID>
+    <Name>LAU-117,AGM-65E</Name>
+    <Weight>345</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_AGM_65G</CLSID>
+    <Name>LAU-117,AGM-65G</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_AGM_65F</CLSID>
+    <Name>LAU-117,AGM-65F</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_AGM_65H</CLSID>
+    <Name>LAU-117,AGM-65H</Name>
+    <Weight>267</Weight>
+  </Store>
+  <Store>
+    <CLSID>{69DC8AE7-8F77-427B-B8AA-B19D3F478B66}</CLSID>
+    <Name>LAU-117,AGM-65K</Name>
+    <Weight>419</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_CATM_65K</CLSID>
+    <Name>LAU-117,CATM-65K</Name>
+    <Weight>419</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_TGM_65D</CLSID>
+    <Name>LAU-117,TGM-65D</Name>
+    <Weight>277</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_TGM_65G</CLSID>
+    <Name>LAU-117,TGM-65G</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_117_TGM_65H</CLSID>
+    <Name>LAU-117,TGM-65H</Name>
+    <Weight>267</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_M151</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets M151 (HE)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_M156</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets M156 (WP)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_M257</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets M257 (Parachute illumination)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_M274</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets M274 (Practice Smoke)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_MK1</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets MK1 (Practice)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_MK5</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets MK5 (HE)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_MK61</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets MK61 (Practice)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_131x3_HYDRA_70_WTU1B</CLSID>
+    <Name>LAU-131*3 - 7 2.75' rockets WTU1B (Practice)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{69926055-0DA8-4530-9F2F-C86B157EA9F6}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets M151 (HE)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2AF2EC3F-9065-4de5-93E1-1739C9A71EF7}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets M156 (WP)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DAD45FE5-CFF0-4a2b-99D4-5D044D3BC22F}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets M257 (Parachute illumination)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6D6D5C07-2A90-4a68-9A74-C5D0CFFB05D9}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets M274 (Practice smoke)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{319293F2-392C-4617-8315-7C88C22AF7C4}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets MK5 (HE)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{1CA5E00B-D545-4ff9-9B53-5970E292F14D}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets MK61 (Practice)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D22C2D63-E5C9-4247-94FB-5E8F3DE22B71}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets Mk1 (Practice)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DDCE7D70-5313-4181-8977-F11018681662}</CLSID>
+    <Name>LAU-131 - 7 2.75' rockets WTU1B (Practice)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU3_FFAR_WP156}</CLSID>
+    <Name>LAU-3 - 19 FFAR M156 WP</Name>
+    <Weight>312.8707256</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU3_FFAR_MK1HE}</CLSID>
+    <Name>LAU-3 - 19 FFAR Mk1 HE</Name>
+    <Weight>285.292332</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU3_FFAR_MK5HEAT}</CLSID>
+    <Name>LAU-3 - 19 FFAR Mk5 HEAT</Name>
+    <Weight>286.1541568</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU_61R}</CLSID>
+    <Name>LAU-61R - 19 2.75' rockets MK151 HE</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A76344EB-32D2-4532-8FA2-0C1BDC00747E}</CLSID>
+    <Name>LAU-61*3 - 57 2.75' rockets MK151 (HE)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}</CLSID>
+    <Name>LAU-61 - 19 2.75' rockets MK151 HE</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3DFB7321-AB0E-11d7-9897-000476191836}</CLSID>
+    <Name>LAU-61 - 19 2.75' rockets MK156 WP</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>{64329ED9-B14C-4c0b-A923-A3C911DA1527}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets M151 (HE)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C2593383-3CA8-4b18-B73D-0E750BCA1C85}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets M156 (WP)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E6966004-A525-4f47-AF94-BCFEDF8FDBDA}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets M257 (Parachute illumination)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4C044B08-886B-46c8-9B1F-AB05B3ED9C1D}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets M274 (Practice smoke)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{443364AE-D557-488e-9499-45EDB3BA6730}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets MK1 (Practice)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{9BC82B3D-FE70-4910-B2B7-3E54EFE73262}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets MK5 (HE)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{C0FA251E-B645-4ce5-926B-F4BC20822F8B}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets MK61 (Practice)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A1853B38-2160-4ffe-B7E9-9BF81E6C3D77}</CLSID>
+    <Name>LAU-68*3 - 7 2.75' rockets WTU1B (Practice)</Name>
+    <Weight>702</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets M151 (HE)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4F977A2A-CD25-44df-90EF-164BFA2AE72F}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets M156(WP)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{647C5F26-BDD1-41e6-A371-8DE1E4CC0E94}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets M257 (Parachute illumination)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0877B74B-5A00-4e61-BA8A-A56450BA9E27}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets M274 (Practice smoke)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FC85D2ED-501A-48ce-9863-49D468DDD5FC}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets MK1 (Practice)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{174C6E6D-0C3D-42ff-BCB3-0853CB371F5C}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets MK5 (HE)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{65396399-9F5C-4ec3-A7D2-5A8F4C1D90C4}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets MK61 (Practice)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{1F7136CB-8120-4e77-B97B-945FF01FB67C}</CLSID>
+    <Name>LAU-68 - 7 2.75' rockets WTU1B (Practice)</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU68_FFAR_WP156}</CLSID>
+    <Name>LAU-68 - 7 FFAR M156 WP</Name>
+    <Weight>128.4260568</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU68_FFAR_MK1HE}</CLSID>
+    <Name>LAU-68 - 7 FFAR Mk1 HE</Name>
+    <Weight>118.265596</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU68_FFAR_MK5HEAT}</CLSID>
+    <Name>LAU-68 - 7 FFAR Mk5 HEAT</Name>
+    <Weight>118.5831104</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9M-ON-ADAPTER}</CLSID>
+    <Name>LAU-7 AIM-9M</Name>
+    <Weight>101.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9P-ON-ADAPTER}</CLSID>
+    <Name>LAU-7 AIM-9P</Name>
+    <Weight>101.18</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9P5-ON-ADAPTER}</CLSID>
+    <Name>LAU-7 AIM-9P5</Name>
+    <Weight>100.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM-9X-ON-ADAPTER}</CLSID>
+    <Name>LAU-7 AIM-9X</Name>
+    <Weight>99.46</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-7_AIS_ASQ_T50}</CLSID>
+    <Name>LAU-7 AN/ASQ-T50 TCTS Pod</Name>
+    <Weight>92.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{GAR-8}</CLSID>
+    <Name>LAU-7 GAR-8</Name>
+    <Weight>100.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F4-2-AIM9L}</CLSID>
+    <Name>LAU-7 - 2 AIM-9L</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{9DDF5297-94B9-42FC-A45E-6E316121CD85}</CLSID>
+    <Name>LAU-7 - 2 AIM-9M</Name>
+    <Weight>116.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{773675AB-7C29-422f-AFD8-32844A7B7F17}</CLSID>
+    <Name>LAU-7 - 2 AIM-9P</Name>
+    <Weight>116.18</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F4-2-AIM9P5}</CLSID>
+    <Name>LAU-7 - 2 AIM-9P5</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F4-2-AIM9B}</CLSID>
+    <Name>LAU-7 - 2 GAR-8</Name>
+    <Weight>115.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E6A6262A-CA08-4B3D-B030-E1A993B98452}</CLSID>
+    <Name>LAU-88,AGM-65D*2</Name>
+    <Weight>647</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E6A6262A-CA08-4B3D-B030-E1A993B98453}</CLSID>
+    <Name>LAU-88,AGM-65D*2</Name>
+    <Weight>647</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DAC53A2F-79CA-42FF-A77A-F5649B601308}</CLSID>
+    <Name>LAU-88,AGM-65D*3</Name>
+    <Weight>865</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_88_AGM_65D_ONE</CLSID>
+    <Name>LAU-88,AGM-65D*1</Name>
+    <Weight>429</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2CC29C7A-E863-411C-8A6E-BD6F0E730548}</CLSID>
+    <Name>LAU-88,AGM-65E*2</Name>
+    <Weight>783</Weight>
+  </Store>
+  <Store>
+    <CLSID>{2CC29C7A-E863-411C-8A6E-BD6F0E730547}</CLSID>
+    <Name>LAU-88,AGM-65E*2</Name>
+    <Weight>783</Weight>
+  </Store>
+  <Store>
+    <CLSID>{71AAB9B8-81C1-4925-BE50-1EF8E9899271}</CLSID>
+    <Name>LAU-88,AGM-65E*3</Name>
+    <Weight>1069</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_88_AGM_65H</CLSID>
+    <Name>LAU-88,AGM-65H*1</Name>
+    <Weight>419</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_88_AGM_65H_2_L</CLSID>
+    <Name>LAU-88,AGM-65H*2</Name>
+    <Weight>627</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_88_AGM_65H_2_R</CLSID>
+    <Name>LAU-88,AGM-65H*2</Name>
+    <Weight>627</Weight>
+  </Store>
+  <Store>
+    <CLSID>LAU_88_AGM_65H_3</CLSID>
+    <Name>LAU-88,AGM-65H*3</Name>
+    <Weight>835</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D7670BC7-881B-4094-906C-73879CF7EB28}</CLSID>
+    <Name>LAU-88,AGM-65K*2</Name>
+    <Weight>931</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D7670BC7-881B-4094-906C-73879CF7EB27}</CLSID>
+    <Name>LAU-88,AGM-65K*2</Name>
+    <Weight>931</Weight>
+  </Store>
+  <Store>
+    <CLSID>{907D835F-E650-4154-BAFD-C656882555C0}</CLSID>
+    <Name>LAU-88,AGM-65K*3</Name>
+    <Weight>1291</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU_SNEB68G}</CLSID>
+    <Name>LAU_SNEB68G - 8xSNEB68_EAP</Name>
+    <Weight>50.08</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CAAC1CFD-6745-416B-AFA4-CB57414856D0}</CLSID>
+    <Name>Lantirn F-16</Name>
+    <Weight>445</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D1744B93-2A8A-4C4D-B004-7A09CD8C8F3F}</CLSID>
+    <Name>Lantirn Target Pod</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LYSBOMB}</CLSID>
+    <Name>LYSBOMB Illumination bomb</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0519A264-0AB6-11d6-9193-00A0249B6F00}</CLSID>
+    <Name>L-081 Fantasmagoria ELINT pod</Name>
+    <Weight>300</Weight>
+  </Store>
+  <Store>
+    <CLSID>{00F5DAC4-0466-4122-998F-B1A298E34113}</CLSID>
+    <Name>M117</Name>
+    <Weight>340</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B58F99BA-5480-4572-8602-28B0449F5260}</CLSID>
+    <Name>M117*27</Name>
+    <Weight>9180</Weight>
+  </Store>
+  <Store>
+    <CLSID>{72CAC282-AE18-490B-BD4D-35E7EE969E73}</CLSID>
+    <Name>M117*51</Name>
+    <Weight>17340</Weight>
+  </Store>
+  <Store>
+    <CLSID>M134_L</CLSID>
+    <Name>M134 MiniGun Left</Name>
+    <Weight>146.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>M134_R</CLSID>
+    <Name>M134 MiniGun Right</Name>
+    <Weight>146.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>M134_SIDE_L</CLSID>
+    <Name>M134 MiniGun Left Door</Name>
+    <Weight>270.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>M134_SIDE_R</CLSID>
+    <Name>M134 MiniGun Right Door</Name>
+    <Weight>270.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{414DA830-B61A-4F9E-B71B-C2F6832E1D7A}</CLSID>
+    <Name>M2000 Fuel tank</Name>
+    <Weight>1050</Weight>
+  </Store>
+  <Store>
+    <CLSID>M260_HYDRA</CLSID>
+    <Name>M260 - 7 2.75' rockets MK156</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>M260_HYDRA_WP</CLSID>
+    <Name>M260 - 7 2.75' rockets MK156 WP</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>M261_MK151</CLSID>
+    <Name>M261 - 19 2.75' rockets MK151 HE</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>M261_MK156</CLSID>
+    <Name>M261 - 19 2.75' rockets MK156 WP</Name>
+    <Weight>234</Weight>
+  </Store>
+  <Store>
+    <CLSID>M60_SIDE_L</CLSID>
+    <Name>M60 Gun Left Door</Name>
+    <Weight>141.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>M60_SIDE_R</CLSID>
+    <Name>M60 Gun Right Door</Name>
+    <Weight>141.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MMagicII}</CLSID>
+    <Name>Matra Magic II</Name>
+    <Weight>85</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Matra_S530D}</CLSID>
+    <Name>Matra Super 530D</Name>
+    <Weight>275</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Matra155RocketPod}</CLSID>
+    <Name>Matra Type 155 Rocket Pod</Name>
+    <Weight>190</Weight>
+  </Store>
+  <Store>
+    <CLSID>{5A1AC2B4-CA4B-4D09-A1AF-AC52FBC4B60B}</CLSID>
+    <Name>MBD-2-67U - 4 FAB-100</Name>
+    <Weight>465</Weight>
+  </Store>
+  <Store>
+    <CLSID>{29A828E2-C6BB-11d8-9897-000476191836}</CLSID>
+    <Name>MBD-2-67U - 4 FAB-100</Name>
+    <Weight>465</Weight>
+  </Store>
+  <Store>
+    <CLSID>{574EDEDF-20DE-4942-B2A2-B2EDFD621562}</CLSID>
+    <Name>MER*12 M117</Name>
+    <Weight>4250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{585D626E-7F42-4073-AB70-41E728C333E2}</CLSID>
+    <Name>MER*12 Mk-82</Name>
+    <Weight>3000</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7C5F0F5F-0A0B-46E8-937C-8922303E39A8}</CLSID>
+    <Name>MER*2 FAB-1500</Name>
+    <Weight>3100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D5D51E24-348C-4702-96AF-97A714E72697}</CLSID>
+    <Name>MER*2 MK-82</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{18617C93-78E7-4359-A8CE-D754103EDF63}</CLSID>
+    <Name>MER*2 MK-83</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{005E70F5-C3EA-4E95-A148-C1044C42D845}</CLSID>
+    <Name>MER-3*3 BetAB-500</Name>
+    <Weight>1566</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CEE04106-B9AA-46B4-9CD1-CD3FDCF0CE78}</CLSID>
+    <Name>MER-3*3 FAB-100</Name>
+    <Weight>360</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D109EE9C-A1B7-4F1C-8D87-631C293A1D26}</CLSID>
+    <Name>MER-3*3 FAB-250</Name>
+    <Weight>810</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A1E85991-B58E-4E92-AE91-DED6DC85B2E7}</CLSID>
+    <Name>MER-3*3 FAB-500</Name>
+    <Weight>1560</Weight>
+  </Store>
+  <Store>
+    <CLSID>{82F90BEC-0E2E-4CE5-A66E-1E4ADA2B5D1E}</CLSID>
+    <Name>MER-3*3 M117AB</Name>
+    <Weight>1060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7B34E0BB-E427-4C2A-A61A-8407CE18B54D}</CLSID>
+    <Name>MER-3*3 Mk-81</Name>
+    <Weight>414</Weight>
+  </Store>
+  <Store>
+    <CLSID>{EAD9B2C1-F3BA-4A7B-A2A5-84E2AF8A1975}</CLSID>
+    <Name>MER-3*3 RBK-250 PTAB-2.5M</Name>
+    <Weight>885</Weight>
+  </Store>
+  <Store>
+    <CLSID>{919CE839-9390-4629-BAF7-229DE19B8523}</CLSID>
+    <Name>MER-3*3 RBK-500-255 PTAB-10-5</Name>
+    <Weight>1560</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6A367BB4-327F-4A04-8D9E-6D86BDC98E7E}</CLSID>
+    <Name>MER*4 FAB-250</Name>
+    <Weight>1060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{02B81892-7E24-4795-84F9-B8110C641AF0}</CLSID>
+    <Name>MER*4 RBK-250 PTAB-2.5M</Name>
+    <Weight>1060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E659C4BE-2CD8-4472-8C08-3F28ACB61A8A}</CLSID>
+    <Name>MER 6*2 FAB-250</Name>
+    <Weight>550</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3E35F8C1-052D-11d6-9191-00A0249B6F00}</CLSID>
+    <Name>MER 6*4 FAB-250</Name>
+    <Weight>1060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{45447F82-01B5-4029-A572-9AAD28AF0275}</CLSID>
+    <Name>MER*6 AGM-86C</Name>
+    <Weight>11760</Weight>
+  </Store>
+  <Store>
+    <CLSID>{436C6FB9-8BF2-46B6-9DC4-F55ABF3CD1EC}</CLSID>
+    <Name>MER*6 BetAB-500</Name>
+    <Weight>3060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E96E1EDD-FF3F-47CF-A959-576C3B682955}</CLSID>
+    <Name>MER*6 BetAB-500SP</Name>
+    <Weight>3060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{752B9782-F962-11d5-9190-00A0249B6F00}</CLSID>
+    <Name>MER*6 BLU-107</Name>
+    <Weight>1800</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F99BEC1A-869D-4AC7-9730-FBA0E3B1F5FC}</CLSID>
+    <Name>MER*6 FAB-100</Name>
+    <Weight>660</Weight>
+  </Store>
+  <Store>
+    <CLSID>{53BE25A4-C86C-4571-9BC0-47D668349595}</CLSID>
+    <Name>MER*6 FAB-250</Name>
+    <Weight>1560</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FA673F4C-D9E4-4993-AA7A-019A92F3C005}</CLSID>
+    <Name>MER*6 FAB-500</Name>
+    <Weight>3060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0D945D78-542C-4E9B-9A17-9B5008CC8D39}</CLSID>
+    <Name>MER*6 FAB-500</Name>
+    <Weight>3060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6CDB6B36-7165-47D0-889F-6625FB333561}</CLSID>
+    <Name>MER*6 M117AB</Name>
+    <Weight>2100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3C7CD675-7D39-41C5-8735-0F4F537818A8}</CLSID>
+    <Name>MER*6 Mk-20 Rockeye</Name>
+    <Weight>1392</Weight>
+  </Store>
+  <Store>
+    <CLSID>{1C97B4A0-AA3B-43A8-8EE7-D11071457185}</CLSID>
+    <Name>MER*6 Mk-82</Name>
+    <Weight>1506</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F503C276-FE15-4C54-B310-17B50B735A84}</CLSID>
+    <Name>MER*6 RBK-500-255 PTAB-10-5</Name>
+    <Weight>3060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4D459A95-59C0-462F-8A57-34E80697F38B}</CLSID>
+    <Name>MER*6 RBK-500-255 PTAB-10-5</Name>
+    <Weight>3060</Weight>
+  </Store>
+  <Store>
+    <CLSID>{5F1C54C0-0ABD-4868-A883-B52FF9FCB422}</CLSID>
+    <Name>MER*9 FAB-100</Name>
+    <Weight>960</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E1AAE713-5FC3-4CAA-9FF5-3FDCFB899E33}</CLSID>
+    <Name>MER*9 FAB-250</Name>
+    <Weight>2310</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BF83E8FD-E7A2-40D2-9608-42E13AFE2193}</CLSID>
+    <Name>MER*9 RBK-250 PTAB-2.5M</Name>
+    <Weight>2535</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B1EF6B0E-3D91-4047-A7A5-A99E7D8B4A8B}</CLSID>
+    <Name>Mercury LLTV Pod</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0DA03783-61E4-40B2-8FAE-6AEE0A5C5AAE}</CLSID>
+    <Name>MICA IR</Name>
+    <Weight>110</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6D778860-7BB8-4ACB-9E95-BA772C6BBC2C}</CLSID>
+    <Name>MICA RF</Name>
+    <Weight>110</Weight>
+  </Store>
+  <Store>
+    <CLSID>MIM_104</CLSID>
+    <Name>M901 PATRIOT</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>MIM_72</CLSID>
+    <Name>M48 CHAPARRAL</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MBDA_MistralG}</CLSID>
+    <Name>Mistral</Name>
+    <Weight>28.2</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MBDA_MistralD}</CLSID>
+    <Name>Mistral</Name>
+    <Weight>28.2</Weight>
+  </Store>
+  <Store>
+    <CLSID>MK_82*28</CLSID>
+    <Name>Mk-82*28</Name>
+    <Weight>6748</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}</CLSID>
+    <Name>Mk-20</Name>
+    <Weight>222</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ACADB374-6D6C-45A0-BA7C-B22B2E108AE4}</CLSID>
+    <Name>Mk 20*18</Name>
+    <Weight>3996</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E79759F7-C622-4AA4-B1EF-37639A34D924}</CLSID>
+    <Name>Mk-20 Rockeye *6</Name>
+    <Weight>1332</Weight>
+  </Store>
+  <Store>
+    <CLSID>{90321C8E-7ED1-47D4-A160-E074D5ABD902}</CLSID>
+    <Name>Mk-81</Name>
+    <Weight>118</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MK-81SE}</CLSID>
+    <Name>Mk-81SE</Name>
+    <Weight>113.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BCE4E030-38E9-423E-98ED-24BE3DA87C32}</CLSID>
+    <Name>Mk-82</Name>
+    <Weight>241</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk82AIR}</CLSID>
+    <Name>Mk-82AIR</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82B}</CLSID>
+    <Name>Mk-82B</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82BT}</CLSID>
+    <Name>Mk-82BT</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82P}</CLSID>
+    <Name>Mk-82P</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82PT}</CLSID>
+    <Name>Mk-82PT</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82SB}</CLSID>
+    <Name>Mk-82SB</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82SP}</CLSID>
+    <Name>Mk-82SP</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82XT}</CLSID>
+    <Name>Mk-82XT</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82YT}</CLSID>
+    <Name>Mk-82YT</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk82SNAKEYE}</CLSID>
+    <Name>Mk-82 SnakeEye</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_82Y}</CLSID>
+    <Name>Mk-82Y</Name>
+    <Weight>232</Weight>
+  </Store>
+  <Store>
+    <CLSID>{mk77mod0}</CLSID>
+    <Name>Mk-77 mod 0</Name>
+    <Weight>340</Weight>
+  </Store>
+  <Store>
+    <CLSID>{mk77mod1}</CLSID>
+    <Name>Mk-77 mod 1</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M30A1}</CLSID>
+    <Name>AN-M30A1</Name>
+    <Weight>52.5</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{AN-M57A1}</CLSID>
+    <Name>AN-M57A1</Name>
+    <Weight>117.9</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M81}</CLSID>
+    <Name>AN-M81</Name>
+    <Weight>117.9</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M88}</CLSID>
+    <Name>AN-M88</Name>
+    <Weight>98.1</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DFT-300gal_LR}</CLSID>
+    <Name>Fuel Tank 300 gallons</Name>
+    <Weight>1002</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DFT-150gal}</CLSID>
+    <Name>Fuel Tank 150 gallons</Name>
+    <Weight>517.5</Weight>
+  </Store>
+  <Store>
+    <!-- A-4E-C wip? -->
+    <CLSID>{AGM45_SHRIKE}</CLSID>
+    <Name>AGM-45B</Name>
+    <Weight>177</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M65A1}</CLSID>
+    <Name>AN-M65A1</Name>
+    <Weight>471.7</Weight>
+  </Store>
+
+  <!-- A-4E-C the rest -->
+  <Store>
+    <CLSID>{DFT-400gal}</CLSID>
+    <Name>Fuel Tank 400 gallons</Name>
+    <Weight>1324.49</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D-704_BUDDY_POD}</CLSID>
+    <Name>D-704 Refueling Pod</Name>
+    <Weight>1237.854</Weight>
+  </Store>
+  <Store>
+    <CLSID>{DFT-300gal}</CLSID>
+    <Name>Fuel Tank 300 gallons</Name>
+    <Weight>994.7</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3*LAU-61}</CLSID>
+    <Name>3*LAU-61</Name>
+    <Weight>98</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER,LAU-61*3}</CLSID>
+    <Name>3*LAU-61</Name>
+    <Weight>98</Weight>
+  </Store>
+  <Store>
+    <!-- A-4E-C wip? -->
+    <CLSID>{AGM12_B}</CLSID>
+    <Name>AGM-12B</Name>
+    <Weight>810</Weight>
+  </Store>
+  <Store>
+    <!-- A-4E-C wip? -->
+    <CLSID>{AGM12_C}</CLSID>
+    <Name>AGM-12B</Name>
+    <Weight>810</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M66A2}</CLSID>
+    <Name>AN-M66A2</Name>
+    <Weight>970.7</Weight>
+  </Store>
+
+  <!-- A-4E-C CBUs -->
+  <Store>
+    <CLSID>{CBU-1/A}</CLSID>
+    <Name>CBU-1/A</Name>
+    <Weight>377.1</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-2/A}</CLSID>
+    <Name>CBU-2/A</Name>
+    <Weight>296</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-2B/A}</CLSID>
+    <Name>CBU-2B/A</Name>
+    <Weight>322.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-1/A_TER_2_L}</CLSID>
+    <Name>CBU-1/A *2</Name>
+    <Weight>801.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-2/A_TER_2_L}</CLSID>
+    <Name>CBU-2/A *2</Name>
+    <Weight>639.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-2B/A_TER_2_L}</CLSID>
+    <Name>CBU-2B/A *2</Name>
+    <Weight>692.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-1/A_TER_2_R}</CLSID>
+    <Name>CBU-1/A *2</Name>
+    <Weight>801.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-2/A_TER_2_R}</CLSID>
+    <Name>CBU-2/A *2</Name>
+    <Weight>639.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBU-2B/A_TER_2_R}</CLSID>
+    <Name>CBU-2B/A *2</Name>
+    <Weight>692.8</Weight>
+  </Store>
+
+  <!-- A-4E-C BOMB RACKS -->
+  <Store>
+    <CLSID>{Mk-20_TER_2_L}</CLSID>
+    <Name>Mk-20 *2 (TER)</Name>
+    <Weight>491.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-81_MER_5_L}</CLSID>
+    <Name>Mk-81 *5 (MER)</Name>
+    <Weight>689.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-81SE_MER_5_L}</CLSID>
+    <Name>Mk-81SE *5 (MER)</Name>
+    <Weight>689.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82_TER_2_L}</CLSID>
+    <Name>Mk-82 *2 (TER)</Name>
+    <Weight>529.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82 Snakeye_TER_2_L}</CLSID>
+    <Name>Mk-82 Snakeye *2 (TER)</Name>
+    <Weight>529.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M57A1_MER_5_L}</CLSID>
+    <Name>AN-M57A1 * 5 (MER)</Name>
+    <Weight>684.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M81_MER_5_L}</CLSID>
+    <Name>AN-M81 *5 (MER)</Name>
+    <Weight>684.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M88_MER_5_L}</CLSID>
+    <Name>AN-M88 *5 (MER)</Name>
+    <Weight>589.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-20_TER_3_C}</CLSID>
+    <Name>Mk-20 *3 (TER)</Name>
+    <Weight>713.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-20_TER_2_C}</CLSID>
+    <Name>Mk-20 *20 (TER)</Name>
+    <Weight>491.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-81_MER_6_C}</CLSID>
+    <Name>Mk-81 *6 (MER)</Name>
+    <Weight>807.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-81SE_MER_6_C}</CLSID>
+    <Name>Mk-81SE *6 (MER)</Name>
+    <Weight>807.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82_MER_6_C}</CLSID>
+    <Name>Mk-82 *6 (MER)</Name>
+    <Weight>1545.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82_MER_4_C}</CLSID>
+    <Name>Mk-82 *4 (MER)</Name>
+    <Weight>1063.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82_TER_3_C}</CLSID>
+    <Name>Mk-82 *3 (TER)</Name>
+    <Weight>770.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82 Snakeye_MER_6_C}</CLSID>
+    <Name>Mk-82 Snakeye *6 (MER)</Name>
+    <Weight>1545.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82 Snakeye_MER_4_C}</CLSID>
+    <Name>Mk-82 Snakeye *4 (MER)</Name>
+    <Weight>1063.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82 Snakeye_TER_3_C}</CLSID>
+    <Name>Mk-82 Snakeye *3 (TER)</Name>
+    <Weight>770.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-83_TER_3_C}</CLSID>
+    <Name>Mk-83 *3 (TER)</Name>
+    <Weight>1388.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-83_TER_2_C}</CLSID>
+    <Name>Mk-83 *2 (TER)</Name>
+    <Weight>941.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-77 mod 1_TER_2_C}</CLSID>
+    <Name>Mk-77 mod 1 *2 (TER)</Name>
+    <Weight>507.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M57A1_MER_6_C}</CLSID>
+    <Name>AN-M57A1 *6 (MER)</Name>
+    <Weight>801.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M57A1_MER_4_C}</CLSID>
+    <Name>AN-M57A1 *4 (MER)</Name>
+    <Weight>567.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M81_MER_6_C}</CLSID>
+    <Name>AN-M81 *6 (MER)</Name>
+    <Weight>801.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M88_MER_6_C}</CLSID>
+    <Name>AN-M88 *6 (MER)</Name>
+    <Weight>687.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-20_TER_2_R}</CLSID>
+    <Name>Mk-20 *2 (TER)</Name>
+    <Weight>491.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-81_MER_5_R}</CLSID>
+    <Name>Mk-81 *5 (MER)</Name>
+    <Weight>689.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-81SE_MER_5_R}</CLSID>
+    <Name>Mk-81SE *5 (MER)</Name>
+    <Weight>689.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82_TER_2_R}</CLSID>
+    <Name>Mk-82 *2 (TER)</Name>
+    <Weight>529.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk-82 Snakeye_TER_2_R}</CLSID>
+    <Name>Mk-82 Snakeye *2 (TER)</Name>
+    <Weight>529.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M57A1_MER_5_R}</CLSID>
+    <Name>AN-M57A1 * 5 (MER)</Name>
+    <Weight>684.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M81_MER_5_R}</CLSID>
+    <Name>AN-M81 *5 (MER)</Name>
+    <Weight>684.8</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AN-M88_MER_5_R}</CLSID>
+    <Name>AN-M88 *5 (MER)</Name>
+    <Weight>589.8</Weight>
+  </Store>  
+  
+  <!-- A-4E-C GUN PODS -->
+  <Store>
+    <CLSID>{Mk4 HIPEG}</CLSID>
+    <Name>Mk4 HIPEG</Name>
+    <Weight>612.35</Weight>
+  </Store>
+  
+
+
+
+
+  <Store>
+    <CLSID>{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}</CLSID>
+    <Name>Mk-83</Name>
+    <Weight>447</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_83BT}</CLSID>
+    <Name>Mk-83BT</Name>
+    <Weight>454</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_83CT}</CLSID>
+    <Name>Mk-83CT</Name>
+    <Weight>454</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_83P}</CLSID>
+    <Name>Mk-83P</Name>
+    <Weight>454</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_83PT}</CLSID>
+    <Name>Mk-83PT</Name>
+    <Weight>454</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}</CLSID>
+    <Name>Mk-84</Name>
+    <Weight>894</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_84P}</CLSID>
+    <Name>Mk-84P</Name>
+    <Weight>908</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Mk_84T}</CLSID>
+    <Name>Mk-84T</Name>
+    <Weight>908</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F092B80C-BB54-477E-9408-66DEEF740008}</CLSID>
+    <Name>Mk 84*18</Name>
+    <Weight>16092</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3ABF208-FA56-4D56-BB31-E0D931D57AE3}</CLSID>
+    <Name>Mk 84*28</Name>
+    <Weight>25032</Weight>
+  </Store>
+  <Store>
+    <CLSID>{44EE8698-89F9-48EE-AF36-5FD31896A82D}</CLSID>
+    <Name>MPS-410</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{44EE8698-89F9-48EE-AF36-5FD31896A82C}</CLSID>
+    <Name>MPS-410</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>MXU-648-TP</CLSID>
+    <Name>MXU-648 Travel Pod</Name>
+    <Weight>300</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ODAB-500PM}</CLSID>
+    <Name>ODAB-500PM</Name>
+    <Weight>520</Weight>
+  </Store>
+  <Store>
+    <CLSID>{OFAB-100-120-TU}</CLSID>
+    <Name>OFAB-100-120-TU x 4</Name>
+    <Weight>557</Weight>
+  </Store>
+  <Store>
+    <CLSID>{OFAB_100_Jupiter}</CLSID>
+    <Name>OFAB-100 Jupiter</Name>
+    <Weight>121</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB-100x2}</CLSID>
+    <Name>OFAB-100 Jupiter x2</Name>
+    <Weight>342</Weight>
+  </Store>
+  <Store>
+    <CLSID>oh-58-brauning</CLSID>
+    <Name>OH-58D Brauning</Name>
+    <Weight>290</Weight>
+  </Store>
+  <Store>
+    <CLSID>{199D6D51-1764-497E-9AE5-7D07C8D4D87E}</CLSID>
+    <Name>Pavetack F-111</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>PKT_7_62</CLSID>
+    <Name>PKT 7.62 Gun</Name>
+    <Weight>90</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PK-3}</CLSID>
+    <Name>PK-3</Name>
+    <Weight>218</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PL-12}</CLSID>
+    <Name>PL-12</Name>
+    <Weight>180</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PL-5EII}</CLSID>
+    <Name>PL-5EII</Name>
+    <Weight>83</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PL-8A}</CLSID>
+    <Name>PL-8A</Name>
+    <Weight>115</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PL-8B}</CLSID>
+    <Name>PL-8B</Name>
+    <Weight>115</Weight>
+  </Store>
+  <Store>
+    <CLSID>PTB300_MIG15</CLSID>
+    <Name>Fuel Tank 300 liters</Name>
+    <Weight>271</Weight>
+  </Store>
+  <Store>
+    <CLSID>PTB400_MIG15</CLSID>
+    <Name>Fuel Tank 400 liters</Name>
+    <Weight>364</Weight>
+  </Store>
+  <Store>
+    <CLSID>PTB600_MIG15</CLSID>
+    <Name>Fuel Tank 600 liters</Name>
+    <Weight>531</Weight>
+  </Store>
+  <Store>
+    <CLSID>{P-50T}</CLSID>
+    <Name>P-50T</Name>
+    <Weight>50</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RBK_250_275_AO_1SCH}</CLSID>
+    <Name>RBK-250-275 AO-1SCh</Name>
+    <Weight>244.6</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4203753F-8198-4E85-9924-6F8FF679F9FF}</CLSID>
+    <Name>RBK-250 PTAB-2.5M</Name>
+    <Weight>273</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RBK_500U_OAB_2_5RT}</CLSID>
+    <Name>RBK-500U OAB-2.5RT</Name>
+    <Weight>427</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D5435F26-F120-4FA3-9867-34ACE562EF1B}</CLSID>
+    <Name>RBK-500-255 PTAB-10-5</Name>
+    <Weight>427</Weight>
+  </Store>
+  <Store>
+    <CLSID>{7AEC222D-C523-425e-B714-719C0D1EB14D}</CLSID>
+    <Name>RBK-500 PTAB-1M</Name>
+    <Weight>427</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Rb04}</CLSID>
+    <Name>RB-04E with launcher</Name>
+    <Weight>661</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Rb04AI}</CLSID>
+    <Name>RB-04E (for A.I.) with launcher</Name>
+    <Weight>661</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Robot05}</CLSID>
+    <Name>RB-05A with launcher</Name>
+    <Weight>341</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Rb15}</CLSID>
+    <Name>RB-15F with launcher</Name>
+    <Weight>610</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Rb15AI}</CLSID>
+    <Name>RB-15F (for A.I.) with launcher</Name>
+    <Weight>341</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Robot24J}</CLSID>
+    <Name>RB-24J with launcher</Name>
+    <Weight>90</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Robot24}</CLSID>
+    <Name>RB-24 with launcher</Name>
+    <Weight>90</Weight>
+  </Store>
+  <Store>
+    <CLSID>{Robot74}</CLSID>
+    <Name>RB-74 with launcher</Name>
+    <Weight>90</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RB75B}</CLSID>
+    <Name>RB-75B with launcher</Name>
+    <Weight>210</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RB75T}</CLSID>
+    <Name>RB-75T with launcher</Name>
+    <Weight>354</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RB75}</CLSID>
+    <Name>RB-75 with launcher</Name>
+    <Weight>210</Weight>
+  </Store>
+  <Store>
+    <CLSID>REFLEX_9M119</CLSID>
+    <Name>AT-11 SNIPER (Reflex)</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RKL609_L}</CLSID>
+    <Name>RKL609 ECM Pod (Left)</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RKL609_R}</CLSID>
+    <Name>RKL609 ECM Pod (Right)</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RN-24}</CLSID>
+    <Name>RN-24</Name>
+    <Weight>470</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RN-28}</CLSID>
+    <Name>RN-28</Name>
+    <Weight>260</Weight>
+  </Store>
+  <Store>
+    <CLSID>ROLAND</CLSID>
+    <Name>ROLAND</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RPL_522}</CLSID>
+    <Name>RPL 522 1300 liters Fuel Tank</Name>
+    <Weight>1170</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_RPL_522_EMPTY}</CLSID>
+    <Name>RPL 522 1300 liters Fuel Tank (Empty)</Name>
+    <Weight>180</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_02_RPL541}</CLSID>
+    <Name>RPL 541 2000 liters Fuel Tank </Name>
+    <Weight>1837</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_08_RPL541}</CLSID>
+    <Name>RPL 541 2000 liters Fuel Tank </Name>
+    <Weight>1837</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_02_RPL541_EMPTY}</CLSID>
+    <Name>RPL 541 2000 liters Fuel Tank (Empty)</Name>
+    <Weight>257</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M2KC_08_RPL541_EMPTY}</CLSID>
+    <Name>RPL 541 2000 liters Fuel Tank (Empty)</Name>
+    <Weight>257</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RS-2US}</CLSID>
+    <Name>RS-2US</Name>
+    <Weight>105.2</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-13M}</CLSID>
+    <Name>R-13M</Name>
+    <Weight>119.7</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-13M1}</CLSID>
+    <Name>R-13M1</Name>
+    <Weight>122.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CCF898C9-5BC7-49A4-9D1E-C3ED3D5166A1}</CLSID>
+    <Name>R-24R</Name>
+    <Weight>215</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6980735A-44CC-4BB9-A1B5-591532F1DC69}</CLSID>
+    <Name>R-24T</Name>
+    <Weight>215</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E8069896-8435-4B90-95C0-01A03AE6E400}</CLSID>
+    <Name>R-27ER</Name>
+    <Weight>350</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B79C379A-9E87-4E50-A1EE-7F7E29C2E87A}</CLSID>
+    <Name>R-27ET</Name>
+    <Weight>343</Weight>
+  </Store>
+  <Store>
+    <CLSID>{9B25D316-0434-4954-868F-D51DB1A38DF0}</CLSID>
+    <Name>R-27R</Name>
+    <Weight>253</Weight>
+  </Store>
+  <Store>
+    <CLSID>{88DAC840-9F75-4531-8689-B46E64E42E53}</CLSID>
+    <Name>R-27T</Name>
+    <Weight>254</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F1243568-8EF0-49D4-9CB5-4DA90D92BC1D}</CLSID>
+    <Name>R-33</Name>
+    <Weight>490</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-3R}</CLSID>
+    <Name>R-3R</Name>
+    <Weight>111.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-3S}</CLSID>
+    <Name>R-3S</Name>
+    <Weight>103.3</Weight>
+  </Store>
+  <Store>
+    <CLSID>{4EDBA993-2E34-444C-95FB-549300BF7CAF}</CLSID>
+    <Name>R-40R</Name>
+    <Weight>475</Weight>
+  </Store>
+  <Store>
+    <CLSID>{5F26DBC2-FB43-4153-92DE-6BBCE26CB0FF}</CLSID>
+    <Name>R-40T</Name>
+    <Weight>475</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-55}</CLSID>
+    <Name>R-55</Name>
+    <Weight>113</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FC23864E-3B80-48E3-9C03-4DA8B1D7497B}</CLSID>
+    <Name>R.550 Magic 2</Name>
+    <Weight>89</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-60}</CLSID>
+    <Name>R-60</Name>
+    <Weight>58.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{682A481F-0CB5-4693-A382-D00DD4A156D7}</CLSID>
+    <Name>R-60M</Name>
+    <Weight>44</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-60M}</CLSID>
+    <Name>R-60M</Name>
+    <Weight>58.5</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B0DBC591-0F52-4F7D-AD7B-51E67725FB81}</CLSID>
+    <Name>R-60M*2</Name>
+    <Weight>148</Weight>
+  </Store>
+  <Store>
+    <CLSID>{275A2855-4A79-4B2D-B082-91EA2ADF4691}</CLSID>
+    <Name>R-60M*2</Name>
+    <Weight>148</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-60M 2L}</CLSID>
+    <Name>R-60M x 2</Name>
+    <Weight>122</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-60M 2R}</CLSID>
+    <Name>R-60M x 2</Name>
+    <Weight>122</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-60 2L}</CLSID>
+    <Name>R-60 x 2</Name>
+    <Weight>122</Weight>
+  </Store>
+  <Store>
+    <CLSID>{R-60 2R}</CLSID>
+    <Name>R-60 x 2</Name>
+    <Weight>122</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FBC29BFE-3D24-4C64-B81D-941239D12249}</CLSID>
+    <Name>R-73</Name>
+    <Weight>110</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CBC29BFE-3D24-4C64-B81D-941239D12249}</CLSID>
+    <Name>R-73</Name>
+    <Weight>110</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B4C01D60-A8A3-4237-BD72-CA7655BC0FE9}</CLSID>
+    <Name>R-77</Name>
+    <Weight>175</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B4C01D60-A8A3-4237-BD72-CA7655BC0FEC}</CLSID>
+    <Name>R-77</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0511E528-EA28-4caf-A212-00D1408DF10A}</CLSID>
+    <Name>SAB-100</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAS}</CLSID>
+    <Name>Sand Filter</Name>
+    <Weight>15</Weight>
+  </Store>
+  <Store>
+    <CLSID>SC_501_SC250</CLSID>
+    <Name>SC-250</Name>
+    <Weight>250</Weight>
+  </Store>
+  <Store>
+    <CLSID>SC_501_SC500</CLSID>
+    <Name>SC-500</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>SEASPARROW</CLSID>
+    <Name>SEASPARROW</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{1461CD18-429A-42A9-A21F-4C621ECD4573}</CLSID>
+    <Name>Sea Eagle</Name>
+    <Weight>600</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0519A263-0AB6-11d6-9193-00A0249B6F00}</CLSID>
+    <Name>Shpil-2M Laser Intelligence Pod</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{8C3F26A2-FA0F-11d5-9190-00A0249B6F00}</CLSID>
+    <Name>Sky-Shadow ECM Pod</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>SM2</CLSID>
+    <Name>SM2</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A4BCC903-06C8-47bb-9937-A30FEDB4E743}</CLSID>
+    <Name>Smokewinder - blue</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A4BCC903-06C8-47bb-9937-A30FEDB4E742}</CLSID>
+    <Name>Smokewinder - green</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A4BCC903-06C8-47bb-9937-A30FEDB4E746}</CLSID>
+    <Name>Smokewinder - orange</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A4BCC903-06C8-47bb-9937-A30FEDB4E741}</CLSID>
+    <Name>Smokewinder - red</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A4BCC903-06C8-47bb-9937-A30FEDB4E744}</CLSID>
+    <Name>Smokewinder - white</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A4BCC903-06C8-47bb-9937-A30FEDB4E745}</CLSID>
+    <Name>Smokewinder - yellow</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3F65166-1AB8-490f-AF2F-2FB6E22568B3}</CLSID>
+    <Name>Smoke Generator - blue</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{INV-SMOKE-BLUE}</CLSID>
+    <Name>Smoke Generator - blue</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3F65166-1AB8-490f-AF2F-2FB6E22568B2}</CLSID>
+    <Name>Smoke Generator - green</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{INV-SMOKE-GREEN}</CLSID>
+    <Name>Smoke Generator - green</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3F65166-1AB8-490f-AF2F-2FB6E22568B6}</CLSID>
+    <Name>Smoke Generator - orange</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{INV-SMOKE-ORANGE}</CLSID>
+    <Name>Smoke Generator - orange</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3F65166-1AB8-490f-AF2F-2FB6E22568B1}</CLSID>
+    <Name>Smoke Generator - red</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{INV-SMOKE-RED}</CLSID>
+    <Name>Smoke Generator - red</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3F65166-1AB8-490f-AF2F-2FB6E22568B4}</CLSID>
+    <Name>Smoke Generator - white</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{INV-SMOKE-WHITE}</CLSID>
+    <Name>Smoke Generator - white</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{D3F65166-1AB8-490f-AF2F-2FB6E22568B5}</CLSID>
+    <Name>Smoke Generator - yellow</Name>
+    <Weight>220</Weight>
+  </Store>
+  <Store>
+    <CLSID>{INV-SMOKE-YELLOW}</CLSID>
+    <Name>Smoke Generator - yellow</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SMOKE-RED-AVIOJET}</CLSID>
+    <Name>Smoke System red colorant</Name>
+    <Weight>1</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SMOKE-YELLOW-AVIOJET}</CLSID>
+    <Name>Smoke System yellow colorant</Name>
+    <Weight>1</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SMOKE-SYSTEM-AVIOJET}</CLSID>
+    <Name>Smoke System (White Smoke)</Name>
+    <Weight>18.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MIG21_SMOKE_RED}</CLSID>
+    <Name>Smoke - red - 21 /t</Name>
+    <Weight>30</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SMOKE_WHITE}</CLSID>
+    <Name>Smoke - white - 21</Name>
+    <Weight>30</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MIG21_SMOKE_WHITE}</CLSID>
+    <Name>Smoke - white - 21</Name>
+    <Weight>30</Weight>
+  </Store>
+  <Store>
+    <CLSID>SPITFIRE_45GAL_SLIPPER_TANK</CLSID>
+    <Name>45 gal. Slipper Tank</Name>
+    <Weight>138.647</Weight>
+  </Store>
+  <Store>
+    <CLSID>SPITFIRE_45GAL_TORPEDO_TANK</CLSID>
+    <Name>45 gal. Torpedo Tank</Name>
+    <Weight>144.647</Weight>
+  </Store>
+  <Store>
+    <CLSID>{E92CBFE5-C153-11d8-9897-000476191836}</CLSID>
+    <Name>SPPU-22-1 Gun pod</Name>
+    <Weight>290</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SPRD}</CLSID>
+    <Name>SPRD-99</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F75187EF-1D9E-4DA9-84B4-1A1A14A3973A}</CLSID>
+    <Name>SPS-141</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SPS-141-100}</CLSID>
+    <Name>SPS-141-100 (21)</Name>
+    <Weight>150</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}</CLSID>
+    <Name>SUU-25 * 8 LUU-2</Name>
+    <Weight>130</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FD21B13E-57F3-4C2A-9F78-C522D0B5BCE1}</CLSID>
+    <Name>Super 530D</Name>
+    <Weight>270</Weight>
+  </Store>
+  <Store>
+    <CLSID>SVIR_9M119</CLSID>
+    <Name>AT-11 SNIPER (Svir')</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{S-24A}</CLSID>
+    <Name>S-24A (21)</Name>
+    <Weight>235</Weight>
+  </Store>
+  <Store>
+    <CLSID>{1FA14DEA-8CDB-45AD-88A8-EC068DF1E65A}</CLSID>
+    <Name>S-24B</Name>
+    <Weight>235</Weight>
+  </Store>
+  <Store>
+    <CLSID>{3858707D-F5D5-4bbb-BDD8-ABB0530EBC7C}</CLSID>
+    <Name>S-24B</Name>
+    <Weight>295</Weight>
+  </Store>
+  <Store>
+    <CLSID>{S-24B}</CLSID>
+    <Name>S-24B (21)</Name>
+    <Weight>235</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0180F983-C14A-11d8-9897-000476191836}</CLSID>
+    <Name>S-25L</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{A0648264-4BC0-4EE8-A543-D119F6BA4257}</CLSID>
+    <Name>S-25 OFM</Name>
+    <Weight>495</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0519A262-0AB6-11d6-9193-00A0249B6F00}</CLSID>
+    <Name>Tangazh ELINT pod</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>TEST_ROTARY_LAUNCHER_MK82</CLSID>
+    <Name>TEST ROTARY LAUNCHER MK82</Name>
+    <Weight>6748</Weight>
+  </Store>
+  <Store>
+    <CLSID>TGM_65H</CLSID>
+    <Name>TGM-65H</Name>
+    <Weight>208</Weight>
+  </Store>
+  <Store>
+    <CLSID>{EF124821-F9BB-4314-A153-E0E2FE1162C4}</CLSID>
+    <Name>TORNADO Fuel tank</Name>
+    <Weight>1275</Weight>
+  </Store>
+  <Store>
+    <CLSID>TOW</CLSID>
+    <Name>BGM-71 TOW</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{U22A}</CLSID>
+    <Name>U22/A Jammer</Name>
+    <Weight>348</Weight>
+  </Store>
+  <Store>
+    <CLSID>{U22}</CLSID>
+    <Name>U22 Jammer</Name>
+    <Weight>348</Weight>
+  </Store>
+  <Store>
+    <CLSID>{UB-16_S5M}</CLSID>
+    <Name>UB-16UM - 16 S-5M</Name>
+    <Weight>119.76</Weight>
+  </Store>
+  <Store>
+    <CLSID>{UB-16-57UMP}</CLSID>
+    <Name>UB-16 - 16 S-5KO</Name>
+    <Weight>138</Weight>
+  </Store>
+  <Store>
+    <CLSID>{637334E4-AB5A-47C0-83A6-51B7F1DF3CD5}</CLSID>
+    <Name>UB-32A - 32 S-5KO</Name>
+    <Weight>275</Weight>
+  </Store>
+  <Store>
+    <CLSID>{UB-32_S5M}</CLSID>
+    <Name>UB-32M - 32 S-5M</Name>
+    <Weight>228.52</Weight>
+  </Store>
+  <Store>
+    <CLSID>{05544F1A-C39C-466b-BC37-5BD1D52E57BB}</CLSID>
+    <Name>UPK-23-250</Name>
+    <Weight>218</Weight>
+  </Store>
+  <Store>
+    <CLSID>{UPK-23-250 MiG-21}</CLSID>
+    <Name>UPK-23-250</Name>
+    <Weight>218</Weight>
+  </Store>
+  <Store>
+    <CLSID>{WGr21}</CLSID>
+    <Name>Werfer-Granate 21</Name>
+    <Weight>121</Weight>
+  </Store>
+  <Store>
+    <CLSID>{wmd7}</CLSID>
+    <Name>WMD7</Name>
+    <Weight>445</Weight>
+  </Store>
+  <Store>
+    <CLSID>XM158_M151</CLSID>
+    <Name>XM158 - 7 2.75' rockets M151 HE</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>XM158_M156</CLSID>
+    <Name>XM158 - 7 2.75' rockets M156 WP</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>XM158_M257</CLSID>
+    <Name>XM158 - 7 2.75' rockets M257 Parachute illumination</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>XM158_M274</CLSID>
+    <Name>XM158 - 7 2.75' rockets M274 Practice smoke</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>XM158_MK1</CLSID>
+    <Name>XM158 - 7 2.75' rockets MK1 Practice</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>XM158_MK5</CLSID>
+    <Name>XM158 - 7 2.75' rockets MK5 HE</Name>
+    <Weight>112</Weight>
+  </Store>
+  <Store>
+    <CLSID>{YJ-83K}</CLSID>
+    <Name>YJ-83K</Name>
+    <Weight>850</Weight>
+  </Store>
+  <Store>
+    <CLSID>{tank1100}</CLSID>
+    <Name>1100L Tank</Name>
+    <Weight>690</Weight>
+  </Store>
+  <Store>
+    <CLSID>{12xM64}</CLSID>
+    <Name>12 AN-M64</Name>
+    <Weight>2744</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FW_190_R4M_LEFT_WING}</CLSID>
+    <Name>13 R4M</Name>
+    <Weight>70.05</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FW_190_R4M_RGHT_WING}</CLSID>
+    <Name>13 R4M</Name>
+    <Weight>70.05</Weight>
+  </Store>
+  <Store>
+    <CLSID>{6C47D097-83FF-4FB2-9496-EAB36DDF0B05}</CLSID>
+    <Name>27 Mk-82</Name>
+    <Weight>6507</Weight>
+  </Store>
+  <Store>
+    <CLSID>{89D000B0-0360-461A-AD83-FB727E2ABA98}</CLSID>
+    <Name>2xGBU-12</Name>
+    <Weight>601</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2xGBU-12_right}</CLSID>
+    <Name>2xGBU-12</Name>
+    <Weight>601</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TWIN_S25}</CLSID>
+    <Name>2xS-25</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*GBU-12_LEFT}</CLSID>
+    <Name>2 GBU-12</Name>
+    <Weight>610</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*GBU-12_RIGHT}</CLSID>
+    <Name>2 GBU-12</Name>
+    <Weight>610</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*GBU-16_LEFT}</CLSID>
+    <Name>2 GBU-16</Name>
+    <Weight>1050</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*GBU-16_RIGHT}</CLSID>
+    <Name>2 GBU-16</Name>
+    <Weight>1050</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*GBU-38_LEFT}</CLSID>
+    <Name>2 GBU-38</Name>
+    <Weight>610</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*GBU-38_RIGHT}</CLSID>
+    <Name>2 GBU-38</Name>
+    <Weight>610</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-82_LEFT}</CLSID>
+    <Name>2 MK-82</Name>
+    <Weight>542</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-82AIR_LEFT}</CLSID>
+    <Name>2 MK-82AIR</Name>
+    <Weight>542</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-82AIR_RIGHT}</CLSID>
+    <Name>2 MK-82AIR</Name>
+    <Weight>542</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-82_RIGHT}</CLSID>
+    <Name>2 MK-82</Name>
+    <Weight>542</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-82SNAKEYE_LEFT}</CLSID>
+    <Name>2 MK-82 SNAKEYE</Name>
+    <Weight>542</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-82SNAKEYE_RIGHT}</CLSID>
+    <Name>2 MK-82 SNAKEYE</Name>
+    <Weight>542</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-83_LEFT}</CLSID>
+    <Name>2 MK-83</Name>
+    <Weight>954</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*Mk-83_RIGHT}</CLSID>
+    <Name>2 MK-83</Name>
+    <Weight>954</Weight>
+  </Store>
+  <Store>
+    <CLSID>{0B9ABA77-93B8-45FC-9C63-82AFB2CB50A4}</CLSID>
+    <Name>2 Mk-20 Rockeye</Name>
+    <Weight>200</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*MK-20_LEFT}</CLSID>
+    <Name>2 Mk-20 Rockeye</Name>
+    <Weight>504</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_2*MK-20_RIGHT}</CLSID>
+    <Name>2 Mk-20 Rockeye</Name>
+    <Weight>504</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B13_5_S13OF_DUAL_L}</CLSID>
+    <Name>2 x B-13L - 5 S-13 OF</Name>
+    <Weight>1020</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B13_5_S13OF_DUAL_R}</CLSID>
+    <Name>2 x B-13L - 5 S-13 OF</Name>
+    <Weight>1020</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8M1_20_S8KOM_DUAL_L}</CLSID>
+    <Name>2 x B-8M1 - 20 S-8KOM</Name>
+    <Weight>727</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8M1_20_S8KOM_DUAL_R}</CLSID>
+    <Name>2 x B-8M1 - 20 S-8KOM</Name>
+    <Weight>727</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8M1_20_S8OFP2_DUAL_L}</CLSID>
+    <Name>2 x B-8M1 - 20 S-8OFP2</Name>
+    <Weight>727</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8M1_20_S8OFP2_DUAL_R}</CLSID>
+    <Name>2 x B-8M1 - 20 S-8OFP2</Name>
+    <Weight>727</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8M1_20_S8TsM_DUAL_L}</CLSID>
+    <Name>2 x B-8M1 - 20 S-8TsM</Name>
+    <Weight>727</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B8M1_20_S8TsM_DUAL_R}</CLSID>
+    <Name>2 x B-8M1 - 20 S-8TsM</Name>
+    <Weight>727</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB_250_DUAL_L}</CLSID>
+    <Name>2 x FAB-250</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB_250_DUAL_R}</CLSID>
+    <Name>2 x FAB-250</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB_500_DUAL_L}</CLSID>
+    <Name>2 x FAB-500</Name>
+    <Weight>1012</Weight>
+  </Store>
+  <Store>
+    <CLSID>{FAB_500_DUAL_R}</CLSID>
+    <Name>2 x FAB-500</Name>
+    <Weight>1012</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RBK_250_PTAB25M_DUAL_L}</CLSID>
+    <Name>2 x RBK-250 PTAB-2.5M</Name>
+    <Weight>546</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RBK_250_PTAB25M_DUAL_R}</CLSID>
+    <Name>2 x RBK-250 PTAB-2.5M</Name>
+    <Weight>546</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RBK_500_PTAB105_DUAL_L}</CLSID>
+    <Name>2 x RBK-500-255 PTAB-10-5</Name>
+    <Weight>854</Weight>
+  </Store>
+  <Store>
+    <CLSID>{RBK_500_PTAB105_DUAL_R}</CLSID>
+    <Name>2 x RBK-500-255 PTAB-10-5</Name>
+    <Weight>854</Weight>
+  </Store>
+  <Store>
+    <CLSID>{S25_DUAL_L}</CLSID>
+    <Name>2 x S-25</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>{S25_DUAL_R}</CLSID>
+    <Name>2 x S-25</Name>
+    <Weight>500</Weight>
+  </Store>
+  <Store>
+    <CLSID>3M45</CLSID>
+    <Name>SS-N-19 SHIPWRECK</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42A_3*GBU-12}</CLSID>
+    <Name>3 GBU-12</Name>
+    <Weight>885</Weight>
+  </Store>
+  <Store>
+    <CLSID>{88D49E04-78DF-4F08-B47E-B81247A9E3C5}</CLSID>
+    <Name>3 GBU-16</Name>
+    <Weight>666</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42A_3*GBU-16}</CLSID>
+    <Name>3 GBU-16</Name>
+    <Weight>1545</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_3*GBU-38}</CLSID>
+    <Name>3 GBU-38</Name>
+    <Weight>885</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_3*Mk-82SNAKEYE}</CLSID>
+    <Name>3 MK-82 SNAKEYE</Name>
+    <Weight>783</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_3*Mk-83}</CLSID>
+    <Name>3 MK-83</Name>
+    <Weight>1401</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B83CB620-5BBE-4BEA-910C-EB605A327EF9}</CLSID>
+    <Name>3 Mk-20 Rockeye</Name>
+    <Weight>726</Weight>
+  </Store>
+  <Store>
+    <CLSID>{60CC734F-0AFA-4E2E-82B8-93B941AB11CF}</CLSID>
+    <Name>3 Mk-82</Name>
+    <Weight>783</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_3*Mk-82AIR}</CLSID>
+    <Name>3 Mk-82AIR</Name>
+    <Weight>783</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-42_LS_3*SUU-25_8*LUU-2}</CLSID>
+    <Name>3 SUU-25 * 8 LUU-2</Name>
+    <Weight>490</Weight>
+  </Store>
+  <Store>
+    <CLSID>48N6E2</CLSID>
+    <Name>48N6E2 S-300F (SA-N-6 Grumble)</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>_4M80</CLSID>
+    <Name>SS-N-12 SANDBOX</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M71BOMB}</CLSID>
+    <Name>4 M/71 HE-Bomb</Name>
+    <Weight>609</Weight>
+  </Store>
+  <Store>
+    <CLSID>{M71BOMBD}</CLSID>
+    <Name>4 M/71 HE-Bomb w chute</Name>
+    <Weight>609</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B84DFE16-6AC7-4854-8F6D-34137892E166}</CLSID>
+    <Name>51 Mk-82</Name>
+    <Weight>12291</Weight>
+  </Store>
+  <Store>
+    <CLSID>5V55</CLSID>
+    <Name>5V55 S-300PS (SA-10B Grumble)</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MER-5E_MK82x5}</CLSID>
+    <Name>5 Mk-82</Name>
+    <Weight>1295.7</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MER-5E_Mk82SNAKEYEx5}</CLSID>
+    <Name>5 Mk-82 SnakeEye</Name>
+    <Weight>1250.7</Weight>
+  </Store>
+  <Store>
+    <CLSID>{027563C9-D87E-4A85-B317-597B510E3F03}</CLSID>
+    <Name>6 Mk-82</Name>
+    <Weight>1446</Weight>
+  </Store>
+  <Store>
+    <CLSID>{tank800}</CLSID>
+    <Name>800L Tank</Name>
+    <Weight>490</Weight>
+  </Store>
+  <Store>
+    <CLSID>_9M111</CLSID>
+    <Name>AT-4 SPIGOT</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{57232979-8B0F-4db7-8D9A-55197E06B0F5}</CLSID>
+    <Name>9M114 Shturm-V x 8</Name>
+    <Weight>300</Weight>
+  </Store>
+  <Store>
+    <CLSID>{B919B0F4-7C25-455E-9A02-CEA51DB895E3}</CLSID>
+    <Name>9M114 Shturm-V - 2</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>_9M117</CLSID>
+    <Name>AT-10 SABBER</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>9M133</CLSID>
+    <Name>AT-14 KORNET</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>9M14</CLSID>
+    <Name>AT-3 SAGGER</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>9M31</CLSID>
+    <Name>SA-9 GASKIN</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>9M311</CLSID>
+    <Name>SA-19 GRISON</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>9M33</CLSID>
+    <Name>SA-8 GECKO</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>_9M331</CLSID>
+    <Name>SA-15 GAUNTLET</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>_9M37</CLSID>
+    <Name>SA-13 GOPHER</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>_9M38</CLSID>
+    <Name>SA-11 GADFLY</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>_9M39</CLSID>
+    <Name>SA-18 GROUSE</Name>
+    <Weight>0</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU33_2X_GBU-12}</CLSID>
+    <Name>BRU-33 2*GBU-12</Name>
+    <Weight>629</Weight>
+  </Store>
+  <Store>
+    <CLSID>{CE2_SMOKE_WHITE}</CLSID>
+    <Name>Smoke for Christen Eagle II, white</Name>
+    <Weight>7</Weight>
+  </Store>
+
+  <!-- MiG-19P Stores -->
+  <Store>
+    <CLSID>{ORO57K_S5M_HEFRAG}</CLSID>
+    <Name>ORO-57K - S-5M x 8</Name>
+    <Weight>64.92</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ORO57K_S5M1_HEFRAG}</CLSID>
+    <Name>ORO-57K - S-5M1 HE-FRAG FFAR x 8</Name>
+    <Weight>64.92</Weight>
+  </Store>
+  <Store>
+    <CLSID>{ORO57K_S5MO_HEFRAG}</CLSID>
+    <Name>ORO-57K - S-5MO HE-FRAG FFAR x 8</Name>
+    <Weight>64.92</Weight>
+  </Store>
+  <Store>
+    <CLSID>{K-13A}</CLSID>
+    <Name>K-13A</Name>
+    <Weight>90</Weight>
+  </Store>
+  <Store>
+    <CLSID>FAB_50</CLSID>
+    <Name>FAB-50</Name>
+    <Weight>50</Weight>
+  </Store>
+  <Store>
+    <CLSID>FAB_100M</CLSID>
+    <Name>FAB-100M</Name>
+    <Weight>100</Weight>
+  </Store>
+  <Store>
+    <CLSID>PTB400_MIG19</CLSID>
+    <Name>Fuel Tank 400 liters</Name>
+    <Weight>364</Weight>
+  </Store>
+  <Store>
+    <CLSID>PTB760_MIG19</CLSID>
+    <Name>Fuel Tank 760 liters</Name>
+    <Weight>663.8</Weight>
+  </Store>
+
+  <!-- F-14B Stores -->
+  <Store>
+    <CLSID>{AIM_54A_Mk47}</CLSID>
+    <Name>AIM-54A-Mk47</Name>
+    <Weight>444</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM_54A_Mk60}</CLSID>
+    <Name>AIM-54A-Mk60</Name>
+    <Weight>471.7</Weight>
+  </Store>
+  <Store>
+    <CLSID>{AIM_54C_Mk47}</CLSID>
+    <Name>AIM-54C-Mk47</Name>
+    <Weight>465.6</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{SHOULDER AIM_54C_Mk47 L}</CLSID>
+    <Name>AIM-54C-Mk47</Name>
+    <Weight>510.96</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SHOULDER AIM_54C_Mk47 R}</CLSID>
+    <Name>AIM-54C-Mk47</Name>
+    <Weight>510.96</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{SHOULDER AIM_54A_Mk60 L}</CLSID>
+    <Name>AIM-54A-Mk60</Name>
+    <Weight>517.06</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SHOULDER AIM_54A_Mk60 R}</CLSID>
+    <Name>AIM-54A-Mk60</Name>
+    <Weight>517.06</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{SHOULDER AIM_54A_Mk47 L}</CLSID>
+    <Name>AIM-54A-Mk47</Name>
+    <Weight>489.36</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SHOULDER AIM_54A_Mk47 R}</CLSID>
+    <Name>AIM-54A-Mk47</Name>
+    <Weight>489.36</Weight>
+  </Store>
+
+  <Store>
+    <CLSID>{LAU-7 - AIM-9M}</CLSID>
+    <Name>LAU-7 AIM-9M</Name>
+    <Weight>101.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-7 - AIM-9L}</CLSID>
+    <Name>LAU-7 AIM-9L</Name>
+    <Weight>101.18</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-138 wtip - AIM-9M}</CLSID>
+    <Name>LAU-138 AIM-9M</Name>
+    <Weight>86.64</Weight>
+  </Store>
+  <Store>
+    <CLSID>{LAU-138 wtip - AIM-9L}</CLSID>
+    <Name>LAU-138 AIM-9L</Name>
+    <Weight>86.18</Weight>
+  </Store>
+  <Store>
+    <CLSID>{SHOULDER AIM-7M}</CLSID>
+    <Name>AIM-7M</Name>
+    <Weight>284.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BELLY AIM-7M}</CLSID>
+    <Name>AIM-7M</Name>
+    <Weight>230</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F14-300gal-empty}</CLSID>
+    <Name>Fuel tank 300 gal (empty)</Name>
+    <Weight>50</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F14-300gal}</CLSID>
+    <Name>Fuel tank 300 gal</Name>
+    <Weight>958.4</Weight>
+  </Store>
+  <Store>
+    <CLSID>{F14-LANTIRN-TP}</CLSID>
+    <Name>LANTIRN Targeting Pod</Name>
+    <Weight>342</Weight>
+  </Store>
+  <!--<Store>
+    <CLSID>{F14-CLEAN-RAIL}</CLSID>
+    <Name>Clean Phoenix Pallet</Name>
+    <Weight>0</Weight>
+  </Store>-->
+  <Store>
+    <CLSID>{BRU-32 MK-84}</CLSID>
+    <Name>Mk-84</Name>
+    <Weight>951.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 MK-83}</CLSID>
+    <Name>Mk-83</Name>
+    <Weight>504.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 MK-82}</CLSID>
+    <Name>Mk-82</Name>
+    <Weight>298.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 MK-82AIR}</CLSID>
+    <Name>Mk-82AIR</Name>
+    <Weight>298.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 MK-82SE}</CLSID>
+    <Name>Mk-82 SnakeEye</Name>
+    <Weight>298.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 MK-20}</CLSID>
+    <Name>Mk-20</Name>
+    <Weight>279.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 GBU-10}</CLSID>
+    <Name>GBU-10</Name>
+    <Weight>997.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 GBU-12}</CLSID>
+    <Name>GBU-12</Name>
+    <Weight>332.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 GBU-16}</CLSID>
+    <Name>GBU-16</Name>
+    <Weight>621.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU-32 GBU-24}</CLSID>
+    <Name>GBU-24</Name>
+    <Weight>1107.38</Weight>
+  </Store>
+  
+  
+  
+  
+  
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK81 RS}</CLSID>
+    <Name>2 Mk-81</Name>
+    <Weight>421.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK81 LS}</CLSID>
+    <Name>2 Mk-81</Name>
+    <Weight>421.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK82 RS}</CLSID>
+    <Name>2 Mk-82</Name>
+    <Weight>667.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK82 LS}</CLSID>
+    <Name>2 Mk-82</Name>
+    <Weight>667.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK82AIR RS}</CLSID>
+    <Name>2 Mk-82AIR</Name>
+    <Weight>667.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK82AIR LS}</CLSID>
+    <Name>2 Mk-82AIR</Name>
+    <Weight>667.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK82SE RS}</CLSID>
+    <Name>2 Mk-82 SnakeEye</Name>
+    <Weight>667.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK82SE LS}</CLSID>
+    <Name>2 Mk-82 SnakeEye</Name>
+    <Weight>667.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK20 RS}</CLSID>
+    <Name>2 MK-20</Name>
+    <Weight>629.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*MK20 LS}</CLSID>
+    <Name>2 MK-20</Name>
+    <Weight>629.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_MK83 RS}</CLSID>
+    <Name>Mk-83</Name>
+    <Weight>632.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_MK83 LS}</CLSID>
+    <Name>Mk-83</Name>
+    <Weight>632.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_3*BDU33}</CLSID>
+    <Name>3 BDU-33</Name>
+    <Weight>218.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_BDU33}</CLSID>
+    <Name>3 BDU-33</Name>
+    <Weight>218.38</Weight>
+  </Store>
+  
+  
+  
+  
+  
+  <Store>
+    <CLSID>{MAK79_MK81 4}</CLSID>
+    <Name>MAK79 4 Mk-81</Name>
+    <Weight>512</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK81 3L}</CLSID>
+    <Name>MAK79 3 Mk-81</Name>
+    <Weight>384</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK81 3R}</CLSID>
+    <Name>MAK79 3 Mk-81</Name>
+    <Weight>384</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82 4}</CLSID>
+    <Name>MAK79 4 Mk-82</Name>
+    <Weight>1004</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82 3L}</CLSID>
+    <Name>MAK79 3 Mk-82</Name>
+    <Weight>753</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82 3R}</CLSID>
+    <Name>MAK79 3 Mk-82</Name>
+    <Weight>753</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_BDU33 4}</CLSID>
+    <Name>MAK79 4 BDU-33</Name>
+    <Weight>84</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_BDU33 3L}</CLSID>
+    <Name>MAK79 3 BDU-33</Name>
+    <Weight>63</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_BDU33 3R}</CLSID>
+    <Name>MAK79 3 BDU-33</Name>
+    <Weight>63</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82AIR 4}</CLSID>
+    <Name>MAK79 4 Mk-82AIR</Name>
+    <Weight>1004</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82AIR 3L}</CLSID>
+    <Name>MAK79 3 Mk-82AIR</Name>
+    <Weight>753</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82AIR 3R}</CLSID>
+    <Name>MAK79 3 Mk-82AIR</Name>
+    <Weight>753</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82SE 4}</CLSID>
+    <Name>MAK79 4 Mk-82 SnakeEye</Name>
+    <Weight>1004</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82SE 3L}</CLSID>
+    <Name>MAK79 3 Mk-82 SnakeEye</Name>
+    <Weight>753</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK82SE 3R}</CLSID>
+    <Name>MAK79 3 Mk-82 SnakeEye</Name>
+    <Weight>753</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK83 3L}</CLSID>
+    <Name>MAK79 3 Mk-83</Name>
+    <Weight>1371</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK83 3R}</CLSID>
+    <Name>MAK79 3 Mk-83</Name>
+    <Weight>1371</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK83 1L}</CLSID>
+    <Name>MAK79 Mk-83</Name>
+    <Weight>457</Weight>
+  </Store>
+  <Store>
+    <CLSID>{MAK79_MK83 1R}</CLSID>
+    <Name>MAK79 Mk-83</Name>
+    <Weight>457</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_ADM141}</CLSID>
+    <Name>ADM_141A</Name>
+    <Weight>365.38</Weight>
+  </Store>
+  
+  
+  
+  
+  
+  
+  <Store>
+    <CLSID>{BRU3242_LAU10}</CLSID>
+    <Name>LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>625.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_2*LAU10 L}</CLSID>
+    <Name>2 LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>1065.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_2*LAU10 R}</CLSID>
+    <Name>2 LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>1065.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*LAU10 RS}</CLSID>
+    <Name>2 LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>1065.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{PHXBRU3242_2*LAU10 LS}</CLSID>
+    <Name>2 LAU-10 - 4 ZUNI MK 71</Name>
+    <Weight>1065.38</Weight>
+  </Store>
+  
+  
+  
+  
+  
+  <Store>
+    <CLSID>{BRU3242_SUU25}</CLSID>
+    <Name>SUU-25 * 8 LUU-2</Name>
+    <Weight>315.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_2*SUU25 L}</CLSID>
+    <Name>2 SUU-25 * 8 LUU-2</Name>
+    <Weight>445.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_2*SUU25 R}</CLSID>
+    <Name>2 SUU-25 * 8 LUU-2</Name>
+    <Weight>445.38</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_2*LUU2 R}</CLSID>
+    <Name>2 LUU-2</Name>
+    <Weight>212.58</Weight>
+  </Store>
+  <Store>
+    <CLSID>{BRU3242_2*LUU2 L}</CLSID>
+    <Name>2 LUU-2</Name>
+    <Weight>212.58</Weight>
+  </Store>
+
+  <!-- I-16 -->
+  <Store>
+    <CLSID>I16_RS_82</CLSID>
+    <Name>RS-82</Name>
+    <Weight>9.7</Weight>
+  </Store>
+
+  <!-- Fw190A-8 -->
+  <Store>
+    <CLSID>{SC_250}</CLSID>
+    <Name>SC-250</Name>
+    <Weight>250</Weight>
+  </Store>
+
+  <!-- F-16 -->
+  <Store>
+    <CLSID>{TER_9A_3*MK-82}</CLSID>
+    <Name>TER-9A - 3 x Mk-82</Name>
+    <Weight>776</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_3*MK-82_Snakeye}</CLSID>
+    <Name>TER-9A - 3 x Mk-82 SnakeEye</Name>
+    <Weight>749</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_3*MK-82AIR}</CLSID>
+    <Name>TER-9A - 3 x Mk-82AIR</Name>
+    <Weight>749</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_3*BDU-33}</CLSID>
+    <Name>TER-9A - 3 x BDU-33</Name>
+    <Weight>86.9</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2L*MK-82}</CLSID>
+    <Name>TER-9A - 2 x Mk-82</Name>
+    <Weight>535</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2L*MK-82_Snakeye}</CLSID>
+    <Name>TER-9A - 2 x Mk-82 SnakeEye</Name>
+    <Weight>517</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2L*MK-82AIR}</CLSID>
+    <Name>TER-9A - 2 x Mk-82AIR</Name>
+    <Weight>517</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2L*GBU-12}</CLSID>
+    <Name>TER-9A - 2 x GBU-12</Name>
+    <Weight>603</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2L*CBU-87}</CLSID>
+    <Name>TER-9A - 2 x CBU-87</Name>
+    <Weight>913</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2L*CBU-97}</CLSID>
+    <Name>TER-9A - 2 x CBU-97</Name>
+    <Weight>887</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2R*MK-82}</CLSID>
+    <Name>TER-9A - 2 x Mk-82AIR</Name>
+    <Weight>517</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2R*MK-82_Snakeye}</CLSID>
+    <Name>TER-9A - 2 x Mk-82 SnakeEye</Name>
+    <Weight>517</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2R*MK-82AIR}</CLSID>
+    <Name>TER-9A - 2 x Mk-82AIR</Name>
+    <Weight>517</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2R*GBU-12}</CLSID>
+    <Name>TER-9A - 2 x GBU-12</Name>
+    <Weight>603</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2R*CBU-87}</CLSID>
+    <Name>TER-9A - 2 x CBU-87</Name>
+    <Weight>913</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_2R*CBU-97}</CLSID>
+    <Name>TER-9A - 2 x CBU-97</Name>
+    <Weight>887</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_3*CBU-87}</CLSID>
+    <Name>TER-9A - 3 x CBU-87</Name>
+    <Weight>1343</Weight>
+  </Store>
+  <Store>
+    <CLSID>{TER_9A_3*CBU-97}</CLSID>
+    <Name>TER-9A - 3 x CBU-97</Name>
+    <Weight>1304</Weight>
+  </Store>
+
+</Stores>
