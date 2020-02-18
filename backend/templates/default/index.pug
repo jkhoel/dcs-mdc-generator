@@ -353,14 +353,14 @@ html(lang="en")
             th TCN
             th NOTES
 
-          if mis_comms
-            each comm in mis_comms
+          if support
+            each sup in support
               tr
-                td.lpad5 #{comm.agency}
-                td.lpad5 #{comm.chan}
-                td.freq #{comm.freq}
-                td.freq #{comm.tcn}
-                td.lpad5 #{comm.notes}
+                td.lpad5 #{sup.agency}
+                td.lpad5 #{sup.chan}
+                td.freq #{sup.freq}
+                td.freq #{sup.tcn}
+                td.lpad5 #{sup.notes}
           else
             tr
               td(colspan=5, style="text-align: center") N/A
@@ -434,8 +434,8 @@ html(lang="en")
                   else
                     td.algnc #{waypoint.dist} NM
                     td.algnc #{waypoint.brg}°
-                  td.algnc #{waypoint.gs}
-                  td.algnc #{waypoint.alt}
+                  td.algnc #{Math.round(waypoint.gs)}
+                  td.algnc #{Math.round(waypoint.alt)}
                   td.algnc 99:99
 
           else
