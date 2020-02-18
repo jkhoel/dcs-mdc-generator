@@ -32,12 +32,49 @@ export default function WaypointTable({ label }) {
     }
   };
 
+  const FormatAltitude = altitude => {
+    let { transition_alt } = store.settings || 9000;
+
+    // If we are above the transition alt, then convert to Flight Level
+    if (altitude > parseInt(transition_alt)) {
+      const fl = Math.round(altitude / 100);
+      if (fl < 100) return `FL0${fl}`;
+      return `FL${fl}`;
+    }
+    // If not, then just return the altitude in feet
+    return altitude;
+  };
+
+  const FormatSpeed = rowData => {
+    const { speedtype } = rowData;
+
+    if (speedtype === 'mach')
+      return `${parseFloat(rowData[speedtype]).toFixed(2)}M`;
+
+    if (speedtype === 'gs') return `${Math.round(rowData[speedtype])} GS`;
+
+    return `${Math.round(rowData[speedtype])} K${speedtype.toUpperCase()}`;
+  };
+
   // Configure table columns
   const columns = [
     { title: 'TYPE', field: 'desc', sorting: false },
     { title: 'WAYPOINT', field: 'wp', sorting: false },
-    { title: 'ALT', field: 'alt', sorting: false },
-    { title: 'GS', field: 'gs', sorting: false },
+    {
+      title: 'ALT',
+      field: 'alt',
+      sorting: false,
+      render: rowData =>
+        rowData ? (
+          <React.Fragment>{FormatAltitude(rowData.alt)}</React.Fragment>
+        ) : null
+    },
+    {
+      title: 'SPEED',
+      sorting: false,
+      render: rowData =>
+        rowData ? <React.Fragment>{FormatSpeed(rowData)}</React.Fragment> : null
+    },
     {
       title: 'TOT',
       sorting: false,
@@ -106,7 +143,12 @@ export default function WaypointTable({ label }) {
             lat: waypoint.lat,
             lon: waypoint.lon,
             brg: Math.round(bearing),
-            dist: Math.round(distance)
+            dist: Math.round(distance),
+            agl: waypoint.agl,
+            speedtype: waypoint.speedtype.toLowerCase(),
+            tas: waypoint.tas,
+            cas: waypoint.cas,
+            mach: waypoint.mach
           };
         })
       );

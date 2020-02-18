@@ -66,6 +66,32 @@
     }
   };
 
+-
+  function FormatAltitude(altitude) {
+    let { transition_alt } = settings || 9000;
+
+    // If we are above the transition alt, then convert to Flight Level
+    if (altitude > parseInt(transition_alt)) {
+      const fl = Math.round(altitude / 100);
+      if (fl < 100) return `FL0${fl}`;
+      return `FL${fl}`;
+    }
+    // If not, then just return the altitude in feet
+    return altitude;
+  };
+
+-
+  function FormatSpeed(wp) {
+    const { speedtype } = wp;
+
+    if (speedtype === 'mach')
+      return `${parseFloat(wp[speedtype]).toFixed(2)}M`;
+
+    if (speedtype === 'gs') return `${Math.round(wp[speedtype])} GS`;
+
+    return `${Math.round(wp[speedtype])} K${speedtype.toUpperCase()}`;
+  };
+
 //- ### TEMP DATA
 //- - 
 //-   const waypoints = [
@@ -299,93 +325,99 @@ html(lang="en")
             td.freq 1614
             td.freq 4414
 
-      //- Package Info
-      table.kb-width(style="margin-top: 15px")
-        colgroup
-          col(style="width: 160px")
-          col
-          col
-          col
-
-        tbody
-          tr
-            td.section(colspan=6) PACKAGE INFO
-          tr
-            th CALLSIGN
-            th AIRCRAFT
-            th FREQ
-            th TCN
-            th LSR
-            th TASKING
-
-          tr
-            td.lpad5 PANTHER
-            td.bold.algnl.lpad5 2xFA-18C
-            td.freq 123.000
-            td.freq 76Y
-            td.freq N/A
-            td.freq CAP
-
-          tr
-            td.lpad5 AXE
-            td.bold.algnl.lpad5 2xA-10C
-            td.freq 134.000
-            td.freq 55Y
-            td.freq 1511
-            td.freq CAS
-
       //- Support
-      table.kb-width(style="margin-top: 15px")
-        colgroup
-          col(style="width: 190px")
-          col(style="width: 85px")
-          col(style="width: 60px")
-          col(style="width: 60px")
-          col
+      if support
+        if support.length > 0
+          table.kb-width(style="margin-top: 15px")
+            colgroup
+              col(style="width: 190px")
+              col(style="width: 85px")
+              col(style="width: 60px")
+              col(style="width: 60px")
+              col
 
-        tbody
-          tr
-            td.section(colspan=5) SUPPORT
-          tr
-            th AGENCY
-            th CHAN
-            th FREQ
-            th TCN
-            th NOTES
-
-          if support
-            each sup in support
+            tbody
               tr
-                td.lpad5 #{sup.agency}
-                td.lpad5 #{sup.chan}
-                td.freq #{sup.freq}
-                td.freq #{sup.tcn}
-                td.lpad5 #{sup.notes}
-          else
-            tr
-              td(colspan=5, style="text-align: center") N/A
+                td.section(colspan=5) SUPPORT
+              tr
+                th AGENCY
+                th CHAN
+                th FREQ
+                th TCN
+                th NOTES
+
+              if support
+                each sup in support
+                  tr
+                    td.lpad5 #{sup.agency}
+                    td.lpad5 #{sup.chan}
+                    td.freq #{sup.freq}
+                    td.freq #{sup.tcn}
+                    td.lpad5 #{sup.notes}
+              else
+                tr
+                  td(colspan=5, style="text-align: center") N/A
+
+      //- Package Info
+      if pkg
+        if pkg.length > 0
+          table.kb-width(style="margin-top: 15px")
+            colgroup
+              col(style="width: 160px")
+              col
+              col
+              col
+
+            tbody
+              tr
+                td.section(colspan=6) PACKAGE INFO
+              tr
+                th CALLSIGN
+                th AIRCRAFT
+                th FREQ
+                th TCN
+                th LSR
+                th TASKING
+
+              tr
+                td.lpad5 PANTHER
+                td.bold.algnl.lpad5 2xFA-18C
+                td.freq 123.000
+                td.freq 76Y
+                td.freq N/A
+                td.freq CAP
+
+              tr
+                td.lpad5 AXE
+                td.bold.algnl.lpad5 2xA-10C
+                td.freq 134.000
+                td.freq 55Y
+                td.freq 1511
+                td.freq CAS
+
 
       //- Notes
-      table.kb-width(style="margin-top: 15px")
-        colgroup
-          col(style="width: 190px")
-          col
+      if false
+        table.kb-width(style="margin-top: 15px")
+          colgroup
+            col(style="width: 190px")
+            col
 
-          tbody
-            tr
-              td.section(colspan=2) NOTES
-            tr
-              th PREDICATE
-              th DETAILS
-
-            if notes
-              each note in notes
-                tr
-                  td.lpad5 #{note.pre}
-                  td.lpad5 #{note.details}
-            else
+            tbody
               tr
-                td(colspan=2, style="text-align: center") N/A
+                td.section(colspan=2) NOTES
+              tr
+                th PREDICATE
+                th DETAILS
+
+              if notes
+                each note in notes
+                  tr
+                    td.lpad5 #{note.pre}
+                    td.lpad5 #{note.details}
+              else
+                tr
+                  td(colspan=2, style="text-align: center") N/A
 
     //- ##### PAGE: WAYPOINTS & POIs
     div.kneeboard#kneeboard
@@ -408,9 +440,9 @@ html(lang="en")
             each waypoint, index in waypoints
               tr
                 th WP#{index}
-                th #{waypoint.desc}
+                th(style="font-weight: bold;", colspan=2) #{waypoint.wp}
                 th(style="font-size: 16px", colspan=2) #{FormatCoords(waypoint.lat)}
-                th(style="font-size: 16px", colspan=3) #{FormatCoords(waypoint.lon)}
+                th(style="font-size: 16px", colspan=2) #{FormatCoords(waypoint.lon)}
 
               tr
                 tr(style="color: #a0a0a0;")
@@ -420,9 +452,9 @@ html(lang="en")
                     td.algnc TOT
 
                   td.algnc ACT
-                  td.algnc DIST
                   td.algnc BRG
-                  td.algnc GS
+                  td.algnc DIST
+                  td.algnc SPEED
                   td.algnc ALT
                   td.algnc ETE
                 tr
@@ -432,10 +464,12 @@ html(lang="en")
                     td.algnc -
                     td.algnc -
                   else
-                    td.algnc #{waypoint.dist} NM
                     td.algnc #{waypoint.brg}°
-                  td.algnc #{Math.round(waypoint.gs)}
-                  td.algnc #{Math.round(waypoint.alt)}
+                    td.algnc #{waypoint.dist} NM
+                  //- td.algnc #{Math.round(waypoint.gs)}
+                  td.algnc #{FormatSpeed(waypoint)}
+                  //- td.algnc #{Math.round(waypoint.alt)}
+                  td.algnc #{FormatAltitude(waypoint.alt)}
                   td.algnc 99:99
 
           else
@@ -443,7 +477,8 @@ html(lang="en")
               td(colspan=7, style="text-align: center") N/A
 
       //- POIs
-      table.kb-width(style="table-layout: fixed; margin-top: 15px")
+      if false
+        table.kb-width(style="table-layout: fixed; margin-top: 15px")
         colgroup
           col(style="width: 30px")
           col
@@ -473,60 +508,61 @@ html(lang="en")
     //- ##### PAGE: CONFIG
     div.kneeboard
       //- Config
-      table(style="width: 225px")
-        colgroup
-          col(style="width: 100px")
-          col
+      if false
+        table(style="width: 225px")
+          colgroup
+            col(style="width: 100px")
+            col
 
-        tbody
-          tr
-            td.section(colspan=2) CONFIG
-          tr
-            th(colspan=2) FUEL
-          tr
-            td.lpad5 JOKER
-            td.bold.algnr.rpad5 4000 lbs
-          tr
-            td.lpad5 BINGO
-            td.bold.algnr.rpad5 2000 lbs
-          tr
-            td.lpad5 SET/TARGET
-            td.bold.algnr.rpad5 7800 lbs
-          tr
-            td.lpad5 TOTAL
-            td.bold.algnr.rpad5 12103 lbs
-
-          tr
-            th(colspan=2, style="margin-top: 15px") TAKE-OFF
-          tr
-            td.lpad5 GTOW
-            td.bold.algnr.rpad5 34309 lbs
-          tr
-            td.lpad5 Vref
-            td.bold.algnr.rpad5 174 KIAS
-          tr
-            td.lpad5 Vrot
-            td.bold.algnr.rpad5 174 KIAS
-
-        //- Loadout
-
-      table(style="width: 225px; margin-top: 15px")
-        colgroup
-          col
-          col
-
-        tbody
-          tr
-            td.section(colspan=2) LOADOUT
-          tr
-            th PYL
-            th ITEM
-
-          if loadout
-            each load in loadout
-              tr
-                td.algnc #{load.pyl}
-                td.lpad5 #{load.item}
-          else
+          tbody
             tr
-              td(colspan=2, style="text-align: center") N/A
+              td.section(colspan=2) CONFIG
+            tr
+              th(colspan=2) FUEL
+            tr
+              td.lpad5 JOKER
+              td.bold.algnr.rpad5 4000 lbs
+            tr
+              td.lpad5 BINGO
+              td.bold.algnr.rpad5 2000 lbs
+            tr
+              td.lpad5 SET/TARGET
+              td.bold.algnr.rpad5 7800 lbs
+            tr
+              td.lpad5 TOTAL
+              td.bold.algnr.rpad5 12103 lbs
+
+            tr
+              th(colspan=2, style="margin-top: 15px") TAKE-OFF
+            tr
+              td.lpad5 GTOW
+              td.bold.algnr.rpad5 34309 lbs
+            tr
+              td.lpad5 Vref
+              td.bold.algnr.rpad5 174 KIAS
+            tr
+              td.lpad5 Vrot
+              td.bold.algnr.rpad5 174 KIAS
+
+          //- Loadout
+      if false
+        table(style="width: 225px; margin-top: 15px")
+          colgroup
+            col
+            col
+
+          tbody
+            tr
+              td.section(colspan=2) LOADOUT
+            tr
+              th PYL
+              th ITEM
+
+            if loadout
+              each load in loadout
+                tr
+                  td.algnc #{load.pyl}
+                  td.lpad5 #{load.item}
+            else
+              tr
+                td(colspan=2, style="text-align: center") N/A

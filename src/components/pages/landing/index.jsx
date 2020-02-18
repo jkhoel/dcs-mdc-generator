@@ -29,7 +29,8 @@ function TabPanel(props) {
       hidden={value !== index}
       id={`scrollable-auto-tabpanel-${index}`}
       aria-labelledby={`scrollable-auto-tab-${index}`}
-      {...other}>
+      {...other}
+    >
       {value === index && <Box p={3}>{children}</Box>}
     </Typography>
   );
@@ -49,7 +50,7 @@ const useStyles = makeStyles({
 
 // Main Component
 export default function Landing() {
-  const [value, setValue] = React.useState(1); // TODO: set this back to 0
+  const [value, setValue] = React.useState(0);
 
   const classes = useStyles();
 
@@ -78,7 +79,8 @@ export default function Landing() {
               textColor="primary"
               variant="scrollable"
               scrollButtons="auto"
-              aria-label="scrollable auto tabs example">
+              aria-label="scrollable auto tabs example"
+            >
               <Tab label="Communication" />
               <Tab label="Navigation" />
               <Tab label="Configuration" />

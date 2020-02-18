@@ -8,6 +8,7 @@ import Paper from '@material-ui/core/Paper';
 
 import FileImportButton from '../buttons/file-import-button';
 import CoordFormatSelector from '../selectors/coord-format';
+import TransitionAltitudeSelector from '../selectors/transition-level';
 import ThemeOptionsSelector from '../selectors/theme-options';
 import DownloadMDCButton from '../buttons/download-mdc';
 import DownloadJSONButton from '../buttons/download-json';
@@ -55,15 +56,7 @@ export default function Sidemenu() {
           defaultValue={1}
         />
 
-        <TextField
-          variant="outlined"
-          label="Transition Altitude"
-          style={{ marginTop: 15, width: '100%' }}
-          defaultValue={5000}
-          InputProps={{
-            endAdornment: <InputAdornment position="start">Feet</InputAdornment>
-          }}
-        />
+        <TransitionAltitudeSelector />
 
         <TextField
           variant="outlined"

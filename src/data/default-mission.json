@@ -11,7 +11,8 @@
       "par": "126.300",
       "ctrl": "127.100",
       "elev": "52",
-      "rwy": "13LR/31LR"
+      "rwy": "13LR/31LR",
+      "tableData": { "id": 0 }
     },
     {
       "type": "ARR",
@@ -24,7 +25,8 @@
       "par": "126.300",
       "ctrl": "127.100",
       "elev": "52",
-      "rwy": "13LR/31LR"
+      "rwy": "13LR/31LR",
+      "tableData": { "id": 1 }
     },
     {
       "type": "ALT",
@@ -37,125 +39,197 @@
       "par": "309.500",
       "ctrl": "309.900",
       "elev": "",
-      "rwy": ""
+      "rwy": "",
+      "tableData": { "id": 2 }
     }
   ],
   "flight": [
     {
       "desc": "FL",
-      "callsign": "Dex",
-      "tcn": "62X",
+      "callsign": "ASHILTA",
+      "tcn": "28Y",
       "laser": 1611,
-      "mode": 4411
+      "mode": 4411,
+      "tableData": { "id": 0 }
     },
     {
+      "index": 1,
       "desc": "#2",
-      "callsign": "Dex",
-      "tcn": "62Y",
-      "laser": 1611,
-      "mode": 4411
+      "callsign": "DEX",
+      "tcn": "125X",
+      "laser": 1612,
+      "mode": 4412
     },
     {
+      "index": 2,
       "desc": "EL",
-      "callsign": "Dex",
-      "tcn": "62Y",
-      "laser": 1611,
-      "mode": 4411
+      "callsign": "",
+      "tcn": "",
+      "laser": "",
+      "mode": ""
     },
     {
+      "index": 3,
       "desc": "#4",
-      "callsign": "Dex",
-      "tcn": "62Y",
-      "laser": 1611,
-      "mode": 4411
+      "callsign": "",
+      "tcn": "125X",
+      "laser": 1614,
+      "mode": 4414
     }
   ],
   "flight_comms": [
     {
-      "type": "FLIGHT PRI - GRAY6",
-      "chan": "U2",
-      "freq": "235.250"
+      "type": "FLIGHT PRI - AMBER2",
+      "chan": "",
+      "freq": "238.750",
+      "tableData": { "id": 0 }
     },
     {
-      "type": "FLIGHT SEC - OLIVE3",
-      "chan": "V5",
-      "freq": "141.750"
+      "type": "FLIGHT SEC - BLUE7",
+      "chan": "",
+      "freq": "117.500",
+      "tableData": { "id": 1 }
     }
   ],
   "support": [
     {
       "agency": "DARKSTAR",
       "chan": "BLUE 3",
-      "freq": "123.250",
+      "freq": "237.00",
       "tcn": "",
-      "notes": "MISSION CMDR"
+      "notes": "AMC",
+      "tableData": { "id": 0 }
     },
     {
-      "agency": "ARCO - BOOM",
-      "chan": "MAROON 11",
-      "freq": "235.250",
+      "agency": "AR203 - ARCO - BOOM",
+      "chan": "",
+      "freq": "140.00",
       "tcn": "49X",
-      "notes": "AAR203"
+      "notes": "TANKER",
+      "tableData": { "id": 1 }
     }
   ],
-  "pkg": [
-    {
-      "callsign": "Panther",
-      "aircraft": "2xFA18C",
-      "freq": "123.750",
-      "tcn": "76Y",
-      "lsr": "N/A",
-      "tasking": "CAP"
-    },
-    {
-      "callsign": "Axe",
-      "aircraft": "2xA10C",
-      "freq": "134.000",
-      "tcn": "55Y",
-      "lsr": "1511",
-      "tasking": "CAS"
-    }
-  ],
+  "pkg": [],
   "waypoints": [
     {
-      "desc": "DEP",
-      "wp": "Al Ain Int. Airport",
-      "alt": "813",
-      "gs": "300",
-      "tot": 0,
+      "desc": "WP",
+      "wp": "RCTRACK",
+      "alt": "2000",
+      "agl": "False",
+      "speedtype": "mach",
+      "gs": "496.992283740069",
+      "tas": "496.992283740069",
+      "cas": "0",
+      "mach": "0.75",
+      "tot": 43200,
       "act": 0,
-      "lat": "24.2752666666667",
-      "lon": "55.6113833333333"
+      "lat": "24.1883333333333",
+      "lon": "54.6383333333333"
     },
     {
       "desc": "WP",
-      "wp": "1",
-      "alt": "1500",
-      "gs": "300",
-      "tot": 0,
+      "wp": "XJUNCT",
+      "alt": "6000",
+      "agl": "False",
+      "speedtype": "mach",
+      "gs": "490.139515252279",
+      "tas": "490.139515252279",
+      "cas": "451.059257517899",
+      "mach": "0.75",
+      "tot": 43386,
       "act": 0,
-      "lat": "24.8891086358444",
-      "lon": "56.6894652395402"
+      "lat": "24.42",
+      "lon": "55.0266666666667"
     },
     {
       "desc": "WP",
-      "wp": "2",
-      "alt": "1500",
-      "gs": "300",
-      "tot": 0,
+      "wp": "FLOT",
+      "alt": "24000",
+      "agl": "False",
+      "speedtype": "mach",
+      "gs": "456.185244285094",
+      "tas": "456.185244285094",
+      "cas": "323.494655941868",
+      "mach": "0.746971070766449",
+      "tot": 43731,
       "act": 0,
-      "lat": "25.5138824943904",
-      "lon": "56.7191173282923"
+      "lat": "24.9335666666667",
+      "lon": "55.5934666666667"
     },
     {
-      "desc": "ARR",
-      "wp": "Khasab",
-      "alt": "1500",
-      "gs": "300",
-      "tot": 0,
+      "desc": "WP",
+      "wp": "COAST",
+      "alt": "24000",
+      "agl": "False",
+      "speedtype": "mach",
+      "gs": "458.035051963605",
+      "tas": "458.035051963605",
+      "cas": "324.913324775513",
+      "mach": "0.75",
+      "tot": 44118,
       "act": 0,
-      "lat": "26.1797222222",
-      "lon": "56.2430555556"
+      "lat": "25.3977246973931",
+      "lon": "56.3410493702054"
+    },
+    {
+      "desc": "WP",
+      "wp": "NAP SA6",
+      "alt": "500",
+      "agl": "True",
+      "speedtype": "cas",
+      "gs": "456.806770313953",
+      "tas": "456.806770313953",
+      "cas": "450",
+      "mach": "0.685844100192887",
+      "tot": 44348,
+      "act": 0,
+      "lat": "25.8788",
+      "lon": "56.4168666666667"
+    },
+    {
+      "desc": "WP",
+      "wp": "IP",
+      "alt": "500",
+      "agl": "True",
+      "speedtype": "cas",
+      "gs": "456.806770313953",
+      "tas": "456.806770313953",
+      "cas": "450",
+      "mach": "0.685844100192887",
+      "tot": 44580,
+      "act": 0,
+      "lat": "26.3623833333333",
+      "lon": "56.5090166666667"
+    },
+    {
+      "desc": "WP",
+      "wp": "T12.6",
+      "alt": "20",
+      "agl": "True",
+      "speedtype": "cas",
+      "gs": "454.166405444558",
+      "tas": "454.166405444558",
+      "cas": "450",
+      "mach": "0.680841410079679",
+      "tot": 44642,
+      "act": 0,
+      "lat": "26.3694991838559",
+      "lon": "56.3632545369907"
+    },
+    {
+      "desc": "WP",
+      "wp": "T12.7",
+      "alt": "30",
+      "agl": "True",
+      "speedtype": "cas",
+      "gs": "479.374594167032",
+      "tas": "479.374594167032",
+      "cas": "475",
+      "mach": "0.718623453926887",
+      "tot": 44643,
+      "act": 0,
+      "lat": "26.36845",
+      "lon": "56.36385"
     }
   ],
   "poi": [
@@ -185,18 +259,16 @@
     "coordFormat": "ddm",
     "dd-precision": "1",
     "dms-precision": "0",
-    "transition-alt": "5000",
+    "transition_alt": "9000",
     "mission_start": 43200,
     "theatre": "PersianGulf"
   },
   "mission": {
-    "desc": "COM-O1",
-    "callsign": "BANSHEE 1",
-    "packageName": "Alpha",
-    "number": "TR7820"
+    "desc": "TAC-05",
+    "callsign": "DEVIL 1",
+    "packageName": "",
+    "number": "CP7938",
+    "tableData": { "id": 0 }
   },
-  "theme": {
-    "mode": "light",
-    "template": "default"
-  }
+  "theme": { "mode": "light", "template": "default" }
 }

@@ -46,7 +46,7 @@ export function getRouteWaypoints(route) {
       let wp = {};
 
       // Get data from child ELEMENT_NODEs
-      wps[i].childNodes.forEach((child) => {
+      wps[i].childNodes.forEach(child => {
         if (child.nodeType === 1) {
           // Add the data to the wp object
           wp = { ...wp, [child.tagName.toLowerCase()]: child.textContent };
@@ -81,18 +81,17 @@ function cfTypeMap(type) {
   }
 }
 
-
 /**
  * Converts a string of format 'HH:MM:SS' to seconds in the day
  */
 function convertHHSSMMtoSeconds(time) {
-  const arr = time.split(':')
+  const arr = time.split(':');
 
-  let t = parseInt(arr[0]) * 3600 // Seconds in an hour
-  t += parseInt(arr[1]) * 60 // Seconds in a minute
-  t += parseInt(arr[2])
+  let t = parseInt(arr[0]) * 3600; // Seconds in an hour
+  t += parseInt(arr[1]) * 60; // Seconds in a minute
+  t += parseInt(arr[2]);
 
-  return t
+  return t;
 }
 
 export function createWaypointsFromXML(xml) {
@@ -100,12 +99,12 @@ export function createWaypointsFromXML(xml) {
   let waypoints = [];
 
   // Create a valid waypoint array for each waypoint in the XML
-  wps.forEach((wp) => {
+  wps.forEach(wp => {
     // Convert activity to seconds
-    let activity = convertHHSSMMtoSeconds(wp.activity)
+    let activity = convertHHSSMMtoSeconds(wp.activity);
 
     // Convert tot to seconds
-    let tot = convertHHSSMMtoSeconds(wp.tot.split(' ')[1])
+    let tot = convertHHSSMMtoSeconds(wp.tot.split(' ')[1]);
 
     // console.log(SecondsToHHSS(tot))
     // console.log(SecondsToHHSS(activity))
@@ -114,7 +113,12 @@ export function createWaypointsFromXML(xml) {
       desc: cfTypeMap(wp.type),
       wp: wp.name,
       alt: wp.altitude,
+      agl: wp.agl,
+      speedtype: wp.speedtype.toLowerCase(),
       gs: wp.gs,
+      tas: wp.ktas,
+      cas: wp.kcas,
+      mach: wp.mach,
       tot: tot,
       act: activity,
       lat: wp.lat,
@@ -130,11 +134,11 @@ export function createPoiFromXML(xml) {
   let pois = [];
 
   // Create a valid waypoint array for each waypoint in the XML
-  wps.forEach((poi) => {
+  wps.forEach(poi => {
     pois.push({
-      type: cfTypeMap(poi.type), 
-      name: poi.name, 
-      lat: poi.lat, 
+      type: cfTypeMap(poi.type),
+      name: poi.name,
+      lat: poi.lat,
       lon: poi.lon
     });
   });
@@ -196,11 +200,11 @@ export function ImportDialog({ open, routes, onClose, onSave }) {
     onSave({ wp, poi });
   };
 
-  const handleWPSelection = (event) => {
+  const handleWPSelection = event => {
     setWpSelection(event.target.value);
   };
 
-  const handlePOISelection = (event) => {
+  const handlePOISelection = event => {
     setPoiSelection(event.target.value);
   };
 
@@ -220,12 +224,14 @@ export function ImportDialog({ open, routes, onClose, onSave }) {
           label="Waypoints"
           value={wpSelection}
           onChange={handleWPSelection}
-          style={{ marginTop: 15, width: '100%' }}>
+          style={{ marginTop: 15, width: '100%' }}
+        >
           <MenuItem value={999}>None</MenuItem>
           {routeOptions.map((route, index) => (
             <MenuItem
               key={index}
-              value={route.index}>{`[${route.task}] - ${route.name}`}</MenuItem>
+              value={route.index}
+            >{`[${route.task}] - ${route.name}`}</MenuItem>
           ))}
         </TextField>
 
@@ -234,12 +240,14 @@ export function ImportDialog({ open, routes, onClose, onSave }) {
           label="Points of Interest"
           value={poiSelection}
           onChange={handlePOISelection}
-          style={{ marginTop: 15, width: '100%' }}>
+          style={{ marginTop: 15, width: '100%' }}
+        >
           <MenuItem value={999}>None</MenuItem>
           {routeOptions.map((route, index) => (
             <MenuItem
               key={index}
-              value={route.index}>{`[${route.task}] - ${route.name}`}</MenuItem>
+              value={route.index}
+            >{`[${route.task}] - ${route.name}`}</MenuItem>
           ))}
         </TextField>
       </DialogContent>
@@ -280,11 +288,11 @@ export function CombatFliteProvider({ children }) {
     // Create Waypoints and POIs if any where selected, and update the store context
     if (wp) {
       wps = createWaypointsFromXML(routes[wp.index]);
-      setStore((prev) => ({ ...prev, waypoints: wps }));
+      setStore(prev => ({ ...prev, waypoints: wps }));
     }
     if (poi) {
       pois = createPoiFromXML(routes[poi.index]);
-      setStore((prev) => ({ ...prev, poi: pois }));
+      setStore(prev => ({ ...prev, poi: pois }));
     }
 
     // And close the dialog
@@ -293,7 +301,8 @@ export function CombatFliteProvider({ children }) {
 
   return (
     <CombatFliteContext.Provider
-      value={{ routes, setRoutes, openImportDialog, closeImportDialog }}>
+      value={{ routes, setRoutes, openImportDialog, closeImportDialog }}
+    >
       <ImportDialog
         open={open}
         onClose={closeImportDialog}
