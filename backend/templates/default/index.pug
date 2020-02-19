@@ -300,30 +300,35 @@ html(lang="en")
             th LASER
             th MODE
 
-          tr
-            td.freq FL
-            td.lpad5 DEX
-            td.freq 62Y
-            td.freq 1611
-            td.freq 4411
-          tr
-            td.freq #2
-            td.lpad5 DEX
-            td.freq 125Y
-            td.freq 1612
-            td.freq 4412
-          tr
-            td.freq EL
-            td.lpad5 DEX
-            td.freq 125Y
-            td.freq 1613
-            td.freq 4413
-          tr
-            td.freq #4
-            td.lpad5 DEX
-            td.freq 125Y
-            td.freq 1614
-            td.freq 4414
+          if flight
+            tr
+              td.freq FL
+              td.lpad5 #{flight[0].callsign}
+              td.freq #{flight[0].tcn}
+              td.freq #{flight[0].laser}
+              td.freq #{flight[0].mode}
+            tr
+              td.freq #2
+              td.lpad5 #{flight[1].callsign}
+              td.freq #{flight[1].tcn}
+              td.freq #{flight[1].laser}
+              td.freq #{flight[1].mode}
+            tr
+              td.freq EL
+              td.lpad5 #{flight[2].callsign}
+              td.freq #{flight[2].tcn}
+              td.freq #{flight[2].laser}
+              td.freq #{flight[2].mode}
+            tr
+              td.freq #4
+              td.lpad5 #{flight[3].callsign}
+              td.freq #{flight[3].tcn}
+              td.freq #{flight[3].laser}
+              td.freq #{flight[3].mode}
+
+          else
+            tr
+              td(colspan=5, style="text-align: center") N/A
 
       //- Support
       if support
